@@ -88,4 +88,18 @@
   width: 100%;
   height: 100%;
  }
+ @media screen and (max-width: 530px) {
+  &__title {
+   font-size: 20px;
+   line-height: 22px;
+  }
+  &__question-name {
+   font-size: 16px;
+   line-height: 17.6px;
+  }
+  &__question-answer {
+   font-size: 16px;
+   line-height: 17.6px;
+  }
+ }
 }

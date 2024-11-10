@@ -66,6 +66,12 @@
   line-height: 17.6px;
   font-weight: 400;
  }
+ &__nav {
+  display: flex;
+  max-width: 60%;
+  width: 100%;
+  justify-content: space-between;
+ }
  @media screen and (max-width: 530px) {
   padding: 40px 20px 20px 20px;
   &__info {
@@ -74,6 +80,17 @@
   &__docs {
    flex-direction: column;
    row-gap: 5px;
+  }
+  &__telegram {
+   margin-bottom: 20px;
+  }
+  &__contacts {
+   margin-bottom: 40px;
+  }
+  &__nav {
+   max-width: 100%;
+   flex-direction: column;
+   row-gap: 40px;
   }
  }
 }

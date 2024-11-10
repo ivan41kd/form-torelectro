@@ -935,17 +935,17 @@ const categories = document.querySelectorAll('.catalog__category');
 
 const selectCategory = (category) => {
  currentCategory = category.dataset.category;
- initSwiper();
+
  renderProducts(category.dataset.category);
 };
 const renderProducts = (category) => {
- initSwiper();
  cardsWrapper.innerHTML = '';
  const categoryItems = products[category].items;
 
  categoryItems.forEach((item, index) => {
   renderCards(item, index);
  });
+ initSlider();
 };
 
 const renderOptions = (product) => {
@@ -1155,6 +1155,7 @@ const openProduct = (index) => {
 
 categories.forEach((category) => {
  category.addEventListener('click', () => {
+  initSlider();
   categories.forEach((cat) => cat.classList.remove('active'));
 
   category.classList.add('active');

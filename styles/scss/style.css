@@ -180,7 +180,7 @@ textarea:not([rows]) {
 }
 
 .header {
-  padding: 20px 20px;
+  padding: 20px 0px;
   padding-bottom: 100px;
   max-width: 1180px;
   width: 100%;
@@ -274,8 +274,12 @@ section {
   padding-bottom: 100px;
   max-width: 1180px;
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+@media screen and (max-width: 1150px) {
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .intro__wrapper {
@@ -284,7 +288,15 @@ section {
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  row-gap: 20px;
+  row-gap: 38px;
+}
+.intro__img {
+  display: none;
+  max-width: 350px;
+  width: 100%;
+  height: 370px;
+  background: white;
+  border-radius: 5px;
 }
 .intro__title {
   font-size: 36px;
@@ -316,6 +328,9 @@ section {
   text-wrap: pretty;
 }
 @media screen and (max-width: 530px) {
+  .intro__img {
+    display: flex;
+  }
   .intro__wrapper {
     max-width: 350px;
   }
@@ -862,6 +877,8 @@ section {
 @media screen and (max-width: 530px) {
   .presentation__text {
     max-width: 340px;
+    font-size: 18px;
+    line-height: 19.8px;
   }
   .presentation__button {
     max-width: 350px;
@@ -947,12 +964,23 @@ section {
   line-height: 19.8px;
   font-weight: 400;
 }
+.information__img {
+  max-width: 320px;
+  width: 100%;
+  height: 140px;
+  background: rgb(240, 240, 240);
+  border-radius: 5px;
+  display: none;
+}
 @media screen and (max-width: 530px) {
   .information__title {
     font-size: 20px;
     line-height: 22px;
+    margin-bottom: 10px;
   }
   .information__item {
+    display: flex;
+    flex-direction: column;
     padding: 15px;
     padding-bottom: 20px;
   }
@@ -964,6 +992,10 @@ section {
     max-width: 320px;
     font-size: 16px;
     line-height: 17.6px;
+  }
+  .information__img {
+    display: flex;
+    margin-bottom: 15px;
   }
 }
 
@@ -1057,6 +1089,20 @@ section {
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 530px) {
+  .faq__title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .faq__question-name {
+    font-size: 16px;
+    line-height: 17.6px;
+  }
+  .faq__question-answer {
+    font-size: 16px;
+    line-height: 17.6px;
+  }
+}
 
 .nuances {
   padding-top: 100px;
@@ -1077,6 +1123,9 @@ section {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+}
+.nuances__items.mobile {
+  display: none;
 }
 .nuances__item {
   cursor: pointer;
@@ -1156,6 +1205,29 @@ section {
   font-size: 16px;
   line-height: 17.6px;
   color: rgb(255, 61, 0);
+}
+@media screen and (max-width: 530px) {
+  .nuances__title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .nuances__items {
+    display: none;
+  }
+  .nuances__items.mobile {
+    display: flex;
+  }
+  .nuances__item.active .nuances__item-body {
+    max-height: 350px;
+    transition: max-height 0.6s;
+  }
+  .nuances__item.active .nuances__question-icon {
+    display: none;
+  }
+  .nuances__item-name {
+    font-size: 16px;
+    line-height: 17.6px;
+  }
 }
 
 .popup {
@@ -1397,6 +1469,12 @@ section {
   line-height: 17.6px;
   font-weight: 400;
 }
+.footer__nav {
+  display: flex;
+  max-width: 60%;
+  width: 100%;
+  justify-content: space-between;
+}
 @media screen and (max-width: 530px) {
   .footer {
     padding: 40px 20px 20px 20px;
@@ -1407,5 +1485,16 @@ section {
   .footer__docs {
     flex-direction: column;
     row-gap: 5px;
+  }
+  .footer__telegram {
+    margin-bottom: 20px;
+  }
+  .footer__contacts {
+    margin-bottom: 40px;
+  }
+  .footer__nav {
+    max-width: 100%;
+    flex-direction: column;
+    row-gap: 40px;
   }
 }/*# sourceMappingURL=style.css.map */

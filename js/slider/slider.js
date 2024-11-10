@@ -1,5 +1,6 @@
-function initSwiper() {
- const swiper = new Swiper('.swiper', {
+let swiper;
+const initSlider = () => {
+ swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -17,6 +18,4 @@ function initSwiper() {
   },
  });
  swiper.slideTo(100, 0);
-}
-
-initSwiper();
+};
