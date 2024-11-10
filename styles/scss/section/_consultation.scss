@@ -1,0 +1,47 @@
+.consultation {
+ padding-top: 50px;
+ padding-bottom: 50px;
+ background: rgba(16, 16, 16, 1);
+ width: 100%;
+ max-width: 100%;
+ display: flex;
+ justify-content: center;
+ &__wrapper {
+  max-width: 1180px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+ }
+ &__text {
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  line-height: 26.4px;
+  max-width: 780px;
+  width: 100%;
+ }
+ &__text span {
+  color: rgba(255, 61, 0, 1);
+ }
+ &__button {
+  width: 380px;
+  padding: 20px;
+  background: rgba(255, 61, 0, 1);
+  font-size: 18px;
+  line-height: 19.8px;
+  color: rgba(255, 255, 255, 1);
+ }
+ @media screen and (max-width: 530px) {
+  &__wrapper {
+   max-width: 100%;
+  }
+  &__text {
+   font-size: 18px;
+   line-height: 19.8px;
+   max-width: 100%;
+  }
+  &__button {
+   max-width: 100%;
+  }
+ }
+}

@@ -1,0 +1,100 @@
+.nuances {
+ padding-top: 100px;
+ &__wrapper {
+  display: flex;
+  flex-direction: column;
+ }
+ &__title {
+  font-size: 30px;
+  line-height: 33px;
+  margin-bottom: 20px;
+ }
+ &__title span {
+  color: rgba(255, 61, 0, 1);
+ }
+ &__items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+ }
+ &__item {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 20px;
+  background: rgba(16, 16, 16, 1);
+ }
+
+ &__question-cross {
+  transform: rotate(0deg);
+  transform-origin: center;
+  transition: 0.3s;
+ }
+ &__item.active {
+  height: 100%;
+  transition: 0.3s;
+ }
+ &__item.active &__item-body {
+  max-height: 200px;
+  transition: max-height 0.6s;
+ }
+ &__item.active &__item-header {
+  margin-bottom: 20px;
+  transition: 0.1s;
+ }
+ &__item.active &__question-cross {
+  transform: rotate(45deg);
+  transform-origin: center;
+  transition: 0.3s;
+ }
+ &__item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.6s;
+  margin-bottom: 0px;
+ }
+ &__item-body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s;
+  &::before {
+   display: block;
+   content: '';
+   background: rgba(80, 80, 80, 1);
+   width: 100%;
+   height: 1px;
+   margin-bottom: 20px;
+  }
+ }
+ &__item-answers {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 20px;
+ }
+ &__item-answer {
+  font-size: 18px;
+  line-height: 19.8px;
+  color: rgba(144, 144, 144, 1);
+  font-weight: 400;
+ }
+ &__item-name {
+  font-size: 18px;
+  line-height: 19.8px;
+  color: rgba(255, 255, 255, 1);
+ }
+ &__question-icon {
+  max-width: 30px;
+  max-height: 30px;
+  width: 100%;
+  height: 100%;
+ }
+ &__write {
+  font-size: 16px;
+  line-height: 17.6px;
+  color: rgba(255, 61, 0, 1);
+ }
+}
