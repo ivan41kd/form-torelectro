@@ -26,20 +26,35 @@
  &__button {
   max-width: 380px;
   width: 100%;
-  padding: 20px;
+  height: 60px;
   background: rgba(255, 61, 0, 1);
   font-size: 18px;
-  line-height: 19.8px;
   color: rgba(255, 255, 255, 1);
+  line-height: normal;
+ }
+ &__disclaimer {
+  display: none;
  }
  @media screen and (max-width: 530px) {
   &__text {
    max-width: 340px;
    font-size: 18px;
-   line-height: 19.8px;
+   line-height: 110%;
+   height: 100px;
   }
   &__button {
    max-width: 350px;
+   font-size: 16px;
+   line-height: 110%;
+   padding: 0;
+   height: 58px;
+  }
+  &__disclaimer {
+   font-size: 14px;
+   line-height: 110%;
+   color: #505050;
+   text-align: center;
+   display: flex;
   }
  }
 }

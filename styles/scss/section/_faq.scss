@@ -6,7 +6,7 @@
  }
  &__title {
   font-size: 30px;
-  line-height: 33px;
+  line-height: 110%;
   margin-bottom: 20px;
  }
  &__title span {
@@ -74,13 +74,13 @@
  }
  &__question-answer {
   font-size: 18px;
-  line-height: 19.8px;
+  line-height: 110%;
   color: rgba(80, 80, 80, 1);
   font-weight: 400;
  }
  &__question-name {
   font-size: 18px;
-  line-height: 19.8px;
+  line-height: 110%;
  }
  &__question-icon {
   max-width: 30px;

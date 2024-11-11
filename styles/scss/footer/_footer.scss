@@ -19,8 +19,8 @@
   border-radius: 5px;
  }
  &__info {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 780px) 1fr;
   column-gap: 20px;
  }
  &__info-items {
@@ -34,46 +34,64 @@
  &__info-item {
   color: rgba(144, 144, 144, 1);
   font-size: 16px;
-  line-height: 17.6px;
+  line-height: 110%;
+  height: 20px;
   font-weight: 400;
   cursor: pointer;
  }
  &__contacts {
   display: flex;
   flex-direction: column;
+  row-gap: 5px;
  }
  &__contact-item {
   font-size: 18px;
-  line-height: 19.8px;
+  line-height: 110%;
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
+  height: 20px;
  }
  &__disclaimer {
   color: rgba(80, 80, 80, 1);
   font-size: 16px;
-  line-height: 17.6px;
+  line-height: 110%;
   font-weight: 400;
  }
  &__docs {
-  display: flex;
-  max-width: 1140px;
+  display: grid;
   width: 100%;
-  justify-content: space-between;
+  grid-template-columns: minmax(0, 385px) minmax(0, 380px) minmax(0, 380px);
+  column-gap: 20px;
  }
  &__docs-item {
   color: rgba(80, 80, 80, 1);
   font-size: 16px;
-  line-height: 17.6px;
+  line-height: 110%;
   font-weight: 400;
  }
  &__nav {
+  display: grid;
+  grid-template-columns: minmax(0, 385px) minmax(0, 380px);
+  column-gap: 30px;
+  width: 100%;
+  max-width: 765px;
+ }
+ &__socials {
   display: flex;
-  max-width: 60%;
   width: 100%;
   justify-content: space-between;
  }
+ &__docs-item.footer-political {
+  cursor: pointer;
+ }
  @media screen and (max-width: 530px) {
   padding: 40px 20px 20px 20px;
+  &__logo {
+   margin-bottom: 40px;
+  }
+  &__wrapper {
+   row-gap: 0;
+  }
   &__info {
    flex-direction: column-reverse;
   }
@@ -88,9 +106,37 @@
    margin-bottom: 40px;
   }
   &__nav {
+   display: flex;
    max-width: 100%;
    flex-direction: column;
    row-gap: 40px;
+   margin-bottom: 40px;
+  }
+  &__info {
+   flex-direction: column-reverse;
+   display: flex;
+  }
+  &__socials {
+   display: flex;
+   flex-direction: column-reverse;
+  }
+  &__info-item {
+   font-size: 14px;
+  }
+  &__docs {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+  }
+  &__docs-item {
+   font-size: 14px;
+   line-height: 110%;
+  }
+
+  &__disclaimer {
+   font-size: 14px;
+   line-height: 110%;
+   margin-bottom: 40px;
   }
  }
 }

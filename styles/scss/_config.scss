@@ -126,7 +126,7 @@ input {
  color: rgba(16, 16, 16, 1);
  font-weight: 400;
  font-size: 18px;
- line-height: 19.8px;
+ line-height: normal;
  padding: 15px;
  &::placeholder {
   color: black;
@@ -140,6 +140,9 @@ input.invalid {
 /* Make sure textarea without a rows attribute are not tiny */
 textarea:not([rows]) {
  min-height: 10em;
+}
+a {
+ text-decoration: none;
 }
 
 /* Anything that has been anchored to should have extra scroll margin */

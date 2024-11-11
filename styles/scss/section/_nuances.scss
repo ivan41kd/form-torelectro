@@ -6,7 +6,7 @@
  }
  &__title {
   font-size: 30px;
-  line-height: 33px;
+  line-height: 110%;
   margin-bottom: 20px;
  }
  &__title span {
@@ -80,13 +80,13 @@
  }
  &__item-answer {
   font-size: 18px;
-  line-height: 19.8px;
+  line-height: 110%;
   color: rgba(144, 144, 144, 1);
   font-weight: 400;
  }
  &__item-name {
   font-size: 18px;
-  line-height: 19.8px;
+  line-height: 110%;
   color: rgba(255, 255, 255, 1);
  }
  &__question-icon {
@@ -97,8 +97,11 @@
  }
  &__write {
   font-size: 16px;
-  line-height: 17.6px;
+  line-height: 110%;
   color: rgba(255, 61, 0, 1);
+ }
+ &__write a {
+  text-decoration: none;
  }
 
  @media screen and (max-width: 530px) {
@@ -116,12 +119,13 @@
    max-height: 350px;
    transition: max-height 0.6s;
   }
-  &__item.active &__question-icon {
-   display: none;
-  }
   &__item-name {
    font-size: 16px;
-   line-height: 17.6px;
+   line-height: 110%;
+  }
+  &__item-answer {
+   font-size: 16px;
+   line-height: 110%;
   }
  }
 }

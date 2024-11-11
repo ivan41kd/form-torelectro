@@ -18,6 +18,9 @@ const mask = (e) => {
 const validatePhone = (phoneInput) => {
  const phoneRegex = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
  if (phoneRegex.test(phoneInput.value)) {
+  phoneInput.classList.contains('invalid')
+   ? phoneInput.classList.remove('invalid')
+   : null;
   return true;
  } else {
   return false;

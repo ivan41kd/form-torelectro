@@ -31,8 +31,8 @@ const openConsultationModal = () => {
        <div class="popup__button-wrapper">
         <button class="popup__form-button">Бесплатная консультация</button>
         <p class="popup__disclamer">
-         нажимая, вы соглашаетесь с условиями политики конфиденциальности
-        </p>
+        нажимая, вы соглашаетесь с <br/><span>условиями политики конфиденциальности</span>
+       </p>
        </div>
       </div>
      </form>
@@ -51,6 +51,9 @@ const openConsultationModal = () => {
  closePopupIcon.addEventListener('click', () =>
   closePopup(consultationSection)
  );
+ consultationSection
+  .querySelector('.popup__disclamer')
+  .addEventListener('click', openPoliticalModal);
 };
 
 const consultationButton = document.querySelector('.consultation__button');

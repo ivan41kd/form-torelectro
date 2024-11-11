@@ -1,7 +1,7 @@
 .catalog {
  &__title {
-  font-size: 36px;
-  line-height: 39.6px;
+  font-size: 30px;
+  line-height: 110%;
   color: rgba(16, 16, 16, 1);
   margin-bottom: 20px;
  }
@@ -56,14 +56,16 @@
  }
  &__category.active button {
   background: rgba(255, 61, 0, 1);
+  color: white;
  }
  &__category-button {
-  max-width: 170px;
+  max-width: 200px;
   width: 100%;
   padding: 20px;
   font-size: 16px;
   line-height: 18.4px;
   background: rgba(255, 255, 255, 1);
+  color: black;
  }
  &__category-info-name {
   font-size: 16px;
@@ -133,10 +135,10 @@
   color: rgba(144, 144, 144, 1);
  }
  &__card-button {
-  padding: 20px;
+  height: 60px;
   color: white;
   font-size: 18px;
-  line-height: 19.8px;
+  line-height: normal;
  }
  @media screen and (max-width: 530px) {
   overflow: hidden;

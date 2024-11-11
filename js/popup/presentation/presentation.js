@@ -31,7 +31,7 @@ const openPresentationModal = () => {
     <div class="popup__button-wrapper">
      <button class="popup__form-button">Подробная презентация</button>
      <p class="popup__disclamer">
-      нажимая, вы соглашаетесь с условиями политики конфиденциальности
+      нажимая, вы соглашаетесь с <br/><span>условиями политики конфиденциальности</span>
      </p>
     </div>
    </div>
@@ -51,6 +51,9 @@ const openPresentationModal = () => {
  closePopupIcon.addEventListener('click', () =>
   closePopup(presentationSection)
  );
+ presentationSection
+  .querySelector('.popup__disclamer')
+  .addEventListener('click', openPoliticalModal);
 };
 
 const submitForm = (input, form) => {

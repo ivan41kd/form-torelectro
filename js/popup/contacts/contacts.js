@@ -21,15 +21,25 @@ const openContactsModal = () => {
   <div class="contacts__wrapper">
    <h2 class="contacts__title">Контактная информация</h2>
    <div class="contacts__info-items">
-    <iframe
-     src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d668.5707363817106!2d38.05450251742869!3d55.692552773413404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTXCsDQxJzMzLjUiTiAzOMKwMDMnMTkuMSJF!5e0!3m2!1sru!2sde!4v1731235527574!5m2!1sru!2sde"
-     width="800"
-     height="470"
-     style="border: 0"
-     allowfullscreen=""
-     loading="lazy"
-     referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+   <div style="position: relative; overflow: hidden">
+   <a
+    href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/?utm_medium=mapframe&utm_source=maps"
+    style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+    >Москва и Московская область</a
+   ><a
+    href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/house/derevnya_torbeyevo_48/Z0EYdgJlS0wDQFtvfXp4c3phYw==/?ll=38.055295%2C55.692628&utm_medium=mapframe&utm_source=maps&z=17"
+    style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+    >Деревня Торбеево, 48 на карте Москвы и Московской области —
+    Яндекс Карты</a
+   ><iframe
+    src="https://yandex.ru/map-widget/v1/?ll=38.055295%2C55.692628&mode=whatshere&whatshere%5Bpoint%5D=38.055294%2C55.692627&whatshere%5Bzoom%5D=17&z=17"
+    width="800"
+    height="470"
+    frameborder="0"
+    allowfullscreen="true"
+    style="position: relative"
+   ></iframe>
+  </div>
     <div class="contacts__info-cards">
      <div class="contacts__info-card">
       <p class="contacts__info-text">+7 495 198 62 55</p>
