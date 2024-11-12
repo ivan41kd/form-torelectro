@@ -7,8 +7,8 @@
  &__wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
-  max-width: 1280px;
+  row-gap: 33px;
+  max-width: 1180px;
   width: 100%;
  }
  &__logo {
@@ -35,7 +35,7 @@
   color: rgba(144, 144, 144, 1);
   font-size: 16px;
   line-height: 110%;
-  height: 20px;
+  max-height: 50px;
   font-weight: 400;
   cursor: pointer;
  }
@@ -80,17 +80,21 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  column-gap: 20px;
  }
  &__docs-item.footer-political {
   cursor: pointer;
  }
- @media screen and (max-width: 530px) {
+ @media screen and (max-width: 576px) {
   padding: 40px 20px 20px 20px;
   &__logo {
    margin-bottom: 40px;
   }
   &__wrapper {
    row-gap: 0;
+  }
+  &__info-items {
+   row-gap: 11px;
   }
   &__info {
    flex-direction: column-reverse;
@@ -100,7 +104,7 @@
    row-gap: 5px;
   }
   &__telegram {
-   margin-bottom: 20px;
+   margin-bottom: 18px;
   }
   &__contacts {
    margin-bottom: 40px;
@@ -110,7 +114,7 @@
    max-width: 100%;
    flex-direction: column;
    row-gap: 40px;
-   margin-bottom: 40px;
+   margin-bottom: 42px;
   }
   &__info {
    flex-direction: column-reverse;
@@ -137,6 +141,13 @@
    font-size: 14px;
    line-height: 110%;
    margin-bottom: 40px;
+  }
+  &__docs-logo {
+   display: none;
+  }
+  &__docs {
+   row-gap: 10px;
+   margin-bottom: 19px;
   }
  }
 }

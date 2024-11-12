@@ -32,7 +32,7 @@ const openVacancyForm = (section) => {
        <div class="popup__button-wrapper">
         <button class="popup__form-button">Подробная презентация</button>
         <p class="popup__disclamer">
-         нажимая, вы соглашаетесь с условиями политики конфиденциальности
+         нажимая, вы соглашаетесь<br/> <span>с условиями политики конфиденциальности</span>
         </p>
        </div>
       </div>
@@ -42,6 +42,8 @@ const openVacancyForm = (section) => {
  document.body.append(vacancySection);
  const popupInput = vacancySection.querySelector('.popup__input');
  const popupForm = vacancySection.querySelector('.popup__form');
+ const popupDisclaimer = vacancySection.querySelector('.popup__disclamer');
+
  const closePopupIcon = vacancySection.querySelector('.popup__close');
  popupInput.addEventListener('input', () => mask(popupInput));
 
@@ -50,6 +52,7 @@ const openVacancyForm = (section) => {
   submitForm(popupInput, popupForm);
  });
  closePopupIcon.addEventListener('click', () => closePopup(vacancySection));
+ popupDisclaimer.addEventListener('click', openPoliticalModal);
 };
 const openVacancyModal = () => {
  const vacancySection = document.createElement('section');
@@ -117,6 +120,7 @@ const openVacancyModal = () => {
     </div>
    </div>`;
  document.body.append(vacancySection);
+ document.body.classList.add('scroll-disabled');
  const closePopupIcon = vacancySection.querySelector('.popup__close');
  const vacancyButton = vacancySection.querySelector('.vacancy__button');
  closePopupIcon.addEventListener('click', () => closePopup(vacancySection));

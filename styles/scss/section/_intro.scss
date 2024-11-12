@@ -1,4 +1,5 @@
 .intro {
+ height: 650px;
  &__wrapper {
   max-width: 610px;
   display: flex;
@@ -18,13 +19,19 @@
   font-size: 36px;
   line-height: 110%;
   color: #101010;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
+ }
+ &__title.mobile {
+  display: none;
  }
  &__subtitle {
   font-size: 20px;
   line-height: 110%;
   max-width: 430px;
-  height: 120px;
+  height: 123px;
+ }
+ &__disclaimer-political {
+  cursor: pointer;
  }
  &__button {
   font-size: 18px;
@@ -37,7 +44,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
  }
  &__description {
   max-width: 380px;
@@ -53,29 +60,119 @@
  }
  &__bottom {
   width: 100%;
+  margin-bottom: 70px;
  }
- @media screen and (max-width: 530px) {
+
+ &__disclaimer-wrapper {
+  padding: 11px;
+  background: white;
+  display: flex;
+  border-radius: 5px;
+  column-gap: 34px;
+ }
+ &__disclaimer-text {
+  font-size: 16px;
+  line-height: 110%;
+  width: 100%;
+  max-width: 760px;
+ }
+ &__disclaimer-text span {
+  text-decoration: underline;
+  color: #3366bb;
+ }
+ &__disclaimer-text.mobile {
+  display: none;
+ }
+ &__disclaimer-button-wrapper {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+ }
+ &__disclaimer-button {
+  width: 320px;
+  height: 60px;
+  color: white;
+  font-size: 18px;
+ }
+ &__disclaimer-close {
+  max-width: 20px;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+ }
+ &__disclaimer-close-icon {
+  max-width: 12.19px;
+  width: 100%;
+  height: 12.19px;
+ }
+
+ @media screen and (max-width: 768px) {
+  height: auto;
+  &__disclaimer {
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   z-index: 100;
+   background: rgba(16, 16, 16, 0.9);
+  }
+  &__disclaimer-wrapper {
+   max-width: 350px;
+   flex-direction: column;
+   padding: 15px;
+   width: 100%;
+  }
+  &__disclaimer-text {
+   display: none;
+  }
+  &__disclaimer-text.mobile {
+   display: block;
+   font-size: 14px;
+   margin-bottom: 25px;
+  }
+ }
+ @media screen and (max-width: 576px) {
   &__img {
    display: flex;
-   margin-bottom: 20px;
+   margin-bottom: 23px;
   }
 
   &__wrapper {
-   max-width: 350px;
+   max-width: 390px;
   }
   &__title {
    font-size: 24px;
    line-height: 26.4px;
+   width: 100%;
+   max-width: 390px;
   }
-  br {
+  &__button {
+   font-size: 16px;
+  }
+  &__title {
    display: none;
   }
+  &__title.mobile {
+   margin-bottom: 23px;
+   display: block;
+  }
   &__subtitle {
-   max-width: 350px;
+   max-width: 390px;
    height: fit-content;
    font-size: 16px;
    line-height: 110%;
-   margin-bottom: 20px;
+   margin-bottom: 25px;
+  }
+  &__bottom {
+   margin-bottom: 0;
   }
  }
 }

@@ -20,13 +20,19 @@ const openPresentationModal = () => {
   </svg>
   <form class="popup__form">
    <div class="popup__form-wrapper">
-    <h1 class="popup__form-title">
+    <h1 class="popup__form-title hide-mobile">
      <span>Пожалуйста</span>, оставьте ваши контакты, чтобы мы отправили вам
      презентацию
     </h1>
+    <h1 class="popup__form-title mobile">
+    <span>Пожалуйста</span>, оставьте ваши контакты,
+    чтобы мы перезвонили и ответили
+    на все необходимые вопросы
+   </h1>
     <div class="popup__form-input">
      <p class="popup__input-name">номер сотового телефона</p>
-     <input type="text" class="popup__input" placeholder="" />
+     <input type="text" class="popup__input"  />
+     <span class="placeholder">999 999 99 99</span>
     </div>
     <div class="popup__button-wrapper">
      <button class="popup__form-button">Подробная презентация</button>
@@ -42,7 +48,11 @@ const openPresentationModal = () => {
  const popupInput = presentationSection.querySelector('.popup__input');
  const popupForm = presentationSection.querySelector('.popup__form');
  const closePopupIcon = presentationSection.querySelector('.popup__close');
- popupInput.addEventListener('input', () => mask(popupInput));
+
+ document.body.classList.add('scroll-disabled');
+ initMask(popupInput);
+ setInputMask(popupInput);
+ popupInput.addEventListener('input', () => setInputMask(popupInput));
 
  popupForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -59,13 +69,14 @@ const openPresentationModal = () => {
 const submitForm = (input, form) => {
  form.addEventListener('submit', (e) => {
   e.preventDefault();
-  validatePhone(input) == true
+  validatePhoneNumber(input) == true
    ? console.log('Форма отправлена!')
    : input.classList.add('invalid');
  });
 };
 
 const closePopup = (section) => {
+ document.body.classList.remove('scroll-disabled');
  section.remove();
 };
 const presentationButton = document.querySelector('.presentation__button');

@@ -20,13 +20,19 @@ const openConsultationModal = () => {
      </svg>
      <form class="popup__form">
       <div class="popup__form-wrapper">
-       <h1 class="popup__form-title">
+       <h1 class="popup__form-title hide-mobile">
         <span>Пожалуйста</span>, оставьте ваши контакты,
         чтобы мы перезвонили вам
        </h1>
+       <h1 class="popup__form-title mobile">
+       <span>Пожалуйста</span>, оставьте ваши контакты,
+       чтобы мы перезвонили и ответили
+       на все необходимые вопросы
+      </h1>
        <div class="popup__form-input">
         <p class="popup__input-name">номер сотового телефона</p>
         <input type="text" class="popup__input" placeholder="" />
+        <span class="placeholder">999 999 99 99</span>
        </div>
        <div class="popup__button-wrapper">
         <button class="popup__form-button">Бесплатная консультация</button>
@@ -38,11 +44,14 @@ const openConsultationModal = () => {
      </form>
     </div>
    `;
+ document.body.classList.add('scroll-disabled');
  document.body.append(consultationSection);
  const popupInput = consultationSection.querySelector('.popup__input');
  const popupForm = consultationSection.querySelector('.popup__form');
  const closePopupIcon = consultationSection.querySelector('.popup__close');
- popupInput.addEventListener('input', () => mask(popupInput));
+ initMask(popupInput);
+ setInputMask(popupInput);
+ popupInput.addEventListener('input', () => setInputMask(popupInput));
 
  popupForm.addEventListener('submit', (e) => {
   e.preventDefault();

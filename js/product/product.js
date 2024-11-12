@@ -2582,7 +2582,11 @@ const renderProducts = (category) => {
 const renderOptions = (product) => {
  const optionsArr = product.options;
  const cardOptions = document.querySelector('.product__card-options');
- const imgStickers = document.querySelector('.product__img-stickers');
+ const imgStickers = document.querySelector('.product__img-stickers-items');
+ const stickers = imgStickers.lastChild;
+ if (imgStickers.classList.contains('.product__card-stickers')) {
+  console.log(stickers);
+ }
  cardOptions.innerHTML = '';
  imgStickers.innerHTML = '';
  const lastLength = optionsArr[optionsArr.length - 1].length;
@@ -2637,7 +2641,9 @@ const renderCards = (product, index) => {
  const cardIndex = cardDiv.dataset.index;
  cardDiv.innerHTML = `
   <div class='catalog__card-wrapper'>
-   <div class='catalog__card-img'></div>
+   <div class='catalog__card-img-wrapper'>
+   <img class='catalog__card-img' src ='./assets/product/product.png'/>
+   </div>
    <div class='catalog__card-info'>
    <p class='catalog__card-name'>${product.title} ${
   product.grounding == true && product.category === 1 ? '· с заземлением' : ''
@@ -2713,6 +2719,7 @@ const renderVariants = (product, variantsContainer) => {
 };
 
 const closeProduct = (section) => {
+ document.body.classList.remove('scroll-disabled');
  section.remove();
 };
 const openProduct = (index) => {
@@ -2767,48 +2774,59 @@ const openProduct = (index) => {
              </div>
            </div>
            <div class='product__card-wrapper'>
-             <div class='product__card-img'>
+             <div class='product__card-img-wrapper'>
+             <img class='product__card-img' src='./assets/product/product.png'/>
              <div class='product__img-stickers'>
+             <div class='product__img-stickers-items'>
+             
+             </div>
 
              </div>
              </div>
              <div class='product__card-info'>
-               <div class='product__card-info-texts'>
-                 <div class='product__card-info-description'>
-                   <span class='product__card-title'>название товара</span>
-                   <h2 class='product__name'>${
-                    prod.category === 1 ? prod.title : ''
-                   } ${
-  prod.category === 2 && prod.fulltitle != null ? prod.fulltitle : prod.title
- }
-                   ${
-                    prod.category === 1 && prod.grounding
-                     ? '· с заземлением'
-                     : ''
-                   }
-                   ${
-                    prod.category === 1 && !prod.grounding
-                     ? '· без заземления'
-                     : ''
-                   } </h2>
-                 </div>
-                 <div class='product__card-info-description'>
-                   <span class='product__card-title'>краткое описание категории товара</span>
-                   <h2 class='product__description'>${prod.description}</h2>
-                 </div>
-                 ${
-                  prod.isProfessional
-                   ? '<div class="product__sticker">выбор настоящих профессионалов</div>'
-                   : ''
-                 }  
-                 ${
-                  prod.isSpec
-                   ? '<div class="product__sticker">выбор сильных специалистов</div>'
-                   : ''
-                 }  
-                 </div>
-                 <button class='product__card-button'>Бесплатная консультация</button>
-               <div class='product__card-options'></div>
+             <div class='product__card-info-wrapper'>
+
+             <div class='product__card-info-texts'>
+               <div class='product__card-info-description'>
+                 <span class='product__card-title'>название товара</span>
+                 <h2 class='product__name'>
+    ${
+     prod.category === 1
+      ? prod.title
+      : prod.category === 2 && prod.fulltitle
+      ? prod.fulltitle
+      : prod.title
+    }
+    ${
+     prod.category === 1 && prod.grounding && window.innerWidth > 530
+      ? '· с заземлением'
+      : ''
+    }
+    ${
+     prod.category === 1 && !prod.grounding && window.innerWidth > 530
+      ? '· без заземления'
+      : ''
+    }
+</h2>
+               </div>
+               <div class='product__card-info-description'>
+                 <span class='product__card-title'>краткое описание категории товара</span>
+                 <h2 class='product__description'>${prod.description}</h2>
+               </div>
+               ${
+                prod.isProfessional
+                 ? '<div class="product__sticker">выбор настоящих профессионалов</div>'
+                 : ''
+               }  
+               ${
+                prod.isSpec
+                 ? '<div class="product__sticker">выбор сильных специалистов</div>'
+                 : ''
+               }  
+               </div>
+               <button class='product__card-button'>Бесплатная консультация</button>
+             <div class='product__card-options'></div>
+             </div>
                <p class='product__disclaimer'>
                  вся информация о товарах и об услугах, носит исключительно информационный характер
                </p>
@@ -2818,6 +2836,7 @@ const openProduct = (index) => {
          </div>`;
 
  document.body.appendChild(productSection);
+ document.body.classList.add('scroll-disabled');
 
  const variantsContainer = productSection.querySelector(
   '.product__card-variants'
@@ -2840,6 +2859,7 @@ const openProduct = (index) => {
  const productInfo = productSection.querySelector('.product__card-info');
  const imgWrapper = productSection.querySelector('.product__img-stickers');
  renderStickers(imgWrapper, prod);
+ renderStickers(productInfo, prod);
 };
 const renderStickers = (wrapper, product) => {
  const stickerWrapper = document.createElement('div');
@@ -2851,14 +2871,6 @@ const renderStickers = (wrapper, product) => {
  if (product.options && length >= 1 && length != undefined) {
   for (const [key, value] of Object.entries(product.options)) {
    switch (key) {
-    case 'isEco':
-     if (value) {
-      const stickerItem = document.createElement('div');
-      stickerItem.className = 'product__card-sticker';
-      stickerItem.textContent = 'ЭКО';
-      stickerWrapper.append(stickerItem);
-     }
-     break;
     case 'temp':
      const stickerItem = document.createElement('div');
      stickerItem.className = 'product__card-sticker';

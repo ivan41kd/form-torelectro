@@ -44,6 +44,9 @@ body {
  position: relative;
  color: rgba(16, 16, 16, 1);
 }
+body.scroll-disabled {
+ overflow: hidden;
+}
 html,
 body {
  &::-webkit-scrollbar {
@@ -129,8 +132,27 @@ input {
  font-size: 18px;
  line-height: normal;
  padding: 15px;
+ position: relative;
  &::placeholder {
   color: black;
+ }
+}
+input:focus {
+ border-color: #007bff;
+}
+.placeholder {
+ position: absolute;
+ left: 40px;
+ top: 43%;
+ color: #999;
+ transition: 0.2s;
+ font-size: 18px;
+ line-height: normal;
+ pointer-events: none;
+}
+@media screen and (max-width: 576px) {
+ .placeholder {
+  top: 44%;
  }
 }
 
@@ -149,4 +171,8 @@ a {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
  scroll-margin-block: 5ex;
+}
+
+html {
+ scroll-behavior: smooth;
 }

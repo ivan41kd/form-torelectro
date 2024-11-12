@@ -1,7 +1,9 @@
 .presentation {
  padding-top: 50px;
- padding-bottom: 50px;
+ padding-bottom: 48px;
+ padding-left: 50px;
  background: rgba(16, 16, 16, 1);
+ padding-right: 0;
  width: 100%;
  max-width: 100%;
  display: flex;
@@ -35,12 +37,23 @@
  &__disclaimer {
   display: none;
  }
- @media screen and (max-width: 530px) {
+ @media screen and (max-width: 576px) {
+  align-items: normal;
+  padding-left: 20px;
+  padding-right: 0px;
+  padding-top: 43px;
+  padding-bottom: 41px;
+  &__wrapper {
+   max-width: 390px;
+   width: 100%;
+   padding-right: 20px;
+   padding-left: 0;
+  }
   &__text {
    max-width: 340px;
    font-size: 18px;
    line-height: 110%;
-   height: 100px;
+   height: 100%;
   }
   &__button {
    max-width: 350px;
@@ -50,6 +63,7 @@
    height: 58px;
   }
   &__disclaimer {
+   max-width: 350px;
    font-size: 14px;
    line-height: 110%;
    color: #505050;

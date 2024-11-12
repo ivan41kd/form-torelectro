@@ -1,7 +1,7 @@
 .header {
- padding: 20px 0px;
- padding-bottom: 100px;
- max-width: 1180px;
+ padding: 20px 50px;
+ padding-bottom: 104px;
+ max-width: 1280px;
  width: 100%;
  &__wrapper {
   display: flex;
@@ -11,6 +11,88 @@
   padding: 10px;
   border-radius: 5px;
   column-gap: 15px;
+  position: relative;
+ }
+ &__nav {
+  max-width: 380px;
+  width: 100%;
+  position: absolute;
+  background: #ffffff;
+  top: 110%;
+  right: 0;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+ }
+ &__nav-items-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+ }
+ &__nav-items-list:nth-child(1) {
+  position: relative;
+  &::after {
+   position: absolute;
+   content: '';
+   width: 107%;
+   height: 1px;
+   background: #f0f0f0;
+   bottom: -27%;
+  }
+ }
+ &__nav-item {
+  cursor: pointer;
+  list-style-type: none;
+  font-size: 16px;
+  max-width: 320px;
+  width: 100%;
+  height: 20px;
+  position: relative;
+  display: flex;
+  transition: 0.3s;
+  &::after {
+   display: block;
+   position: absolute;
+   content: '';
+   background: url('data:image/svg+xml,<svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3.5" cy="3.5" r="3.5" fill="%23FF3D00"/></svg>');
+   width: 7px;
+   height: 7px;
+   left: -6.4%;
+   top: 43%;
+   visibility: hidden;
+   opacity: 0;
+   transition: 0.3s;
+  }
+ }
+ &__more-nav-wrapper {
+  transition: 0.3s;
+ }
+ &__nav-item:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+  &::after {
+   visibility: visible;
+   opacity: 1;
+   transition: 0.3s;
+  }
+ }
+ &__more-nav-wrapper:hover &__nav {
+  pointer-events: all;
+  margin-top: 0px;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+ }
+ &__nav-wrapper {
+  padding: 20px;
+  padding-left: 40px;
+  padding-top: 13px;
+  row-gap: 40px;
+  display: flex;
+  flex-direction: column;
  }
  &__logo-wrapper {
   background: rgba(240, 240, 240, 1);
@@ -66,16 +148,38 @@
   height: 40px;
   cursor: pointer;
  }
+
  &__more-icon {
   width: 20px;
   height: 20px;
  }
 
- @media screen and (max-width: 530px) {
+ @media screen and (max-width: 576px) {
+  padding: 20px 20px;
+  max-width: 390px;
   padding-bottom: 20px;
   &__logo-wrapper {
    width: 40px;
    height: 40px;
+  }
+  &__nav-item {
+   font-size: 14px;
+  }
+  &__nav-wrapper {
+   padding-top: 15px;
+   padding: 15px;
+   padding-left: 55px;
+   row-gap: 42px;
+  }
+  &__nav-items-list {
+   row-gap: 10px;
+  }
+  &__nav-item {
+   transition: 0.3s;
+   &::after {
+    left: -7, 9%;
+    top: 34%;
+   }
   }
  }
 }

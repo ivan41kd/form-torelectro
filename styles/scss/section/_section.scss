@@ -1,8 +1,15 @@
 section {
- padding-bottom: 100px;
- max-width: 1180px;
+ padding-bottom: 109px;
+ max-width: 1280px;
  width: 100%;
- @media screen and (max-width: 1150px) {
+ padding-left: 50px;
+ padding-right: 50px;
+ @media screen and (max-width: 576px) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 390px;
+  padding-bottom: 100px;
   padding-left: 20px;
   padding-right: 20px;
  }

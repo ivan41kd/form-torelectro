@@ -80,6 +80,7 @@ const openContactsModal = () => {
   </div>
  </div>`;
  document.body.append(contactsSection);
+ document.body.classList.add('scroll-disabled');
  const closePopupIcon = contactsSection.querySelector('.popup__close');
  closePopupIcon.addEventListener('click', () => closePopup(contactsSection));
 };

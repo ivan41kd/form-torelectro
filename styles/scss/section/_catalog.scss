@@ -1,21 +1,23 @@
 .catalog {
+ overflow: hidden;
+ padding-bottom: 98px;
  &__title {
   font-size: 30px;
   line-height: 110%;
   color: rgba(16, 16, 16, 1);
-  margin-bottom: 20px;
+  margin-bottom: 23px;
  }
  &__header {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
  }
  &__next-icon {
-  max-width: 30px;
+  max-width: 27px;
   width: 100%;
-  height: 30px;
+  height: 27px;
   cursor: pointer;
  }
  &__categories {
@@ -34,26 +36,35 @@
   transition: 0.3s;
  }
  &__category-info {
-  top: -100%;
+  top: -155%;
   display: flex;
-  background: rgba(255, 61, 0, 0.7);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 61, 0, 0.5);
+  backdrop-filter: blur(5px);
   position: absolute;
-  max-width: 285px;
+  max-width: 280px;
   width: 100%;
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
   column-gap: 10px;
   padding: 10px;
-  align-items: center;
   border-radius: 5px;
+  flex-direction: column;
+ }
+ &__category-info-wrapper {
+  display: flex;
+  column-gap: 10px;
+ }
+ &__category-info-subtitle {
+  font-size: 12px;
+  line-height: normal;
+  color: white;
  }
  &__category:nth-child(2) &__category-info {
-  max-width: 335px;
-  left: 25%;
+  max-width: 330px;
  }
  &__category-info-icon {
+  margin-top: 10px;
   max-width: 20px;
   width: 100%;
   height: 20px;
@@ -63,11 +74,11 @@
   color: white;
  }
  &__category-button {
-  max-width: 200px;
+  max-width: 170px;
   width: 100%;
-  padding: 20px;
+  height: 50px;
   font-size: 16px;
-  line-height: 18.4px;
+  line-height: 110%;
   background: rgba(255, 255, 255, 1);
   color: black;
  }
@@ -78,6 +89,8 @@
   font-weight: 400;
  }
  &__cards {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
   overflow: hidden;
   max-width: 100%;
   width: 100%;
@@ -101,13 +114,18 @@
   display: flex;
   flex-direction: column;
  }
- &__card-img {
+ &__card-img-wrapper {
   background: rgba(240, 240, 240, 1);
   max-width: 340px;
   height: 340px;
   width: 100%;
   border-radius: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+ }
+ &__card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
  }
  &__card-name {
   font-size: 18px;
@@ -145,14 +163,31 @@
   line-height: normal;
   width: 100%;
  }
- @media screen and (max-width: 530px) {
+ @media screen and (max-width: 768px) {
+  &__category:hover &__category-info {
+   opacity: 0;
+   visibility: hidden;
+  }
+ }
+ @media screen and (max-width: 576px) {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 125px;
   overflow: hidden;
   &__title {
    font-size: 20px;
    line-height: 22px;
   }
+  &__category:hover &__category-info {
+   opacity: 0;
+   visibility: hidden;
+   transition: 0.3s;
+  }
   &__next-icon {
    display: none;
+  }
+  &__header {
+   width: 100%;
   }
   &__category-button {
    max-width: 100%;
@@ -162,11 +197,26 @@
   &__card {
    max-width: 350px;
   }
+  &__card-img-wrapper {
+   height: 320px;
+   margin-bottom: 18px;
+  }
   &__card-wrapper {
    padding: 15px;
   }
   &__card-name {
+   font-size: 16px;
    width: 320px;
+  }
+  &__char {
+   font-size: 14px;
+  }
+  &__card-chars {
+   row-gap: 2px;
+   margin-bottom: 12px;
+  }
+  &__card-button {
+   font-size: 16px;
   }
  }
 }
