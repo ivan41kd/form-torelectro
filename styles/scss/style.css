@@ -611,7 +611,6 @@ section {
 }
 
 .catalog {
-  overflow: hidden;
   padding-bottom: 98px;
 }
 .catalog__title {
