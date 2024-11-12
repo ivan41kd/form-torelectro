@@ -75,4 +75,27 @@
   color: #3366bb;
   cursor: pointer;
  }
+ &__title.mobile {
+  display: none;
+ }
+ @media screen and (max-width: 530px) {
+  &__wrapper {
+   padding: 15px;
+  }
+  &__title {
+   font-size: 18px;
+   height: 30px;
+   line-height: normal;
+   display: none;
+  }
+  &__title.mobile {
+   display: flex;
+  }
+  &__info {
+   justify-content: normal;
+  }
+  &__info-wrapper {
+   max-width: 100%;
+  }
+ }
 }

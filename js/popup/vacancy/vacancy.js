@@ -74,6 +74,9 @@ const openVacancyModal = () => {
      <h2 class="vacancy__title">
       Вакансия для амбициозных, сильных и коммуникабельных
      </h2>
+     <h2 class="vacancy__title mobile">
+     Вакансия
+    </h2>
      <div class="vacancy__info">
       <div class="vacancy__info-wrapper">
        <div class="vacancy__info-items">
@@ -118,6 +121,9 @@ const openVacancyModal = () => {
  const vacancyButton = vacancySection.querySelector('.vacancy__button');
  closePopupIcon.addEventListener('click', () => closePopup(vacancySection));
  vacancyButton.addEventListener('click', () => openVacancyForm(vacancySection));
+ vacancySection
+  .querySelector('.vacancy__disclaimer')
+  .addEventListener('click', openPoliticalModal);
 };
 
 const footerVacancy = document.querySelector(

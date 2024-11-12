@@ -67,6 +67,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  color: rgb(16, 16, 16);
 }
 
 html::-webkit-scrollbar,
@@ -405,9 +406,9 @@ section {
   transition: 0.3s;
 }
 .catalog__category-info {
-  top: -130%;
+  top: -100%;
   display: flex;
-  background: rgba(255, 61, 0, 0.75);
+  background: rgba(255, 61, 0, 0.7);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   position: absolute;
@@ -421,6 +422,10 @@ section {
   padding: 10px;
   align-items: center;
   border-radius: 5px;
+}
+.catalog__category:nth-child(2) .catalog__category-info {
+  max-width: 335px;
+  left: 25%;
 }
 .catalog__category-info-icon {
   max-width: 20px;
@@ -458,7 +463,7 @@ section {
   width: max-content !important;
 }
 .catalog__card {
-  width: 100%;
+  width: 100% !important;
   max-width: 380px;
   background: rgb(255, 255, 255);
   border-radius: 5px;
@@ -481,11 +486,11 @@ section {
 }
 .catalog__card-name {
   font-size: 18px;
-  line-height: 19.8px;
+  line-height: 110%;
   color: rgb(16, 16, 16);
   font-weight: 500;
   margin-bottom: 15px;
-  width: 340px;
+  width: auto;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -514,6 +519,7 @@ section {
   color: white;
   font-size: 18px;
   line-height: normal;
+  width: 100%;
 }
 @media screen and (max-width: 530px) {
   .catalog {
@@ -553,7 +559,7 @@ section {
   padding-right: 0;
   height: 100dvh;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.308);
+  background: rgba(16, 16, 16, 0.8);
 }
 .product__wrapper {
   align-items: center;
@@ -588,6 +594,7 @@ section {
 }
 .product__card-info {
   width: 100%;
+  position: relative;
 }
 .product__card-close {
   min-width: 30px;
@@ -598,6 +605,25 @@ section {
 .product__card-header {
   display: flex;
   margin-bottom: 20px;
+}
+.product__card-stickers {
+  position: absolute;
+  top: 0;
+  display: flex;
+  right: 0;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.product__card-sticker {
+  background: #ff3d00;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: normal;
+  height: 28px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  color: white;
 }
 .product__next-variant {
   position: relative;
@@ -610,7 +636,7 @@ section {
 }
 .product__next-variant:hover .product__next-variant-info {
   visibility: visible;
-  opacity: 75%;
+  opacity: 1;
   transition: 0.3s;
 }
 .product__next-variant-info {
@@ -620,7 +646,7 @@ section {
   right: 10%;
   bottom: 100%;
   color: white;
-  background: #ff3d00;
+  background: rgba(255, 61, 0, 0.7);
   border-radius: 5px;
   justify-content: space-between;
   padding-top: 15px;
@@ -630,6 +656,8 @@ section {
   visibility: hidden;
   opacity: 0;
   transition: 0.3s;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .product__next-variant-info-icon {
   padding-top: 5px;
@@ -665,11 +693,12 @@ section {
 .product__card-variant {
   max-width: 150px;
   width: 100%;
-  padding: 8.5px 0;
+  height: 50px;
   opacity: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 8px;
   transition: 0.3s;
 }
 .product__card-variant.active {
@@ -679,11 +708,11 @@ section {
 .product__card-variant-value {
   color: rgb(255, 255, 255);
   font-size: 16px;
-  line-height: 17.6px;
+  line-height: 110%;
 }
 .product__card-variant-name {
   font-size: 14px;
-  line-height: 15.4px;
+  line-height: normal;
   color: rgb(255, 255, 255);
   opacity: 50%;
 }
@@ -818,8 +847,11 @@ section {
   height: 100%;
 }
 .product__disclaimer {
+  display: flex;
+  align-items: flex-end;
   font-size: 14px;
-  line-height: 15.4px;
+  line-height: normal;
+  height: 20px;
   color: rgb(144, 144, 144);
 }
 .product__sticker {
@@ -827,11 +859,14 @@ section {
   width: 100%;
   background: rgb(255, 61, 0);
   font-size: 14px;
-  line-height: 15.4px;
+  line-height: normal;
   color: rgb(255, 255, 255);
   font-weight: 400;
-  padding: 7.5px;
+  height: 26px;
+  padding-left: 10px;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
 }
 .product__img-sticker {
   width: -moz-fit-content;
@@ -839,9 +874,11 @@ section {
   padding: 10px;
   background: rgba(16, 16, 16, 0.25);
   font-size: 14px;
-  line-height: 15.4px;
+  line-height: normal;
   color: rgb(255, 255, 255);
   border-radius: 5px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .product__img-stickers {
   display: none;
@@ -881,11 +918,11 @@ section {
   }
   .product__card-variant-value {
     font-size: 14px;
-    line-height: 15.4px;
+    line-height: normal;
   }
   .product__card-variant-name {
     font-size: 12px;
-    line-height: 13.2px;
+    line-height: normal;
   }
   .product__card-title {
     display: none;
@@ -922,6 +959,23 @@ section {
     justify-content: center;
     color: white;
     padding: 21px;
+  }
+  .product__card-variant {
+    padding-top: 0;
+    max-width: 100px;
+    padding-top: 10px;
+    row-gap: 0px;
+  }
+  .product__sticker {
+    display: none;
+  }
+  .product__card-stickers {
+    position: static;
+  }
+  .product__card-sticker {
+    background: rgba(255, 61, 0, 0.5019607843);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
   }
 }
 
@@ -1159,24 +1213,23 @@ section {
 .faq__question-cross {
   transform: rotate(0deg);
   transform-origin: center;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 .faq__question.active {
   height: 100%;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 .faq__question.active .faq__question-body {
   max-height: 200px;
   transition: max-height 0.6s;
 }
 .faq__question.active .faq__question-header {
-  margin-bottom: 20px;
-  transition: 0.1s;
+  transition: 0.6s;
 }
 .faq__question.active .faq__question-cross {
   transform: rotate(45deg);
   transform-origin: center;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 .faq__question-header {
   display: flex;
@@ -1189,9 +1242,10 @@ section {
   position: relative;
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.3s;
+  transition: max-height 0.6s;
 }
 .faq__question-body::before {
+  margin-top: 20px;
   display: block;
   content: "";
   background: rgb(240, 240, 240);
@@ -1267,24 +1321,23 @@ section {
 .nuances__question-cross {
   transform: rotate(0deg);
   transform-origin: center;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 .nuances__item.active {
   height: 100%;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 .nuances__item.active .nuances__item-body {
   max-height: 200px;
   transition: max-height 0.6s;
 }
 .nuances__item.active .nuances__item-header {
-  margin-bottom: 20px;
-  transition: 0.1s;
+  transition: 0.6s;
 }
 .nuances__item.active .nuances__question-cross {
   transform: rotate(45deg);
   transform-origin: center;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 .nuances__item-header {
   display: flex;
@@ -1294,14 +1347,13 @@ section {
   margin-bottom: 0px;
 }
 .nuances__item-body {
-  display: flex;
-  flex-direction: column;
   position: relative;
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.3s;
+  transition: max-height 0.6s;
 }
 .nuances__item-body::before {
+  margin-top: 20px;
   display: block;
   content: "";
   background: rgb(80, 80, 80);
@@ -1377,7 +1429,7 @@ section {
   padding-right: 0;
   height: 100dvh;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.308);
+  background: rgba(16, 16, 16, 0.9);
 }
 .popup__wrapper {
   align-items: center;
@@ -1832,6 +1884,29 @@ section {
   color: #3366bb;
   cursor: pointer;
 }
+.vacancy__title.mobile {
+  display: none;
+}
+@media screen and (max-width: 530px) {
+  .vacancy__wrapper {
+    padding: 15px;
+  }
+  .vacancy__title {
+    font-size: 18px;
+    height: 30px;
+    line-height: normal;
+    display: none;
+  }
+  .vacancy__title.mobile {
+    display: flex;
+  }
+  .vacancy__info {
+    justify-content: normal;
+  }
+  .vacancy__info-wrapper {
+    max-width: 100%;
+  }
+}
 
 .political {
   padding-bottom: 0;
@@ -1845,7 +1920,8 @@ section {
   padding-right: 0;
   height: 100dvh;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.308);
+  overflow: auto;
+  background: rgba(16, 16, 16, 0.9);
 }
 .political__wrapper {
   display: flex;
@@ -1854,7 +1930,6 @@ section {
   background: rgb(255, 255, 255);
   padding: 20px;
   border-radius: 5px;
-  overflow: auto;
 }
 .political__wrapper::-webkit-scrollbar {
   width: 8px;
@@ -1871,7 +1946,6 @@ section {
 }
 .political .popup__wrapper {
   justify-content: normal;
-  overflow: hidden;
 }
 .political__title {
   font-size: 24px;

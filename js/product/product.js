@@ -12,7 +12,7 @@ const products = [
     socket: 'крышка на розетке',
     variants: [
      {
-      variant: 2220,
+      variant: 2200,
       options: [
        {
         article: 101,
@@ -174,7 +174,7 @@ const products = [
     socket: 'крышка в розетке',
     variants: [
      {
-      variant: 2220,
+      variant: 2200,
       options: [
        {
         article: 116,
@@ -336,7 +336,7 @@ const products = [
     socket: 'крышка на розетке',
     variants: [
      {
-      variant: 2220,
+      variant: 2200,
       options: [
        {
         article: 201,
@@ -498,7 +498,7 @@ const products = [
     socket: 'крышка в розетке',
     variants: [
      {
-      variant: 2220,
+      variant: 2200,
       options: [
        {
         article: 116,
@@ -661,7 +661,7 @@ const products = [
     socket: 'крышка на розетке',
     variants: [
      {
-      variant: 2220,
+      variant: 2200,
       options: [
        {
         article: 301,
@@ -705,16 +705,143 @@ const products = [
       variant: 3500,
       options: [
        {
-        article: 121,
-        plugs: '3х1,5',
-        length: '10 м',
+        article: 305,
+        plugs: '2х1,5',
+        length: '20 м',
         security: 'IP44',
         power: '3500 Вт',
+        socket: '1 розетка',
+        grounding: false,
+       },
+       {
+        article: 306,
+        plugs: '2х1,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '1 розетка',
+        grounding: false,
+       },
+       {
+        article: 307,
+        plugs: '2х1,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '1 розетка',
+        grounding: false,
+       },
+       {
+        article: 308,
+        plugs: '2х1,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '1 розетка',
+        grounding: false,
+       },
+      ],
+     },
+     {
+      variant: 4000,
+      options: [
+       {
+        article: 309,
+        plugs: '2х2,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '1 розетка',
+        grounding: false,
+       },
+       {
+        article: 310,
+        plugs: '2х2,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '1 розетка',
+        grounding: false,
+       },
+       {
+        article: 311,
+        plugs: '2х2,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '1 розетка',
+        grounding: false,
+       },
+       {
+        article: 312,
+        plugs: '2х2,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '1 розетка',
+        grounding: false,
+       },
+      ],
+     },
+    ],
+   },
+   {
+    title: 'Удлинители на катушке',
+    description: `Удлинители с кабелем медным (проводом) и виниловым изолированием,
+    на садовой пластиковой катушке и удобным местом наматывания,
+    без заземления, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
+    grounding: true,
+    isProfessional: true,
+    category: 1,
+    socket: 'крышка на розетке',
+    variants: [
+     {
+      variant: 2200,
+      options: [
+       {
+        article: 313,
+        plugs: '3х1,0',
+        length: '20 м',
+        security: 'IP44',
+        power: '2200 Вт',
         socket: '1 розетка',
         grounding: true,
        },
        {
-        article: 122,
+        article: 314,
+        plugs: '3х1,0',
+        length: '30 м',
+        security: 'IP44',
+        power: '2200 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 315,
+        plugs: '3х1,0',
+        length: '40 м',
+        security: 'IP44',
+        power: '2200 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 316,
+        plugs: '3х1,0',
+        length: '50 м',
+        security: 'IP44',
+        power: '2200 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+      ],
+     },
+     {
+      variant: 3500,
+      options: [
+       {
+        article: 317,
         plugs: '3х1,5',
         length: '20 м',
         security: 'IP44',
@@ -723,7 +850,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 123,
+        article: 318,
         plugs: '3х1,5',
         length: '30 м',
         security: 'IP44',
@@ -732,7 +859,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 124,
+        article: 319,
         plugs: '3х1,5',
         length: '40 м',
         security: 'IP44',
@@ -741,7 +868,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 125,
+        article: 320,
         plugs: '3х1,5',
         length: '50 м',
         security: 'IP44',
@@ -755,16 +882,7 @@ const products = [
       variant: 4000,
       options: [
        {
-        article: 126,
-        plugs: '3х2,5',
-        length: '10 м',
-        security: 'IP44',
-        power: '4000 Вт',
-        socket: '1 розетка',
-        grounding: true,
-       },
-       {
-        article: 127,
+        article: 321,
         plugs: '3х2,5',
         length: '20 м',
         security: 'IP44',
@@ -773,7 +891,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 128,
+        article: 322,
         plugs: '3х2,5',
         length: '30 м',
         security: 'IP44',
@@ -782,7 +900,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 129,
+        article: 323,
         plugs: '3х2,5',
         length: '40 м',
         security: 'IP44',
@@ -791,12 +909,692 @@ const products = [
         grounding: true,
        },
        {
-        article: 130,
+        article: 324,
         plugs: '3х2,5',
         length: '50 м',
         security: 'IP44',
         power: '4000 Вт',
         socket: '1 розетка',
+        grounding: true,
+       },
+      ],
+     },
+    ],
+   },
+   {
+    title: 'Удлинители на катушке',
+    description: `Удлинители с кабелем медным (проводом) и виниловым изолированием,
+    на садовой пластиковой катушке и удобным местом наматывания,
+    без заземления, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
+    grounding: true,
+    isProfessional: true,
+    category: 1,
+    socket: 'крышка на розетке',
+    variants: [
+     {
+      variant: 2200,
+      options: [
+       {
+        article: 313,
+        plugs: '3х1,0',
+        length: '20 м',
+        security: 'IP44',
+        power: '2200 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 314,
+        plugs: '3х1,0',
+        length: '30 м',
+        security: 'IP44',
+        power: '2200 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 315,
+        plugs: '3х1,0',
+        length: '40 м',
+        security: 'IP44',
+        power: '2200 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 316,
+        plugs: '3х1,0',
+        length: '50 м',
+        security: 'IP44',
+        power: '2200 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+      ],
+     },
+     {
+      variant: 3500,
+      options: [
+       {
+        article: 317,
+        plugs: '3х1,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 318,
+        plugs: '3х1,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 319,
+        plugs: '3х1,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 320,
+        plugs: '3х1,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+      ],
+     },
+     {
+      variant: 4000,
+      options: [
+       {
+        article: 321,
+        plugs: '3х2,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 322,
+        plugs: '3х2,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 323,
+        plugs: '3х2,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 324,
+        plugs: '3х2,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+      ],
+     },
+    ],
+   },
+   {
+    title: 'Удлинители на катушке',
+    description: `Удлинители с кабелем медным (проводом) и виниловым изолированием,
+    на садовой пластиковой катушке и удобным местом наматывания,
+    без заземления, со степенью стандартной защиты «IP20» (не менее 12.5 мм),
+    с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
+    grounding: false,
+    isProfessional: true,
+    category: 1,
+    socket: 'твердая защита',
+    variants: [
+     {
+      variant: 2200,
+      options: [
+       {
+        article: 401,
+        plugs: '2х1,0',
+        length: '20 м',
+        security: 'IP20',
+        power: '2200 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 402,
+        plugs: '2х1,0',
+        length: '30 м',
+        security: 'IP20',
+        power: '2200 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 403,
+        plugs: '2х1,0',
+        length: '40 м',
+        security: 'IP20',
+        power: '2200 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 404,
+        plugs: '2х1,0',
+        length: '50 м',
+        security: 'IP20',
+        power: '2200 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+      ],
+     },
+     {
+      variant: 3500,
+      options: [
+       {
+        article: 405,
+        plugs: '2х1,5',
+        length: '20 м',
+        security: 'IP20',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 406,
+        plugs: '2х1,5',
+        length: '30 м',
+        security: 'IP20',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 407,
+        plugs: '2х1,5',
+        length: '40 м',
+        security: 'IP20',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 408,
+        plugs: '2х1,5',
+        length: '50 м',
+        security: 'IP20',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+      ],
+     },
+     {
+      variant: 4000,
+      options: [
+       {
+        article: 409,
+        plugs: '2х2,5',
+        length: '20 м',
+        security: 'IP20',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 410,
+        plugs: '2х2,5',
+        length: '30 м',
+        security: 'IP20',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 411,
+        plugs: '2х2,5',
+        length: '40 м',
+        security: 'IP20',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 412,
+        plugs: '2х2,5',
+        length: '50 м',
+        security: 'IP20',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+      ],
+     },
+    ],
+   },
+   {
+    title: 'Удлинители на катушке',
+    description: `Удлинители с кабелем медным (проводом) и виниловым изолированием,
+    на садовой пластиковой катушке и удобным местом наматывания,
+    с заземлением, со степенью стандартной защиты «IP20» (не менее 12.5 мм),
+    с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
+    grounding: true,
+    isProfessional: true,
+    category: 1,
+    socket: 'защита от мусора',
+    variants: [
+     {
+      variant: 2200,
+      options: [
+       {
+        article: 413,
+        plugs: '3х1,0',
+        length: '20 м',
+        security: 'IP20',
+        power: '2200 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 414,
+        plugs: '3х1,0',
+        length: '30 м',
+        security: 'IP20',
+        power: '2200 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 415,
+        plugs: '3х1,0',
+        length: '40 м',
+        security: 'IP20',
+        power: '2200 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 416,
+        plugs: '3х1,0',
+        length: '50 м',
+        security: 'IP20',
+        power: '2200 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+      ],
+     },
+     {
+      variant: 3500,
+      options: [
+       {
+        article: 417,
+        plugs: '3х1,5',
+        length: '20 м',
+        security: 'IP20',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 418,
+        plugs: '3х1,5',
+        length: '30 м',
+        security: 'IP20',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 419,
+        plugs: '3х1,5',
+        length: '40 м',
+        security: 'IP20',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 420,
+        plugs: '3х1,5',
+        length: '50 м',
+        security: 'IP20',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+      ],
+     },
+     {
+      variant: 4000,
+      options: [
+       {
+        article: 421,
+        plugs: '3х2,5',
+        length: '20 м',
+        security: 'IP20',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 422,
+        plugs: '3х2,5',
+        length: '30 м',
+        security: 'IP20',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 423,
+        plugs: '3х2,5',
+        length: '40 м',
+        security: 'IP20',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 424,
+        plugs: '3х2,5',
+        length: '50 м',
+        security: 'IP20',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+      ],
+     },
+    ],
+   },
+   {
+    title: 'Удлинители на катушке',
+    description: `Удлинители с кабелем медным (проводом) и виниловым изолированием,
+    на садовой пластиковой катушке и удобным местом наматывания,
+    с заземлением, со степенью стандартной защиты «IP20» (защита от мусора),
+    с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
+    grounding: false,
+    isProfessional: true,
+    category: 1,
+    socket: 'крышка на розетке',
+    variants: [
+     {
+      variant: 2200,
+      options: [
+       {
+        article: 401,
+        plugs: '3х1,0',
+        length: '20 м',
+        security: 'IP44',
+        power: '2200 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 402,
+        plugs: '3х1,0',
+        length: '30 м',
+        security: 'IP44',
+        power: '2200 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 403,
+        plugs: '3х1,0',
+        length: '40 м',
+        security: 'IP20',
+        power: '2200 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 404,
+        plugs: '3х1,0',
+        length: '50 м',
+        security: 'IP20',
+        power: '2200 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+      ],
+     },
+     {
+      variant: 3500,
+      options: [
+       {
+        article: 405,
+        plugs: '3х1,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 406,
+        plugs: '3х1,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 407,
+        plugs: '3х1,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 408,
+        plugs: '3х1,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+      ],
+     },
+     {
+      variant: 4000,
+      options: [
+       {
+        article: 409,
+        plugs: '3х2,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 410,
+        plugs: '3х2,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 411,
+        plugs: '3х2,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+       {
+        article: 412,
+        plugs: '3х2,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: false,
+       },
+      ],
+     },
+    ],
+   },
+   {
+    title: 'Удлинители на катушке',
+    description: `Удлинители с кабелем медным (проводом) и виниловым изолированием,
+    на металлической катушке с держателями и удобным местом наматывания,
+    с заземлением, со степенью защиты «IP44» (защита от влаги и пыли),
+    с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
+    grounding: true,
+    isProfessional: true,
+    category: 1,
+    socket: 'крышка на розетке',
+    variants: [
+     {
+      variant: 2200,
+      options: [
+       {
+        article: 413,
+        plugs: '3х1,0',
+        length: '20 м',
+        security: 'IP44',
+        power: '2200 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 414,
+        plugs: '3х1,0',
+        length: '30 м',
+        security: 'IP44',
+        power: '2200 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 415,
+        plugs: '3х1,0',
+        length: '40 м',
+        security: 'IP20',
+        power: '2200 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 416,
+        plugs: '3х1,0',
+        length: '50 м',
+        security: 'IP20',
+        power: '2200 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+      ],
+     },
+     {
+      variant: 3500,
+      options: [
+       {
+        article: 417,
+        plugs: '3х1,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 418,
+        plugs: '3х1,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 419,
+        plugs: '3х1,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 420,
+        plugs: '3х1,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+      ],
+     },
+     {
+      variant: 4000,
+      options: [
+       {
+        article: 421,
+        plugs: '3х2,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 422,
+        plugs: '3х2,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 423,
+        plugs: '3х2,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 424,
+        plugs: '3х2,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
         grounding: true,
        },
       ],
@@ -816,10 +1614,13 @@ const products = [
     grounding: true,
     isProfessional: false,
     isSpec: false,
-    isEco: true,
-    isGost: false,
+    settings: {
+     isEco: true,
+     isGost: false,
+     temp: 'от +40°C до -60°C ',
+    },
+
     category: 2,
-    temp: 'от +40°C до -60°C ',
 
     variants: [
      {
@@ -924,6 +1725,836 @@ const products = [
      },
     ],
    },
+   {
+    title: 'Удлинители силовые на колодке',
+    description: `Удлинители силовые с кабелем гибким и холодостойким, на колодке,
+    с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
+    grounding: true,
+    isProfessional: false,
+    isSpec: false,
+    options: {
+     isEco: true,
+     isGost: false,
+     temp: 'от +40°C до -60°C ',
+    },
+    category: 2,
+
+    variants: [
+     {
+      variant: 3500,
+      options: [
+       {
+        article: 511,
+        plugs: '3х1,5',
+        length: '10 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 512,
+        plugs: '3х1,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 513,
+        plugs: '3х1,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 514,
+        plugs: '3х1,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 515,
+        plugs: '3х1,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+      ],
+     },
+     {
+      variant: 4000,
+      options: [
+       {
+        article: 516,
+        plugs: '3х2,5',
+        length: '10 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 517,
+        plugs: '3х2,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 518,
+        plugs: '3х2,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 519,
+        plugs: '3х2,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 520,
+        plugs: '3х2,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+      ],
+     },
+    ],
+   },
+   {
+    title: 'Удлинители силовые на колодке',
+    description: `Удлинители силовые с кабелем гибким и холодостойким, по «ЭКО»,
+    на пластиковой катушке с держателями и удобным местом наматывания,
+    с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
+    grounding: true,
+    isProfessional: false,
+    isSpec: true,
+    options: {
+     isEco: true,
+     isGost: false,
+     temp: 'от +40°C до -60°C ',
+    },
+    category: 2,
+
+    variants: [
+     {
+      variant: 3500,
+      options: [
+       {
+        article: 531,
+        plugs: '3х1,5',
+        length: '10 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 532,
+        plugs: '3х1,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 533,
+        plugs: '3х2,5',
+        length: '10 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 534,
+        plugs: '3х2,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+      ],
+     },
+    ],
+   },
+   {
+    title: 'Удлинители силовые на катушке',
+    fulltitle: 'Удлинители силовые на пластиковой катушке',
+    description: `Удлинители силовые с кабелем гибким и холодостойким, по «ЭКО»,
+    на металлической катушке с держателями и удобным местом наматывания,
+    с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
+    grounding: true,
+    isProfessional: false,
+    isSpec: true,
+    isPlastic: true,
+    isMetalic: false,
+    options: {
+     isEco: true,
+     isGost: false,
+     temp: 'от +40°C до -60°C ',
+    },
+    category: 2,
+
+    variants: [
+     {
+      variant: 3500,
+      options: [
+       {
+        article: 535,
+        plugs: '3х1,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 536,
+        plugs: '3х1,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 537,
+        plugs: '3х1,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 538,
+        plugs: '3х1,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+      ],
+     },
+     {
+      variant: 4000,
+      options: [
+       {
+        article: 539,
+        plugs: '3х2,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 540,
+        plugs: '3х2,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 541,
+        plugs: '3х2,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 542,
+        plugs: '3х2,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+      ],
+     },
+    ],
+   },
+   {
+    title: 'Удлинители силовые на катушке',
+    fulltitle: 'Удлинители силовые на металлической катушке',
+    description: `Удлинители силовые с кабелем гибким и холодостойким, по «ЭКО»,
+    на металлической катушке с держателями и удобным местом наматывания,
+    с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
+    grounding: true,
+    isProfessional: false,
+    isSpec: true,
+    isPlastic: false,
+    isMetalic: true,
+    isCatushka: true,
+    options: {
+     isEco: true,
+     isGost: false,
+     temp: 'от +40°C до -60°C ',
+    },
+    category: 2,
+
+    variants: [
+     {
+      variant: 3500,
+      options: [
+       {
+        article: 535,
+        plugs: '3х1,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 536,
+        plugs: '3х1,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 537,
+        plugs: '3х1,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 538,
+        plugs: '3х1,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+      ],
+     },
+     {
+      variant: 4000,
+      options: [
+       {
+        article: 539,
+        plugs: '3х2,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 540,
+        plugs: '3х2,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 541,
+        plugs: '3х2,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 542,
+        plugs: '3х2,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+      ],
+     },
+    ],
+   },
+   {
+    title: 'Удлинители силовые на колодке',
+    description: `Удлинители силовые с кабелем гибким и холодостойким, в бухте,
+    с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
+    grounding: true,
+    isProfessional: false,
+    isSpec: false,
+    options: {
+     isEco: false,
+     isGost: true,
+     temp: 'от +40°C до -60°C ',
+    },
+    category: 2,
+
+    variants: [
+     {
+      variant: 3500,
+      options: [
+       {
+        article: 601,
+        plugs: '3х1,5',
+        length: '10 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 602,
+        plugs: '3х1,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 603,
+        plugs: '3х1,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 604,
+        plugs: '3х1,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 605,
+        plugs: '3х1,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+      ],
+     },
+     {
+      variant: 4000,
+      options: [
+       {
+        article: 606,
+        plugs: '3х2,5',
+        length: '10 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 607,
+        plugs: '3х2,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 608,
+        plugs: '3х2,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 609,
+        plugs: '3х2,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+       {
+        article: 610,
+        plugs: '3х2,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '1 розетка',
+        grounding: true,
+       },
+      ],
+     },
+    ],
+   },
+   {
+    title: 'Удлинители силовые на колодке',
+    description: `Удлинители силовые с кабелем гибким и холодостойким, на колодке,
+    с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
+    grounding: true,
+    isProfessional: false,
+    isSpec: false,
+    options: {
+     isEco: false,
+     isGost: true,
+     temp: 'от +40°C до -60°C ',
+    },
+    category: 2,
+
+    variants: [
+     {
+      variant: 3500,
+      options: [
+       {
+        article: 611,
+        plugs: '3х1,5',
+        length: '10 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 612,
+        plugs: '3х1,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 613,
+        plugs: '3х1,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 614,
+        plugs: '3х1,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 615,
+        plugs: '3х1,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+      ],
+     },
+     {
+      variant: 4000,
+      options: [
+       {
+        article: 616,
+        plugs: '3х2,5',
+        length: '10 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 617,
+        plugs: '3х2,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 618,
+        plugs: '3х2,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 619,
+        plugs: '3х2,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 620,
+        plugs: '3х2,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+      ],
+     },
+    ],
+   },
+   {
+    title: 'Удлинители силовые на катушке',
+    fulltitle: 'Удлинители силовые на пластиковой катушке',
+    description: `Удлинители силовые с кабелем гибким и холодостойким, по «ГОСТ»,
+    на пластиковой катушке с держателями и удобным местом наматывания,
+    с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
+    grounding: true,
+    isProfessional: false,
+    isSpec: true,
+    isPlastic: true,
+    isMetalic: false,
+    isCatushka: true,
+    options: {
+     isEco: false,
+     isGost: true,
+     temp: 'от +40°C до -60°C ',
+    },
+    category: 2,
+
+    variants: [
+     {
+      variant: 3500,
+      options: [
+       {
+        article: 635,
+        plugs: '3х1,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 636,
+        plugs: '3х1,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 637,
+        plugs: '3х1,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 638,
+        plugs: '3х1,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+      ],
+     },
+     {
+      variant: 4000,
+      options: [
+       {
+        article: 639,
+        plugs: '3х2,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 640,
+        plugs: '3х2,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 641,
+        plugs: '3х2,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 642,
+        plugs: '3х2,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+      ],
+     },
+    ],
+   },
+   {
+    title: 'Удлинители силовые на катушке',
+    fulltitle: 'Удлинители силовые на металлической катушке',
+    description: `Удлинители силовые с кабелем гибким и холодостойким, по «ГОСТ»,
+    на металлической катушке с держателями и удобным местом наматывания,
+    с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
+    grounding: true,
+    isProfessional: false,
+    isSpec: true,
+    options: {
+     isEco: false,
+     isGost: true,
+     temp: 'от +40°C до -60°C ',
+    },
+    category: 2,
+
+    variants: [
+     {
+      variant: 3500,
+      options: [
+       {
+        article: 635,
+        plugs: '3х1,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 636,
+        plugs: '3х1,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 637,
+        plugs: '3х1,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 638,
+        plugs: '3х1,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+      ],
+     },
+     {
+      variant: 4000,
+      options: [
+       {
+        article: 639,
+        plugs: '3х2,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 640,
+        plugs: '3х2,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 641,
+        plugs: '3х2,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+       {
+        article: 642,
+        plugs: '3х2,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '4 розетки',
+        grounding: true,
+       },
+      ],
+     },
+    ],
+   },
   ],
  },
 ];
@@ -954,9 +2585,7 @@ const renderOptions = (product) => {
  const imgStickers = document.querySelector('.product__img-stickers');
  cardOptions.innerHTML = '';
  imgStickers.innerHTML = '';
-
  const lastLength = optionsArr[optionsArr.length - 1].length;
- console.log(lastLength);
  optionsArr.forEach((option, index) => {
   const optionsWrapper = document.createElement('div');
   optionsWrapper.className = 'product__options';
@@ -1009,9 +2638,12 @@ const renderCards = (product, index) => {
  cardDiv.innerHTML = `
   <div class='catalog__card-wrapper'>
    <div class='catalog__card-img'></div>
+   <div class='catalog__card-info'>
    <p class='catalog__card-name'>${product.title} ${
-  product.grounding == true ? '· с заземлением' : '· без заземления'
- } </p>
+  product.grounding == true && product.category === 1 ? '· с заземлением' : ''
+ } ${
+  product.grounding == false && product.category === 1 ? '· без заземления' : ''
+ }  </p>
    <div class='catalog__card-chars'>
     <div class='catalog__char'>
      <p class='catalog__char-name'>сечение кабеля: <br /></p>
@@ -1042,6 +2674,7 @@ const renderCards = (product, index) => {
     </div>
    </div>
    <button class='catalog__card-button'>Посмотреть</button>
+    </div>
   </div>`;
  cardsWrapper.appendChild(cardDiv);
  cardDiv.addEventListener('click', () => {
@@ -1051,8 +2684,10 @@ const renderCards = (product, index) => {
 
 const renderVariants = (product, variantsContainer) => {
  variantsContainer.innerHTML = '';
+
  product.variants.forEach((variant, index) => {
   const productVariantButton = document.createElement('button');
+
   productVariantButton.className = 'product__card-variant';
   productVariantButton.innerHTML = `<span class='product__card-variant-value'>${variant.variant} Вт</span> <span class='product__card-variant-name'>с мощностью</span>`;
 
@@ -1062,7 +2697,6 @@ const renderVariants = (product, variantsContainer) => {
   }
 
   productVariantButton.addEventListener('click', () => {
-   // Удаление класса 'active' у всех кнопок перед назначением новой активной
    const allVariantButtons = variantsContainer.querySelectorAll(
     '.product__card-variant'
    );
@@ -1071,10 +2705,13 @@ const renderVariants = (product, variantsContainer) => {
    productVariantButton.classList.add('active');
    renderOptions(variant);
   });
-
   variantsContainer.appendChild(productVariantButton);
+  if (product.variants.length < 2) {
+   variantsContainer.innerHTML = '';
+  }
  });
 };
+
 const closeProduct = (section) => {
  section.remove();
 };
@@ -1139,9 +2776,21 @@ const openProduct = (index) => {
                <div class='product__card-info-texts'>
                  <div class='product__card-info-description'>
                    <span class='product__card-title'>название товара</span>
-                   <h2 class='product__name'>${prod.title} ${
-  prod.grounding == true ? '· с заземлением' : '· без заземления'
- }</h2>
+                   <h2 class='product__name'>${
+                    prod.category === 1 ? prod.title : ''
+                   } ${
+  prod.category === 2 && prod.fulltitle != null ? prod.fulltitle : prod.title
+ }
+                   ${
+                    prod.category === 1 && prod.grounding
+                     ? '· с заземлением'
+                     : ''
+                   }
+                   ${
+                    prod.category === 1 && !prod.grounding
+                     ? '· без заземления'
+                     : ''
+                   } </h2>
                  </div>
                  <div class='product__card-info-description'>
                    <span class='product__card-title'>краткое описание категории товара</span>
@@ -1150,6 +2799,11 @@ const openProduct = (index) => {
                  ${
                   prod.isProfessional
                    ? '<div class="product__sticker">выбор настоящих профессионалов</div>'
+                   : ''
+                 }  
+                 ${
+                  prod.isSpec
+                   ? '<div class="product__sticker">выбор сильных специалистов</div>'
                    : ''
                  }  
                  </div>
@@ -1182,6 +2836,47 @@ const openProduct = (index) => {
  productSection
   .querySelector('.product__card-button')
   .addEventListener('click', openConsultationModal);
+
+ const productInfo = productSection.querySelector('.product__card-info');
+ const imgWrapper = productSection.querySelector('.product__img-stickers');
+ renderStickers(imgWrapper, prod);
+};
+const renderStickers = (wrapper, product) => {
+ const stickerWrapper = document.createElement('div');
+ stickerWrapper.className = 'product__card-stickers';
+ let length;
+ if (product.options != undefined) {
+  length = Object.keys(product.options).length;
+ }
+ if (product.options && length >= 1 && length != undefined) {
+  for (const [key, value] of Object.entries(product.options)) {
+   switch (key) {
+    case 'isEco':
+     if (value) {
+      const stickerItem = document.createElement('div');
+      stickerItem.className = 'product__card-sticker';
+      stickerItem.textContent = 'ЭКО';
+      stickerWrapper.append(stickerItem);
+     }
+     break;
+    case 'temp':
+     const stickerItem = document.createElement('div');
+     stickerItem.className = 'product__card-sticker';
+     stickerItem.textContent = value;
+     stickerWrapper.append(stickerItem);
+     break;
+    case 'isGost':
+     if (value) {
+      const stickerItem = document.createElement('div');
+      stickerItem.className = 'product__card-sticker';
+      stickerItem.textContent = 'ГОСТ';
+      stickerWrapper.append(stickerItem);
+     }
+     break;
+   }
+   wrapper.appendChild(stickerWrapper);
+  }
+ }
 };
 
 categories.forEach((category) => {

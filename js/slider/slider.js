@@ -1,21 +1,21 @@
 let swiper;
+
 const initSlider = () => {
+ if (swiper) {
+  swiper.destroy(true, true);
+ }
+
  swiper = new Swiper('.swiper', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
   slidesPerView: 'auto',
   spaceBetween: 20,
-  lazyPreloadPrevNext: false,
-
+  initialSlide: 0,
   navigation: {
    nextEl: '.catalog__next-icon',
   },
-
-  // And if we need scrollbar
   scrollbar: {
    el: '.swiper-scrollbar',
   },
  });
- swiper.slideTo(100, 0);
 };

@@ -26,7 +26,7 @@ const openPresentationModal = () => {
     </h1>
     <div class="popup__form-input">
      <p class="popup__input-name">номер сотового телефона</p>
-     <input type="text" class="popup__input" placeholder="+7" />
+     <input type="text" class="popup__input" placeholder="" />
     </div>
     <div class="popup__button-wrapper">
      <button class="popup__form-button">Подробная презентация</button>

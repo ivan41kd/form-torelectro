@@ -9,7 +9,7 @@
  padding-right: 0;
  height: 100dvh;
  z-index: 100;
- background: rgba(0, 0, 0, 0.308);
+ background: rgba(16, 16, 16, 0.8);
  &__wrapper {
   align-items: center;
   display: flex;
@@ -43,6 +43,7 @@
  }
  &__card-info {
   width: 100%;
+  position: relative;
  }
  &__card-close {
   min-width: 30px;
@@ -53,6 +54,24 @@
  &__card-header {
   display: flex;
   margin-bottom: 20px;
+ }
+ &__card-stickers {
+  position: absolute;
+  top: 0;
+  display: flex;
+  right: 0;
+  column-gap: 5px;
+ }
+ &__card-sticker {
+  background: #ff3d00;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: normal;
+  height: 28px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  color: white;
  }
  &__next-variant {
   position: relative;
@@ -65,7 +84,7 @@
  }
  &__next-variant:hover &__next-variant-info {
   visibility: visible;
-  opacity: 75%;
+  opacity: 1;
   transition: 0.3s;
  }
  &__next-variant-info {
@@ -75,7 +94,7 @@
   right: 10%;
   bottom: 100%;
   color: white;
-  background: #ff3d00;
+  background: rgba(255, 61, 0, 0.7);
   border-radius: 5px;
   justify-content: space-between;
   padding-top: 15px;
@@ -85,6 +104,7 @@
   visibility: hidden;
   opacity: 0;
   transition: 0.3s;
+  backdrop-filter: blur(10px);
  }
  &__next-variant-info-icon {
   padding-top: 5px;
@@ -118,11 +138,12 @@
  &__card-variant {
   max-width: 150px;
   width: 100%;
-  padding: 8.5px 0;
+  height: 50px;
   opacity: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 8px;
   transition: 0.3s;
  }
  &__card-variant.active {
@@ -132,11 +153,11 @@
  &__card-variant-value {
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
-  line-height: 17.6px;
+  line-height: 110%;
  }
  &__card-variant-name {
   font-size: 14px;
-  line-height: 15.4px;
+  line-height: normal;
   color: rgba(255, 255, 255, 1);
   opacity: 50%;
  }
@@ -269,8 +290,11 @@
   height: 100%;
  }
  &__disclaimer {
+  display: flex;
+  align-items: flex-end;
   font-size: 14px;
-  line-height: 15.4px;
+  line-height: normal;
+  height: 20px;
   color: rgba(144, 144, 144, 1);
  }
  &__sticker {
@@ -278,20 +302,24 @@
   width: 100%;
   background: rgba(255, 61, 0, 1);
   font-size: 14px;
-  line-height: 15.4px;
+  line-height: normal;
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
-  padding: 7.5px;
+  height: 26px;
+  padding-left: 10px;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
  }
  &__img-sticker {
   width: fit-content;
   padding: 10px;
   background: rgba(16, 16, 16, 0.25);
   font-size: 14px;
-  line-height: 15.4px;
+  line-height: normal;
   color: rgba(255, 255, 255, 1);
   border-radius: 5px;
+  backdrop-filter: blur(10px);
  }
  &__img-stickers {
   display: none;
@@ -328,11 +356,11 @@
   }
   &__card-variant-value {
    font-size: 14px;
-   line-height: 15.4px;
+   line-height: normal;
   }
   &__card-variant-name {
    font-size: 12px;
-   line-height: 13.2px;
+   line-height: normal;
   }
   &__card-title {
    display: none;
@@ -369,6 +397,22 @@
    justify-content: center;
    color: white;
    padding: 21px;
+  }
+  &__card-variant {
+   padding-top: 0;
+   max-width: 100px;
+   padding-top: 10px;
+   row-gap: 0px;
+  }
+  &__sticker {
+   display: none;
+  }
+  &__card-stickers {
+   position: static;
+  }
+  &__card-sticker {
+   background: #ff3d0080;
+   backdrop-filter: blur(10px);
   }
  }
 }

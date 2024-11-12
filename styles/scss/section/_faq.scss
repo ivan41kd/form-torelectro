@@ -27,24 +27,23 @@
  &__question-cross {
   transform: rotate(0deg);
   transform-origin: center;
-  transition: 0.3s;
+  transition: 0.6s;
  }
  &__question.active {
   height: 100%;
-  transition: 0.3s;
+  transition: 0.6s;
  }
  &__question.active &__question-body {
   max-height: 200px;
   transition: max-height 0.6s;
  }
  &__question.active &__question-header {
-  margin-bottom: 20px;
-  transition: 0.1s;
+  transition: 0.6s;
  }
  &__question.active &__question-cross {
   transform: rotate(45deg);
   transform-origin: center;
-  transition: 0.3s;
+  transition: 0.6s;
  }
  &__question-header {
   display: flex;
@@ -57,8 +56,9 @@
   position: relative;
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.3s;
+  transition: max-height 0.6s;
   &::before {
+   margin-top: 20px;
    display: block;
    content: '';
    background: rgba(240, 240, 240, 1);
