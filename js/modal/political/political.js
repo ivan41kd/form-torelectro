@@ -1,8 +1,8 @@
 const openPoliticalModal = () => {
+ window.scrollTo(0, 0);
  const politicalSection = document.createElement('section');
  politicalSection.className = 'political';
-
- politicalSection.innerHTML = `   <div class="popup__wrapper">
+ politicalSection.innerHTML = `<div class="popup__wrapper">
  <svg
   width="30"
   height="30"

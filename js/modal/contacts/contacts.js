@@ -1,4 +1,5 @@
 const openContactsModal = () => {
+ window.scrollTo(0, 0);
  const contactsSection = document.createElement('section');
  contactsSection.className = 'contacts';
  contactsSection.innerHTML = `

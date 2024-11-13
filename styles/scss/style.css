@@ -71,7 +71,8 @@ body {
 }
 
 body.scroll-disabled {
-  overflow: hidden;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 html::-webkit-scrollbar,
@@ -301,6 +302,13 @@ html {
   margin-top: 0px;
   opacity: 1;
   visibility: visible;
+  transition: 0.3s;
+}
+.header__more {
+  transition: 0.3s;
+}
+.header__more-nav-wrapper:hover .header__more {
+  opacity: 0.7;
   transition: 0.3s;
 }
 .header__nav-wrapper {
@@ -577,6 +585,7 @@ section {
   .intro__img {
     display: flex;
     margin-bottom: 23px;
+    height: 150px;
   }
   .intro__wrapper {
     max-width: 390px;
@@ -926,12 +935,18 @@ section {
 }
 .product__next-variant {
   position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .product__next-variant-icon {
   max-width: 30px;
   height: auto;
   width: 100%;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .product__next-variant:hover .product__next-variant-info {
   visibility: visible;
@@ -959,7 +974,7 @@ section {
           backdrop-filter: blur(10px);
 }
 .product__next-variant-info-icon {
-  padding-top: 5px;
+  margin-top: 10px;
   max-width: 20px;
   width: 100%;
   height: 20px;
@@ -1691,7 +1706,7 @@ section {
 }
 .faq__question-name {
   font-size: 18px;
-  line-height: 110%;
+  line-height: 113%;
 }
 .faq__question-icon {
   max-width: 37px;
@@ -1834,7 +1849,7 @@ section {
 }
 .nuances__item-name {
   font-size: 18px;
-  line-height: 110%;
+  line-height: 112%;
   color: rgb(255, 255, 255);
 }
 .nuances__question-icon {
@@ -2054,6 +2069,10 @@ section {
   background: rgb(255, 255, 255);
   padding: 20px;
   border-radius: 5px;
+}
+.contacts .popup__wrapper {
+  padding-top: 85px;
+  justify-content: normal;
 }
 .contacts__title {
   font-size: 24px;
@@ -2385,6 +2404,10 @@ section {
   border-radius: 5px;
   max-width: 1180px;
 }
+.vacancy .popup__wrapper {
+  justify-content: normal;
+  padding-top: 85px;
+}
 .vacancy__title {
   font-size: 24px;
   display: flex;
@@ -2477,6 +2500,7 @@ section {
   position: fixed;
   width: 100%;
   max-width: 100vw;
+  padding-top: 85px;
   padding-left: 50px;
   padding-right: 50px;
   height: 100dvh;

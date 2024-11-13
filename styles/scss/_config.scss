@@ -45,7 +45,8 @@ body {
  color: rgba(16, 16, 16, 1);
 }
 body.scroll-disabled {
- overflow: hidden;
+ height: 100vh;
+ overflow-y: hidden;
 }
 html,
 body {

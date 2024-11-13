@@ -50,6 +50,7 @@
   flex-direction: column;
   justify-content: space-between;
  }
+
  &__card-close {
   min-width: 30px;
   min-height: 30px;
@@ -81,12 +82,14 @@
  }
  &__next-variant {
   position: relative;
+  user-select: none;
  }
  &__next-variant-icon {
   max-width: 30px;
   height: auto;
   width: 100%;
   cursor: pointer;
+  user-select: none;
  }
  &__next-variant:hover &__next-variant-info {
   visibility: visible;
@@ -113,7 +116,7 @@
   backdrop-filter: blur(10px);
  }
  &__next-variant-info-icon {
-  padding-top: 5px;
+  margin-top: 10px;
   max-width: 20px;
   width: 100%;
   height: 20px;

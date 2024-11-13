@@ -1,4 +1,5 @@
 const openVacancyForm = (section) => {
+ window.scrollTo(0, 0);
  section.remove();
  const vacancySection = document.createElement('section');
  vacancySection.className = 'popup';
@@ -55,6 +56,7 @@ const openVacancyForm = (section) => {
  popupDisclaimer.addEventListener('click', openPoliticalModal);
 };
 const openVacancyModal = () => {
+ window.scrollTo(0, 0);
  const vacancySection = document.createElement('section');
  vacancySection.className = 'vacancy';
  vacancySection.innerHTML = `<div class="popup__wrapper">

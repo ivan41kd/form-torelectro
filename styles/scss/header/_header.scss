@@ -86,6 +86,13 @@
   visibility: visible;
   transition: 0.3s;
  }
+ &__more {
+  transition: 0.3s;
+ }
+ &__more-nav-wrapper:hover &__more {
+  opacity: 0.7;
+  transition: 0.3s;
+ }
  &__nav-wrapper {
   padding: 20px;
   padding-left: 40px;

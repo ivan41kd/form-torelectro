@@ -1,4 +1,5 @@
-const introButton = document.querySelector('.intro__disclaimer-button');
+const disclaimerButton = document.querySelector('.intro__disclaimer-button');
+const introButton = document.querySelector('.intro__button');
 const introPolitical = document.querySelectorAll(
  '.intro__disclaimer-political'
 );
@@ -9,8 +10,9 @@ const closeDisclaimer = () => {
  disclaimerWrapper.remove();
 };
 
-introButton.addEventListener('click', closeDisclaimer);
+disclaimerButton.addEventListener('click', closeDisclaimer);
 introPolitical.forEach((item) =>
  item.addEventListener('click', openPoliticalModal)
 );
+introButton.addEventListener('click', openConsultationModal);
 closeDisclaimerIcon.addEventListener('click', closeDisclaimer);

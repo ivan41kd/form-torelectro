@@ -1,4 +1,5 @@
 const openDocumentationModal = () => {
+ window.scrollTo(0, 0);
  const documentSection = document.createElement('section');
  documentSection.className = 'contacts';
  documentSection.innerHTML = `   <div class="popup__wrapper">

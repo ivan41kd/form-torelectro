@@ -20,6 +20,10 @@
   border-radius: 5px;
   max-width: 1180px;
  }
+ .popup__wrapper {
+  justify-content: normal;
+  padding-top: 85px;
+ }
  &__title {
   font-size: 24px;
   display: flex;
