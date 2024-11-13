@@ -1379,17 +1379,15 @@ section {
 }
 @media screen and (max-width: 576px) {
   .presentation {
-    align-items: center;
+    align-items: normal;
     padding-left: 20px;
-    padding-right: 0px;
+    padding-right: 20px;
     padding-top: 43px;
     padding-bottom: 41px;
   }
   .presentation__wrapper {
-    max-width: 390px;
-    width: 100%;
-    padding-right: 20px;
-    padding-left: 0;
+    max-width: 350px;
+    padding-right: 0;
   }
   .presentation__text {
     max-width: 340px;
