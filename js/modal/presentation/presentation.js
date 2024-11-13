@@ -1,4 +1,5 @@
 const openPresentationModal = () => {
+ window.scrollTo(0, 0);
  const presentationSection = document.createElement('section');
  presentationSection.className = 'popup';
  presentationSection.innerHTML = `  

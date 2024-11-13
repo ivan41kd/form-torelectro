@@ -1,5 +1,6 @@
 .intro {
  height: 650px;
+ position: relative;
  &__wrapper {
   max-width: 610px;
   display: flex;
@@ -60,19 +61,23 @@
  }
  &__bottom {
   width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: 66px;
  }
 
  &__disclaimer-wrapper {
-  padding: 11px;
+  padding: 9px;
   background: white;
   display: flex;
   border-radius: 5px;
-  column-gap: 34px;
+  column-gap: 25px;
+  padding-left: 20px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  align-items: center;
  }
  &__disclaimer-text {
   font-size: 16px;
-  line-height: 110%;
+  line-height: 16px;
   width: 100%;
   max-width: 760px;
  }
@@ -85,7 +90,7 @@
  }
  &__disclaimer-button-wrapper {
   display: flex;
-  column-gap: 20px;
+  column-gap: 23px;
   align-items: center;
  }
  &__disclaimer-button {
@@ -125,10 +130,12 @@
    background: rgba(16, 16, 16, 0.9);
   }
   &__disclaimer-wrapper {
+   position: absolute;
    max-width: 350px;
    flex-direction: column;
    padding: 15px;
    width: 100%;
+   top: 65%;
   }
   &__disclaimer-text {
    display: none;
@@ -137,6 +144,9 @@
    display: block;
    font-size: 14px;
    margin-bottom: 25px;
+  }
+  &__disclaimer-button {
+   max-width: 280px;
   }
  }
  @media screen and (max-width: 576px) {

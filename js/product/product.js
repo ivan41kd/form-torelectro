@@ -5,7 +5,9 @@ const products = [
    {
     title: 'Удлинители в бухте',
     description: `Удлинители с кабелем медным (проводом) и виниловым изолированием,
+    <br/>
     без заземления, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: false,
     isProfessional: false,
@@ -167,7 +169,9 @@ const products = [
    {
     title: 'Удлинители в бухте ',
     description: `Удлинители с кабелем медным (проводом) и виниловым изолированием,
+    <br/>
     с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: true,
     isProfessional: false,
@@ -329,7 +333,9 @@ const products = [
    {
     title: 'Удлинители на раме ',
     description: `Удлинители с изолированным кабелем медным на рамке для его намотки,
+    <br/>
     без заземления, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: false,
     isProfessional: false,
@@ -491,7 +497,9 @@ const products = [
    {
     title: 'Удлинители на рамке ',
     description: `Удлинители с изолированным кабелем медным на рамке для его намотки,
+    <br/>
     с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: true,
     isProfessional: false,
@@ -653,8 +661,11 @@ const products = [
    {
     title: 'Удлинители на катушке',
     description: `Удлинители с кабелем медным (проводом) и виниловым изолированием,
+    <br/>
     на садовой пластиковой катушке и удобным местом наматывания,
+    <br/>
     без заземления, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: false,
     isProfessional: true,
@@ -789,8 +800,11 @@ const products = [
    {
     title: 'Удлинители на катушке',
     description: `Удлинители с кабелем медным (проводом) и виниловым изолированием,
+    <br/>
     на садовой пластиковой катушке и удобным местом наматывания,
+    <br/>
     без заземления, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: true,
     isProfessional: true,
@@ -926,8 +940,11 @@ const products = [
    {
     title: 'Удлинители на катушке',
     description: `Удлинители с кабелем медным (проводом) и виниловым изолированием,
+    <br/>
     на садовой пластиковой катушке и удобным местом наматывания,
+    <br/>
     без заземления, со степенью стандартной защиты «IP20» (не менее 12.5 мм),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: false,
     isProfessional: true,
@@ -1062,8 +1079,11 @@ const products = [
    {
     title: 'Удлинители на катушке',
     description: `Удлинители с кабелем медным (проводом) и виниловым изолированием,
+    <br/>
     на садовой пластиковой катушке и удобным местом наматывания,
+    <br/>
     с заземлением, со степенью стандартной защиты «IP20» (не менее 12.5 мм),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: true,
     isProfessional: true,
@@ -1198,8 +1218,11 @@ const products = [
    {
     title: 'Удлинители на катушке',
     description: `Удлинители с кабелем медным (проводом) и виниловым изолированием,
+    <br/>
     на садовой пластиковой катушке и удобным местом наматывания,
+    <br/>
     с заземлением, со степенью стандартной защиты «IP20» (защита от мусора),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: false,
     isProfessional: true,
@@ -1213,7 +1236,7 @@ const products = [
         article: 401,
         plugs: '3х1,0',
         length: '20 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '2200 Вт',
         socket: '4 розетки',
         grounding: false,
@@ -1222,7 +1245,7 @@ const products = [
         article: 402,
         plugs: '3х1,0',
         length: '30 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '2200 Вт',
         socket: '4 розетки',
         grounding: false,
@@ -1254,7 +1277,7 @@ const products = [
         article: 405,
         plugs: '3х1,5',
         length: '20 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '3500 Вт',
         socket: '4 розетки',
         grounding: false,
@@ -1263,7 +1286,7 @@ const products = [
         article: 406,
         plugs: '3х1,5',
         length: '30 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '3500 Вт',
         socket: '4 розетки',
         grounding: false,
@@ -1272,7 +1295,7 @@ const products = [
         article: 407,
         plugs: '3х1,5',
         length: '40 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '3500 Вт',
         socket: '4 розетки',
         grounding: false,
@@ -1281,7 +1304,7 @@ const products = [
         article: 408,
         plugs: '3х1,5',
         length: '50 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '3500 Вт',
         socket: '4 розетки',
         grounding: false,
@@ -1295,7 +1318,7 @@ const products = [
         article: 409,
         plugs: '3х2,5',
         length: '20 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '4000 Вт',
         socket: '4 розетки',
         grounding: false,
@@ -1304,7 +1327,7 @@ const products = [
         article: 410,
         plugs: '3х2,5',
         length: '30 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '4000 Вт',
         socket: '4 розетки',
         grounding: false,
@@ -1313,7 +1336,7 @@ const products = [
         article: 411,
         plugs: '3х2,5',
         length: '40 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '4000 Вт',
         socket: '4 розетки',
         grounding: false,
@@ -1322,7 +1345,7 @@ const products = [
         article: 412,
         plugs: '3х2,5',
         length: '50 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '4000 Вт',
         socket: '4 розетки',
         grounding: false,
@@ -1334,8 +1357,11 @@ const products = [
    {
     title: 'Удлинители на катушке',
     description: `Удлинители с кабелем медным (проводом) и виниловым изолированием,
+    <br/>
     на металлической катушке с держателями и удобным местом наматывания,
+    <br/>
     с заземлением, со степенью защиты «IP44» (защита от влаги и пыли),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: true,
     isProfessional: true,
@@ -1349,7 +1375,7 @@ const products = [
         article: 413,
         plugs: '3х1,0',
         length: '20 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '2200 Вт',
         socket: '4 розетки',
         grounding: true,
@@ -1390,7 +1416,7 @@ const products = [
         article: 417,
         plugs: '3х1,5',
         length: '20 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '3500 Вт',
         socket: '4 розетки',
         grounding: true,
@@ -1399,7 +1425,7 @@ const products = [
         article: 418,
         plugs: '3х1,5',
         length: '30 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '3500 Вт',
         socket: '4 розетки',
         grounding: true,
@@ -1417,7 +1443,7 @@ const products = [
         article: 420,
         plugs: '3х1,5',
         length: '50 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '3500 Вт',
         socket: '4 розетки',
         grounding: true,
@@ -1431,7 +1457,7 @@ const products = [
         article: 421,
         plugs: '3х2,5',
         length: '20 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '4000 Вт',
         socket: '4 розетки',
         grounding: true,
@@ -1440,7 +1466,7 @@ const products = [
         article: 422,
         plugs: '3х2,5',
         length: '30 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '4000 Вт',
         socket: '4 розетки',
         grounding: true,
@@ -1449,7 +1475,7 @@ const products = [
         article: 423,
         plugs: '3х2,5',
         length: '40 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '4000 Вт',
         socket: '4 розетки',
         grounding: true,
@@ -1458,7 +1484,7 @@ const products = [
         article: 424,
         plugs: '3х2,5',
         length: '50 м',
-        security: 'IP44',
+        security: 'IP20',
         power: '4000 Вт',
         socket: '4 розетки',
         grounding: true,
@@ -1475,7 +1501,9 @@ const products = [
    {
     title: 'Удлинители силовые в бухте',
     description: `Удлинители силовые с кабелем гибким и холодостойким, в бухте,
+    <br/>
     с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: true,
     isProfessional: false,
@@ -1594,7 +1622,9 @@ const products = [
    {
     title: 'Удлинители силовые на колодке',
     description: `Удлинители силовые с кабелем гибким и холодостойким, на колодке,
+    <br/>
     с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: true,
     isProfessional: false,
@@ -1712,8 +1742,11 @@ const products = [
    {
     title: 'Удлинители силовые на колодке',
     description: `Удлинители силовые с кабелем гибким и холодостойким, по «ЭКО»,
+    <br/>
     на пластиковой рамке и удобным местом и функционалом намотки,
+    <br/>
     с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: true,
     isProfessional: false,
@@ -1773,8 +1806,11 @@ const products = [
     title: 'Удлинители силовые на катушке',
     fulltitle: 'Удлинители силовые на пластиковой катушке',
     description: `Удлинители силовые с кабелем гибким и холодостойким, по «ЭКО»,
+    <br/>
     на пластиковой катушке с держателями и удобным местом наматывания,
+    <br/>
     с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: true,
     isProfessional: false,
@@ -1877,8 +1913,11 @@ const products = [
     title: 'Удлинители силовые на катушке',
     fulltitle: 'Удлинители силовые на металлической катушке',
     description: `Удлинители силовые с кабелем гибким и холодостойким, по «ЭКО»,
+    <br/>
     на металлической катушке с держателями и удобным местом наматывания,
+    <br/>
     с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: true,
     isProfessional: false,
@@ -1981,7 +2020,9 @@ const products = [
    {
     title: 'Удлинители силовые на колодке',
     description: `Удлинители силовые с кабелем гибким и холодостойким, в бухте,
+    <br/>
     с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: true,
     isProfessional: false,
@@ -2099,7 +2140,9 @@ const products = [
    {
     title: 'Удлинители силовые на колодке',
     description: `Удлинители силовые с кабелем гибким и холодостойким, на колодке,
+    <br/>
     с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: true,
     isProfessional: false,
@@ -2218,8 +2261,11 @@ const products = [
     title: 'Удлинители силовые на катушке',
     fulltitle: 'Удлинители силовые на пластиковой катушке',
     description: `Удлинители силовые с кабелем гибким и холодостойким, по «ГОСТ»,
+    <br/>
     на пластиковой катушке с держателями и удобным местом наматывания,
+    <br/>
     с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: true,
     isProfessional: false,
@@ -2323,8 +2369,11 @@ const products = [
     title: 'Удлинители силовые на катушке',
     fulltitle: 'Удлинители силовые на металлической катушке',
     description: `Удлинители силовые с кабелем гибким и холодостойким, по «ГОСТ»,
+    <br/>
     на металлической катушке с держателями и удобным местом наматывания,
+    <br/>
     с заземлением, со степенью защиты «IP44» (каучуковая розетка и крышка),
+    <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети в «220В»`,
     grounding: true,
     isProfessional: false,
@@ -2450,9 +2499,7 @@ const renderOptions = (product) => {
  const cardOptions = document.querySelector('.product__card-options');
  const imgStickers = document.querySelector('.product__img-stickers-items');
  const stickers = imgStickers.lastChild;
- if (imgStickers.classList.contains('.product__card-stickers')) {
-  console.log(stickers);
- }
+
  cardOptions.innerHTML = '';
  imgStickers.innerHTML = '';
  const lastLength = optionsArr[optionsArr.length - 1].length;
@@ -2471,7 +2518,7 @@ const renderOptions = (product) => {
        : (imgSticker.textContent = 'с заземлением');
      }
      if (key == 'length') {
-      imgSticker.textContent = `От ${value} до ${lastLength} `;
+      imgSticker.textContent = `от ${value} до ${lastLength} `;
      }
      imgStickers.appendChild(imgSticker);
     }

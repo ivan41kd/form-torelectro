@@ -12,23 +12,23 @@ const setInputMask = (inputElement) => {
  });
 
  inputElement.addEventListener('blur', () => {
-  if (!inputElement.value.startsWith('+7')) {
+  if (!inputElement.value.startsWith('+7 ')) {
    maskInstance.updateValue();
    maskInstance.updateControl();
-   inputElement.value = '+7';
-  } else if (inputElement.value === '+7') {
+   inputElement.value = '+7 ';
+  } else if (inputElement.value === '+7 ') {
    maskInstance.updateValue();
    maskInstance.updateControl();
-   inputElement.value = '+7';
+   inputElement.value = '+7 ';
   }
  });
  inputElement.addEventListener('input', () => {
-  if (!inputElement.value.startsWith('+7')) {
-   inputElement.value = '+7';
+  if (!inputElement.value.startsWith('+7 ')) {
+   inputElement.value = '+7 ';
    maskInstance.updateValue();
    maskInstance.updateControl();
    placeholder.textContent = '999 999 99 99';
-  } else if (inputElement.value === '+7') {
+  } else if (inputElement.value === '+7 ') {
    placeholder.textContent = '999 999 99 99';
    maskInstance.updateValue();
    maskInstance.updateControl();
@@ -42,5 +42,5 @@ const validatePhoneNumber = (inputElement) => {
 };
 
 const initMask = (inputElement) => {
- inputElement.value = '+7';
+ inputElement.value = '+7 ';
 };

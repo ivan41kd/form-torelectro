@@ -16,3 +16,4 @@ introPolitical.forEach((item) =>
 );
 introButton.addEventListener('click', openConsultationModal);
 closeDisclaimerIcon.addEventListener('click', closeDisclaimer);
+window.scrollTo(0, 0);
