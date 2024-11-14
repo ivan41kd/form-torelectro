@@ -91,8 +91,8 @@ body::-webkit-scrollbar-thumb {
   html,
   body {
     /* стили только для Firefox */
-    scrollbar-color: rgba(255, 0, 0, 0.6) transparent;
-    scrollbar-width: 20px;
+    scrollbar-color: rgb(0, 0, 0);
+    scrollbar-width: 3px;
   }
 }
 
