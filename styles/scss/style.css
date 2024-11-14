@@ -74,22 +74,25 @@ body.scroll-disabled {
   height: 100vh;
   overflow-y: hidden;
 }
+body.scroll-disabled::-webkit-scrollbar {
+  width: 3px;
+}
 
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-  width: 8px;
+  width: 3px;
 }
 html::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 61, 0);
+  background-color: rgb(0, 0, 0);
   border-radius: 20px;
 }
 @supports (-moz-appearance: none) {
   html,
   body {
     /* стили только для Firefox */
-    scrollbar-color: rgba(212, 211, 211, 0.6) transparent;
-    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 0, 0, 0.6) transparent;
+    scrollbar-width: 20px;
   }
 }
 
@@ -332,7 +335,7 @@ html {
        column-gap: 5px;
 }
 .header__phone {
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
   background: rgb(255, 61, 0);
   align-items: center;
@@ -340,18 +343,19 @@ html {
   border: none;
   color: rgb(240, 240, 240);
   text-align: center;
-  max-width: 205px;
-  padding-left: 15px;
+  width: 205px;
+  padding-left: 17px;
   padding-right: 15px;
   border-radius: 6px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  max-width: 100%;
   cursor: pointer;
 }
 .header__phone-icon {
-  width: 15.62px;
-  height: 15.62px;
+  width: 17.62px;
+  height: 23.62px;
   display: flex;
   -moz-column-gap: 15px;
        column-gap: 15px;
@@ -359,8 +363,8 @@ html {
 .header__phone-icon-wrapper {
   display: flex;
   align-items: center;
-  -moz-column-gap: 19px;
-       column-gap: 19px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 .header__phone-icon-wrapper::after {
   content: "";
@@ -368,7 +372,7 @@ html {
   height: 1px;
   background: rgb(240, 240, 240);
   transform: rotate(-90deg);
-  margin-right: 15px;
+  margin-right: 0;
   opacity: 50%;
 }
 .header__more {
@@ -539,7 +543,11 @@ section {
 }
 .intro__disclaimer-button {
   width: 320px;
-  height: 60px;
+  height: 58px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   font-size: 18px;
 }
@@ -874,7 +882,7 @@ section {
   padding-right: 0;
   height: 100dvh;
   z-index: 100;
-  background: rgba(16, 16, 16, 0.8);
+  background: rgba(16, 16, 16, 0.9);
   padding-bottom: 0;
 }
 .product__wrapper {
@@ -919,8 +927,9 @@ section {
 .product__card-options {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 280px;
   justify-content: space-between;
+  row-gap: 10px;
 }
 .product__card-info-wrapper {
   height: 430px;
@@ -1108,7 +1117,6 @@ section {
   display: flex;
   -moz-column-gap: 5px;
        column-gap: 5px;
-  margin-bottom: 10px;
 }
 .product__options:nth-last-child(1) {
   margin-bottom: 0;
@@ -1189,7 +1197,7 @@ section {
 .product__add-icon {
   max-width: 15px;
   width: 100%;
-  max-height: 15px;
+  max-height: 20px;
   height: 100%;
 }
 .product__disclaimer {
@@ -1381,7 +1389,7 @@ section {
   padding-top: 50px;
   padding-bottom: 48px;
   padding-left: 50px;
-  background: rgb(16, 16, 16);
+  background: #101010;
   padding-right: 50px;
   width: 100%;
   max-width: 100%;
@@ -1455,7 +1463,7 @@ section {
 .consultation {
   padding-top: 81px;
   padding-bottom: 70px;
-  background: rgb(16, 16, 16);
+  background: #101010;
   width: 100%;
   max-width: 100%;
   display: flex;
@@ -1526,12 +1534,12 @@ section {
 
 .information {
   padding-top: 112px;
-  padding-bottom: 104px;
+  padding-bottom: 100px;
 }
 .information__title {
   font-size: 30px;
   line-height: 110%;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   height: 100%;
   max-height: 50px;
 }
@@ -1545,18 +1553,18 @@ section {
   padding: 50px;
   padding-left: 20px;
   background: white;
-  padding-top: 59px;
+  padding-top: 50px;
 }
 .information__item:nth-child(1) .information__item-subtitle {
   height: 80px;
 }
 .information__item:nth-child(2) {
   padding-top: 41px;
-  padding-bottom: 36px;
+  padding-bottom: 39px;
 }
 .information__item:nth-child(3) {
-  padding-top: 60px;
-  padding-bottom: 37px;
+  padding-top: 55px;
+  padding-bottom: 45px;
 }
 .information__item:nth-child(2) .information__item-subtitle {
   height: 100px;
@@ -1760,7 +1768,7 @@ section {
   }
   .faq__question-name {
     font-size: 16px;
-    line-height: normal;
+    line-height: 17px;
   }
   .faq__question-answer {
     font-size: 16px;
@@ -1939,7 +1947,7 @@ section {
   }
   .nuances__item-name {
     font-size: 16px;
-    line-height: 110%;
+    line-height: 17px;
   }
   .nuances__item-answer {
     font-size: 16px;
@@ -2085,7 +2093,7 @@ section {
   padding-right: 0;
   height: 100dvh;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.308);
+  background: rgba(16, 16, 16, 0.9);
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -2253,12 +2261,18 @@ section {
 .footer__docs-item.footer-political {
   cursor: pointer;
 }
+.footer__telegram {
+  transform: translate(-1px, -7px);
+}
 @media screen and (max-width: 576px) {
   .footer {
     padding: 40px 20px 20px 20px;
   }
   .footer__logo {
     margin-bottom: 40px;
+  }
+  .footer__telegram {
+    transform: translate(0, 0);
   }
   .footer__wrapper {
     max-width: 350px;
@@ -2333,7 +2347,7 @@ section {
   padding-right: 0;
   height: 100dvh;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.308);
+  background: rgba(16, 16, 16, 0.9);
 }
 .documentation__wrapper {
   width: 100%;
@@ -2418,7 +2432,7 @@ section {
   padding-right: 50px;
   height: 100dvh;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.308);
+  background: rgba(16, 16, 16, 0.9);
 }
 .vacancy__wrapper {
   display: flex;

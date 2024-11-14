@@ -113,7 +113,7 @@
   column-gap: 5px;
  }
  &__phone {
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
   background: rgba(255, 61, 0, 1);
   align-items: center;
@@ -121,33 +121,34 @@
   border: none;
   color: rgba(240, 240, 240, 1);
   text-align: center;
-  max-width: 205px;
-  padding-left: 15px;
+  width: 205px;
+  padding-left: 17px;
   padding-right: 15px;
   border-radius: 6px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  max-width: 100%;
 
   cursor: pointer;
  }
  &__phone-icon {
-  width: 15.62px;
-  height: 15.62px;
+  width: 17.62px;
+  height: 23.62px;
   display: flex;
   column-gap: 15px;
  }
  &__phone-icon-wrapper {
   display: flex;
   align-items: center;
-  column-gap: 19px;
+  column-gap: 10px;
   &::after {
    content: '';
    width: 10px;
    height: 1px;
    background: rgba(240, 240, 240, 1);
    transform: rotate(-90deg);
-   margin-right: 15px;
+   margin-right: 0;
    opacity: 50%;
   }
  }

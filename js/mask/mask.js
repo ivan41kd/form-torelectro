@@ -3,7 +3,6 @@ const setInputMask = (inputElement) => {
  const maskOptions = {
   mask: '+7 000 000 00 00',
  };
-
  const maskInstance = IMask(inputElement, maskOptions);
  inputElement.addEventListener('input', () => {
   maskInstance.updateValue();

@@ -1,3 +1,4 @@
+window.scrollTo(0, 0);
 const disclaimerButton = document.querySelector('.intro__disclaimer-button');
 const introButton = document.querySelector('.intro__button');
 const introPolitical = document.querySelectorAll(
@@ -16,4 +17,3 @@ introPolitical.forEach((item) =>
 );
 introButton.addEventListener('click', openConsultationModal);
 closeDisclaimerIcon.addEventListener('click', closeDisclaimer);
-window.scrollTo(0, 0);

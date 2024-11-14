@@ -85,10 +85,16 @@
  &__docs-item.footer-political {
   cursor: pointer;
  }
+ &__telegram {
+  transform: translate(-1px, -7px);
+ }
  @media screen and (max-width: 576px) {
   padding: 40px 20px 20px 20px;
   &__logo {
    margin-bottom: 40px;
+  }
+  &__telegram {
+   transform: translate(0, 0);
   }
   &__wrapper {
    max-width: 350px;

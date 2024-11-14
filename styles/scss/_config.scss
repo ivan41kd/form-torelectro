@@ -47,22 +47,25 @@ body {
 body.scroll-disabled {
  height: 100vh;
  overflow-y: hidden;
+ &::-webkit-scrollbar {
+  width: 3px;
+ }
 }
 html,
 body {
  &::-webkit-scrollbar {
-  width: 8px;
+  width: 3px;
  }
 
  &::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 61, 0);
+  background-color: rgb(0, 0, 0);
   border-radius: 20px;
  }
 
  @supports (-moz-appearance: none) {
   /* стили только для Firefox */
-  scrollbar-color: #d4d3d399 transparent;
-  scrollbar-width: thin;
+  scrollbar-color: #ff000099 transparent;
+  scrollbar-width: 20px;
  }
 }
 input::-webkit-outer-spin-button,
