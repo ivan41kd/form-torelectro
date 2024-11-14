@@ -2548,11 +2548,18 @@ section {
   background: rgba(16, 16, 16, 0.9);
 }
 .political::-webkit-scrollbar {
-  width: 8px;
+  width: 3px;
 }
 .political::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 61, 0);
+  background-color: white;
   border-radius: 20px;
+}
+@supports (-moz-appearance: none) {
+  .political {
+    /* стили только для Firefox */
+    scrollbar-color: white;
+    scrollbar-width: 3px;
+  }
 }
 @supports (-moz-appearance: none) {
   .political {
