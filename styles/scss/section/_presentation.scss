@@ -1,6 +1,6 @@
 .presentation {
- padding-top: 50px;
- padding-bottom: 48px;
+ padding-top: 0px;
+ padding-bottom: 0px;
  padding-left: 50px;
  background: #101010;
  padding-right: 50px;
@@ -9,8 +9,18 @@
  display: flex;
  justify-content: center;
  &__wrapper {
+  display: flex;
   max-width: 1180px;
   width: 100%;
+  justify-content: space-between;
+ }
+ &__img {
+  width: 50%;
+  height: auto;
+ }
+ &__texts {
+  padding-top: 50px;
+  padding-bottom: 48px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -43,7 +53,7 @@
   padding-right: 20px;
   padding-top: 43px;
   padding-bottom: 41px;
-  &__wrapper {
+  &__texts {
    max-width: 350px;
    padding-right: 0;
   }

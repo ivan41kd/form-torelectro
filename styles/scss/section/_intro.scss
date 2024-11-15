@@ -1,19 +1,28 @@
 .intro {
  height: 650px;
  &__wrapper {
+  display: flex;
+  justify-content: space-between;
+ }
+ &__texts {
   max-width: 610px;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: start;
  }
- &__img {
-  display: none;
-  max-width: 350px;
+ &__img-wrapper {
+  max-width: 100%;
   width: 100%;
-  height: 370px;
-  background: white;
+  height: auto;
   border-radius: 5px;
+ }
+
+ &__img {
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
  }
  &__title {
   font-size: 36px;
@@ -162,6 +171,7 @@
 
   &__wrapper {
    max-width: 390px;
+   flex-direction: column-reverse;
   }
   &__title {
    font-size: 24px;

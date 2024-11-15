@@ -1,6 +1,6 @@
 .consultation {
- padding-top: 81px;
- padding-bottom: 70px;
+ padding-top: 0;
+ padding-bottom: 0;
  background: #101010;
  width: 100%;
  max-width: 100%;
@@ -8,6 +8,16 @@
  justify-content: center;
  &__wrapper {
   max-width: 1180px;
+  width: 100%;
+  display: flex;
+ }
+ &__img {
+  width: 45%;
+  height: auto;
+ }
+ &__texts {
+  padding-top: 81px;
+  padding-bottom: 70px;
   width: 100%;
   display: flex;
   flex-direction: column;
