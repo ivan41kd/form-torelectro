@@ -18,6 +18,8 @@ const openPresentationModal = () => {
     />
    </g>
   </svg>
+  <div class='popup__body'>
+
   <form class="popup__form">
    <div class="popup__form-wrapper">
     <h1 class="popup__form-title hide-mobile">
@@ -40,8 +42,10 @@ const openPresentationModal = () => {
       нажимая, вы соглашаетесь <br/>с <span>условиями политики конфиденциальности</span>
      </p>
     </div>
-   </div>
-  </form>
+    </div>
+    </form>
+    <img class='popup__img' src='./assets/presentation/laptop_3.png'/>
+  </div>
  </div>
 `;
  document.body.append(presentationSection);

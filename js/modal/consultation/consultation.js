@@ -18,6 +18,7 @@ const openConsultationModal = () => {
        />
       </g>
      </svg>
+     <div class='popup__body'>
      <form class="popup__form">
       <div class="popup__form-wrapper">
        <h1 class="popup__form-title hide-mobile">
@@ -42,6 +43,8 @@ const openConsultationModal = () => {
        </div>
       </div>
      </form>
+     <img class='popup__img' src='./assets/consultation/tele_3.png'/>
+     </div>
     </div>
    `;
  document.body.classList.add('scroll-disabled');
