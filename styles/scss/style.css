@@ -570,7 +570,6 @@ section {
     padding: 15px;
     width: 100%;
     top: 570px;
-    left: 10%;
   }
   .intro__disclaimer-text {
     display: none;
@@ -2066,6 +2065,12 @@ section {
   }
   .popup__form-title {
     font-size: 16px;
+  }
+  .popup__img {
+    display: none;
+  }
+  .popup__body {
+    padding-left: 0;
   }
   .popup__form-title.hide-mobile {
     display: none;

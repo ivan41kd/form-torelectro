@@ -103,7 +103,12 @@
   &__form-title {
    font-size: 16px;
   }
-
+  &__img {
+   display: none;
+  }
+  &__body {
+   padding-left: 0;
+  }
   &__form-title.hide-mobile {
    display: none;
   }
