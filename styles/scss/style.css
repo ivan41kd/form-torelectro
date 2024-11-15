@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Evolventa";
   src: local("Evolventa"), url("Evolventa-Regular.woff");
@@ -73,27 +72,7 @@ body {
 body.scroll-disabled {
   height: 100vh;
   overflow-y: hidden;
-}
-body.scroll-disabled::-webkit-scrollbar {
-  width: 3px;
-}
-
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
-  width: 3px;
-}
-html::-webkit-scrollbar-thumb,
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(0, 0, 0);
-  border-radius: 20px;
-}
-@supports (-moz-appearance: none) {
-  html,
-  body {
-    /* стили только для Firefox */
-    scrollbar-color: rgb(0, 0, 0);
-    scrollbar-width: 3px;
-  }
+  padding-right: 17px;
 }
 
 input::-webkit-outer-spin-button,
@@ -446,7 +425,6 @@ section {
 
 .intro {
   height: 650px;
-  position: relative;
 }
 .intro__wrapper {
   max-width: 610px;
@@ -570,11 +548,11 @@ section {
     height: auto;
   }
   .intro__disclaimer {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -588,7 +566,8 @@ section {
     flex-direction: column;
     padding: 15px;
     width: 100%;
-    top: 65%;
+    top: 570px;
+    left: 50px;
   }
   .intro__disclaimer-text {
     display: none;
@@ -894,19 +873,6 @@ section {
   width: 100%;
   height: 100%;
   justify-content: center;
-}
-.product__wrapper::-webkit-scrollbar {
-  width: 8px;
-}
-.product__wrapper::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 61, 0);
-  border-radius: 20px;
-}
-@supports (-moz-appearance: none) {
-  .product__wrapper {
-    scrollbar-color: rgba(212, 211, 211, 0.6) transparent;
-    scrollbar-width: thin;
-  }
 }
 .product__card {
   position: relative;
@@ -1882,7 +1848,7 @@ section {
 }
 .nuances__item-name {
   font-size: 18px;
-  line-height: 17px;
+  line-height: 10px;
   color: rgb(255, 255, 255);
 }
 .nuances__question-icon {
@@ -1978,6 +1944,7 @@ section {
   height: 100dvh;
   z-index: 100;
   background: rgba(16, 16, 16, 0.9);
+  box-sizing: content-box;
 }
 .popup__wrapper {
   align-items: center;
@@ -2546,26 +2513,6 @@ section {
   z-index: 100;
   overflow: auto;
   background: rgba(16, 16, 16, 0.9);
-}
-.political::-webkit-scrollbar {
-  width: 3px;
-}
-.political::-webkit-scrollbar-thumb {
-  background-color: white;
-  border-radius: 20px;
-}
-@supports (-moz-appearance: none) {
-  .political {
-    /* стили только для Firefox */
-    scrollbar-color: white;
-    scrollbar-width: 3px;
-  }
-}
-@supports (-moz-appearance: none) {
-  .political {
-    scrollbar-color: rgba(212, 211, 211, 0.6) transparent;
-    scrollbar-width: thin;
-  }
 }
 .political__wrapper {
   display: flex;

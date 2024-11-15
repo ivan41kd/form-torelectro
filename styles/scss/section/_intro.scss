@@ -1,6 +1,5 @@
 .intro {
  height: 650px;
- position: relative;
  &__wrapper {
   max-width: 610px;
   display: flex;
@@ -121,11 +120,11 @@
  @media screen and (max-width: 768px) {
   height: auto;
   &__disclaimer {
-   position: fixed;
+   position: absolute;
    top: 0;
    left: 0;
    height: 100%;
-   width: 100%;
+   width: 100vw;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -139,7 +138,8 @@
    flex-direction: column;
    padding: 15px;
    width: 100%;
-   top: 65%;
+   top: 570px;
+   left: 50px;
   }
   &__disclaimer-text {
    display: none;

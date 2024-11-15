@@ -1,5 +1,4 @@
 const openPresentationModal = () => {
- window.scrollTo(0, 0);
  const presentationSection = document.createElement('section');
  presentationSection.className = 'popup';
  presentationSection.innerHTML = `  
@@ -38,7 +37,7 @@ const openPresentationModal = () => {
     <div class="popup__button-wrapper">
      <button class="popup__form-button">Подробная презентация</button>
      <p class="popup__disclamer">
-      нажимая, вы соглашаетесь с <br/><span>условиями политики конфиденциальности</span>
+      нажимая, вы соглашаетесь <br/>с <span>условиями политики конфиденциальности</span>
      </p>
     </div>
    </div>

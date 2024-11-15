@@ -13,25 +13,7 @@
  z-index: 100;
  overflow: auto;
  background: rgba(16, 16, 16, 0.9);
- &::-webkit-scrollbar {
-  width: 3px;
- }
 
- &::-webkit-scrollbar-thumb {
-  background-color: white;
-  border-radius: 20px;
- }
-
- @supports (-moz-appearance: none) {
-  /* стили только для Firefox */
-  scrollbar-color: white;
-  scrollbar-width: 3px;
- }
-
- @supports (-moz-appearance: none) {
-  scrollbar-color: #d4d3d399 transparent;
-  scrollbar-width: thin;
- }
  &__wrapper {
   display: flex;
   flex-direction: column;

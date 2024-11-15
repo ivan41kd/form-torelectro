@@ -47,27 +47,9 @@ body {
 body.scroll-disabled {
  height: 100vh;
  overflow-y: hidden;
- &::-webkit-scrollbar {
-  width: 3px;
- }
+ padding-right: 17px;
 }
-html,
-body {
- &::-webkit-scrollbar {
-  width: 3px;
- }
 
- &::-webkit-scrollbar-thumb {
-  background-color: rgb(0, 0, 0);
-  border-radius: 20px;
- }
-
- @supports (-moz-appearance: none) {
-  /* стили только для Firefox */
-  scrollbar-color: rgb(0, 0, 0);
-  scrollbar-width: 3px;
- }
-}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
  -webkit-appearance: none;

@@ -1,5 +1,4 @@
 const openConsultationModal = () => {
- window.scrollTo(0, 0);
  const consultationSection = document.createElement('section');
  consultationSection.className = 'popup';
  consultationSection.innerHTML = `  
