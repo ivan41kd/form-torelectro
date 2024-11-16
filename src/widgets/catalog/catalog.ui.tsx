@@ -9,9 +9,9 @@ export function Catalog() {
     return (
         <Tooltip.Provider>
             <section className='catalog container' id='catalog'>
-                <h1 className='catalog__title'>Каталог со всеми категориями нашего ассортимента</h1>
+                <h2 className='catalog__title'>Каталог со всеми категориями нашего ассортимента</h2>
                 <Tabs.Root defaultValue='pvs'>
-                    <Tabs.List className='catalog__header'>
+                    <Tabs.List className='catalog__header' aria-label="Выберите свой товар">
                         <div className='catalog__categories'>
                             <Tooltip.Root>
                                 <Tooltip.Trigger asChild>
