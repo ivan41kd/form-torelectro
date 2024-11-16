@@ -30,7 +30,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 7px;
  }
  &__nav-items-list:nth-child(1) {
   position: relative;
@@ -40,7 +40,7 @@
    width: 107%;
    height: 1px;
    background: #f0f0f0;
-   bottom: -27%;
+   bottom: -19%;
   }
  }
  &__nav-item {
@@ -48,6 +48,7 @@
   list-style-type: none;
   font-size: 16px;
   max-width: 320px;
+  height: 20px;
   width: 100%;
   height: auto;
   position: relative;
@@ -60,7 +61,7 @@
    background: url('data:image/svg+xml,<svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3.5" cy="3.5" r="3.5" fill="%23FF3D00"/></svg>');
    width: 7px;
    height: 7px;
-   left: -6.4%;
+   left: -7%;
    top: 43%;
    visibility: hidden;
    opacity: 0;
@@ -98,7 +99,7 @@
   padding: 20px;
   padding-left: 40px;
   padding-top: 13px;
-  row-gap: 40px;
+  row-gap: 31px;
   display: flex;
   flex-direction: column;
  }

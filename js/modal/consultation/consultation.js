@@ -33,12 +33,11 @@ const openConsultationModal = () => {
        <div class="popup__form-input">
         <p class="popup__input-name">номер сотового телефона</p>
         <input type="text" class="popup__input" placeholder="" />
-        <span class="placeholder">999 999 99 99</span>
        </div>
        <div class="popup__button-wrapper">
         <button class="popup__form-button">Бесплатная консультация</button>
         <p class="popup__disclamer">
-        нажимая, вы соглашаетесь с <br/><span>условиями политики конфиденциальности</span>
+        нажимая, вы соглашаетесь <br/> с <span>условиями политики конфиденциальности</span>
        </p>
        </div>
       </div>

@@ -15,12 +15,16 @@
   width: 780px;
   height: 510px;
   border-radius: 5px;
+  position: relative;
  }
 
  &__img {
   object-fit: cover;
   width: 780px;
   height: 510px;
+  position: absolute;
+  left: -18%;
+  top: -20.3%;
  }
  &__title {
   font-size: 36px;
@@ -166,6 +170,7 @@
    margin-bottom: 23px;
    width: 350px;
    height: 210px;
+   position: static;
   }
 
   &__wrapper {

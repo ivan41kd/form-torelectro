@@ -20,6 +20,8 @@ const openVacancyForm = (section) => {
        />
       </g>
      </svg>
+     <div class='popup__body'>
+     
      <form class="popup__form">
       <div class="popup__form-wrapper">
        <h1 class="popup__form-title">
@@ -38,6 +40,8 @@ const openVacancyForm = (section) => {
        </div>
       </div>
      </form>
+     <img class='popup__img' src='./assets/consultation/tele_3.png'/>
+     </div>
     </div>
    `;
  document.body.append(vacancySection);
@@ -83,6 +87,7 @@ const openVacancyModal = () => {
      Вакансия
     </h2>
      <div class="vacancy__info">
+     <img class='vacancy__img' src='./assets/vacancy/kubok.png'/>
       <div class="vacancy__info-wrapper">
        <div class="vacancy__info-items">
         <div class="vacancy__info-item">

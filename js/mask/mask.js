@@ -1,5 +1,4 @@
 const setInputMask = (inputElement) => {
- const placeholder = document.querySelector('.placeholder');
  const maskOptions = {
   mask: '+7 000 000 00 00',
  };
@@ -7,7 +6,6 @@ const setInputMask = (inputElement) => {
  inputElement.addEventListener('input', () => {
   maskInstance.updateValue();
   maskInstance.updateControl();
-  placeholder.textContent = '';
  });
 
  inputElement.addEventListener('blur', () => {
@@ -26,9 +24,7 @@ const setInputMask = (inputElement) => {
    inputElement.value = '+7 ';
    maskInstance.updateValue();
    maskInstance.updateControl();
-   placeholder.textContent = '999 999 99 99';
   } else if (inputElement.value === '+7 ') {
-   placeholder.textContent = '999 999 99 99';
    maskInstance.updateValue();
    maskInstance.updateControl();
   }
