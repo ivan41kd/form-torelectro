@@ -1,4 +1,4 @@
-import { InputMask, type Track } from '@react-input/mask';
+import { InputMask } from '@react-input/mask';
 
 export function FormPhone() {
 	return (

@@ -1,5 +1,4 @@
 import './presentation.scss';
-import { ConsultationModal } from '~@/shared/ui/consultation';
 import * as Dialog from '@radix-ui/react-dialog';
 import { PresentationModal } from '~@/shared/ui/presentation/presentation.modal';
 

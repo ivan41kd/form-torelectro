@@ -3,7 +3,6 @@ import { KG_DATA, PVS_DATA } from '~@/shared/constant';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import * as Tabs from '@radix-ui/react-tabs';
-import 'swiper/css';
 
 import './catalog.scss';
 export function Catalog() {
@@ -104,7 +103,7 @@ export function Catalog() {
 							wrapperClass='catalog__cards-wrapper'
 							navigation={{ nextEl: '.catalog__next-icon' }}
 						>
-							{PVS_DATA.map((product, index) => (
+							{PVS_DATA.map(product => (
 								<SwiperSlide className='catalog__card'>
 									<ProductCard key={product.description} product={product} />
 								</SwiperSlide>
@@ -122,7 +121,7 @@ export function Catalog() {
 							wrapperClass='catalog__cards-wrapper'
 							navigation={{ nextEl: 'catalog__next-icon' }}
 						>
-							{KG_DATA.map((product, index) => (
+							{KG_DATA.map(product => (
 								<SwiperSlide className='catalog__card'>
 									<ProductCard key={product.description} product={product} />
 								</SwiperSlide>

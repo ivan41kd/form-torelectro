@@ -2,7 +2,6 @@ import { FormPhone } from '../form/form';
 import { Image } from '../image';
 import { PoliticalModal } from '../political/political.modal';
 import * as Dialog from '@radix-ui/react-dialog';
-import { InputMask, type Track } from '@react-input/mask';
 
 export function PresentationModal() {
 	return (
