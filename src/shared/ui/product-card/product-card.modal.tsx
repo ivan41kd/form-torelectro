@@ -62,7 +62,7 @@ export function ProductCardModal({ product }: { product: TProduct }) {
 						<Image
 							alt='Image card'
 							className='product__card-img'
-							src='../../../../public/static/images/product/product.png'
+							src='/static/images/product/product.png'
 						/>
 						<div className='product__img-stickers'>
 							<div className='product__img-stickers-items'>
