@@ -1,5 +1,6 @@
 import * as Dialog from '@radix-ui/react-dialog';
 import { PoliticalModal } from '../political/political.modal';
+import { FormPhone } from '../form/form';
 export function VacancyForm() {
 	return (
 		<div className='popup__body'>
@@ -8,10 +9,7 @@ export function VacancyForm() {
 					<h1 className='popup__form-title'>
 						<span>Пожалуйста</span>, оставьте ваши контакты, чтобы мы отправили вам презентацию
 					</h1>
-					<div className='popup__form-input'>
-						<p className='popup__input-name'>номер сотового телефона</p>
-						<input type='text' className='popup__input' placeholder='+7' />
-					</div>
+					<FormPhone />
 					<div className='popup__button-wrapper'>
 						<button className='popup__form-button'>Анкета для заполнения</button>
 						<p className='popup__disclamer'>

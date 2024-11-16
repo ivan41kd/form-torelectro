@@ -3,6 +3,7 @@ import { Image } from '../image';
 import { PoliticalModal } from '../political/political.modal';
 
 import './popup.scss';
+import { FormPhone } from '../form/form';
 
 export function ConsultationModal() {
 	return (
@@ -16,10 +17,7 @@ export function ConsultationModal() {
 						<span>Пожалуйста</span>, оставьте ваши контакты, чтобы мы перезвонили и ответили на все
 						необходимые вопросы
 					</h1>
-					<div className='popup__form-input'>
-						<p className='popup__input-name'>номер сотового телефона</p>
-						<input type='text' className='popup__input' placeholder='' />
-					</div>
+					<FormPhone />
 					<div className='popup__button-wrapper'>
 						<button className='popup__form-button'>Бесплатная консультация</button>
 						<p className='popup__disclamer'>
