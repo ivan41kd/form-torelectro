@@ -1,0 +1,206 @@
+@import './styles/section';
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	line-height: 1.5;
+	font-family: 'Evolventa', sans-serif;
+	background: rgba(240, 240, 240, 1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	color: rgba(16, 16, 16, 1);
+}
+body.scroll-disabled {
+	height: 100vh;
+	overflow: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+button {
+	border-radius: 5px;
+	cursor: pointer;
+	border: none;
+	background: rgba(255, 61, 0, 1);
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+	color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+input {
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	width: 100%;
+	background: rgba(240, 240, 240, 1);
+	color: rgba(16, 16, 16, 1);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: normal;
+	padding: 15px;
+	position: relative;
+	&::placeholder {
+		color: black;
+	}
+}
+input:focus {
+	border-color: #007bff;
+}
+.placeholder {
+	position: absolute;
+	left: 40px;
+	top: 43%;
+	color: #999;
+	transition: 0.2s;
+	font-size: 18px;
+	line-height: normal;
+	pointer-events: none;
+}
+@media screen and (max-width: 576px) {
+	.placeholder {
+		top: 44%;
+	}
+}
+
+input.invalid {
+	border: 1px solid red;
+}
+
+/* Make sure textarea without a rows attribute are not tiny */
+textarea:not([rows]) {
+	min-height: 10em;
+}
+a {
+	text-decoration: none;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+	scroll-margin-block: 5ex;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: 'Evolventa';
+	src: local('/static/fonts/Evolventa'), url('/static/fonts/Evolventa-Regular.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Evolventa';
+	src: local('/static/fonts/Evolventa Oblique'), url('/static/fonts/Evolventa-Oblique.woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Evolventa';
+	src: local('/static/fonts/Evolventa Bold'), url('/static/fonts/Evolventa-Bold.woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Evolventa';
+	src: local('/static/fonts/Evolventa Bold Oblique'),
+		url('/static/fonts/Evolventa-BoldOblique.woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.root {
+	width: 100%;
+}
