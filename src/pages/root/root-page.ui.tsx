@@ -6,7 +6,7 @@ import { Header } from '../../widgets/header';
 import { Nuaces } from '../../widgets/nuaces';
 import { Hero } from '../../widgets/hero';
 import { Faq } from '../../widgets/faq';
-import { Presentation } from '~@/widgets/presentation';
+import { Presentation } from '../../widgets/presentation';
 
 export function RootPage() {
 	return (
@@ -18,7 +18,6 @@ export function RootPage() {
 				<Presentation />
 				<Information />
 				<Consultation />
-
 				<Faq />
 				<Nuaces />
 			</main>
