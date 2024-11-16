@@ -47,6 +47,7 @@
 		transition: 0.6s;
 	}
 	&__question-header {
+		padding-left: 0;
 		background-color: white;
 		width: 100%;
 		display: flex;
@@ -95,7 +96,8 @@
 	}
 	&__question-name {
 		font-size: 18px;
-		line-height: 16px;
+		line-height: 18px;
+		font-weight: 400;
 	}
 	&__question-icon {
 		max-width: 37px;
@@ -126,6 +128,7 @@
 		&__question-name {
 			font-size: 16px;
 			line-height: 17px;
+			text-align: start;
 		}
 		&__question-answer {
 			font-size: 16px;

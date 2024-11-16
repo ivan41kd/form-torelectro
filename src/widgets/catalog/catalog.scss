@@ -1,5 +1,5 @@
 .catalog {
-	margin-top: 0px!important;
+	margin-top: 0px !important;
 	&__title {
 		font-size: 30px;
 		line-height: 110%;
@@ -85,8 +85,7 @@
 	}
 	&__cards-wrapper {
 		display: flex;
-		overflow: hidden;
-		width: max-content !important;
+		width: 1180px !important;
 	}
 	&__card {
 		width: 100% !important;
@@ -170,8 +169,11 @@
 		&__header {
 			width: 100%;
 		}
+		&__categories {
+			width: fit-content;
+		}
 		&__category-button {
-			max-width: 100%;
+			max-width: 170px;
 			font-size: 14px;
 			line-height: 16.1px;
 		}
@@ -184,6 +186,9 @@
 		}
 		&__card-wrapper {
 			padding: 15px;
+		}
+		&__cards-wrapper {
+			width: 350px !important;
 		}
 		&__card-name {
 			font-size: 16px;
