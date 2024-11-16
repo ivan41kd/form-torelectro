@@ -13,7 +13,7 @@ export function ProductCard({ product }: { product: TProduct }) {
 					<Image
 						alt=''
 						className='catalog__card-img'
-						src='../../../../public/static/images/product/product.png'
+						src='/static/images/product/product.png'
 					/>
 				</div>
 				<div className='catalog__card-info'>
