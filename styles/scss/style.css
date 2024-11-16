@@ -562,18 +562,18 @@ section {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     z-index: 100;
     background: rgba(16, 16, 16, 0.9);
+    padding-top: 376px;
   }
   .intro__disclaimer-wrapper {
-    position: absolute;
+    position: sticky;
     max-width: 350px;
     flex-direction: column;
     padding: 15px;
     width: 100%;
-    top: 310px;
+    top: 15px;
     align-items: normal;
   }
   .intro__disclaimer-text {
