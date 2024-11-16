@@ -588,6 +588,14 @@ section {
     font-size: 18px;
     max-width: 280px;
   }
+  .intro__disclaimer-close {
+    max-width: 15px;
+    height: 15px;
+  }
+  .intro__disclaimer-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 @media screen and (max-width: 820px) {
   .intro__img, .intro__img-wrapper {
