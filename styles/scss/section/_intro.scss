@@ -150,6 +150,7 @@
    padding: 15px;
    width: 100%;
    top: 570px;
+   align-items: normal;
   }
   &__disclaimer-text {
    display: none;
@@ -160,6 +161,7 @@
    margin-bottom: 25px;
   }
   &__disclaimer-button {
+   font-size: 18px;
    max-width: 280px;
   }
  }
