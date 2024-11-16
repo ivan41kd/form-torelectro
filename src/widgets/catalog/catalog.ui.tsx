@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import * as Tabs from '@radix-ui/react-tabs';
 
+import 'swiper/css'
+
 import './catalog.scss';
 export function Catalog() {
 	return (
@@ -94,11 +96,8 @@ export function Catalog() {
 					</Tabs.List>
 					<Tabs.Content value='pvs'>
 						<Swiper
-							loop={true}
 							spaceBetween={20}
-							slidesPerView={1}
-							initialSlide={0}
-							breakpoints={{ 820: { slidesPerView: 3 } }}
+							slidesPerView='auto'
 							className='catalog__cards'
 							wrapperClass='catalog__cards-wrapper'
 							navigation={{ nextEl: '.catalog__next-icon' }}
@@ -112,11 +111,8 @@ export function Catalog() {
 					</Tabs.Content>
 					<Tabs.Content value='kg'>
 						<Swiper
-							loop={true}
 							spaceBetween={20}
-							slidesPerView={1}
-							initialSlide={0}
-							breakpoints={{ 820: { slidesPerView: 3 } }}
+							slidesPerView='auto'
 							className='catalog__cards'
 							wrapperClass='catalog__cards-wrapper'
 							navigation={{ nextEl: 'catalog__next-icon' }}
