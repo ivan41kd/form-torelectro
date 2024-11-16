@@ -72,7 +72,6 @@ body {
 body.scroll-disabled {
   height: 100vh;
   overflow: hidden;
-  padding-right: 17px;
 }
 
 input::-webkit-outer-spin-button,
