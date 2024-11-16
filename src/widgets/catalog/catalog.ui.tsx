@@ -1,5 +1,5 @@
-import { ProductCard } from '~@/shared/ui/product-card';
-import { KG_DATA, PVS_DATA } from '~@/shared/constant';
+import { ProductCard } from '../../shared/ui/product-card';
+import { KG_DATA, PVS_DATA } from '../../shared/constant';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import * as Tabs from '@radix-ui/react-tabs';

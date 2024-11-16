@@ -1,9 +1,9 @@
-import { DocumentationModal } from '~@/shared/ui/documentation/documentation.modal';
+import { DocumentationModal } from '../..//shared/ui/documentation/documentation.modal';
 import './footer.scss';
 import * as Dialog from '@radix-ui/react-dialog';
-import { ContactsModal } from '~@/shared/ui/contacts/contacts.modal';
-import { PoliticalModal } from '~@/shared/ui/political/political.modal';
-import { VacancyModal } from '~@/shared/ui/vacancy/vacancy.modal';
+import { ContactsModal } from '../..//shared/ui/contacts/contacts.modal';
+import { PoliticalModal } from '../..//shared/ui/political/political.modal';
+import { VacancyModal } from '../..//shared/ui/vacancy/vacancy.modal';
 
 export function Footer() {
 	return (

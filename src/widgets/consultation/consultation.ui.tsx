@@ -1,6 +1,6 @@
 import './consultation.scss';
 
-import { ConsultationModal } from '~@/shared/ui/consultation';
+import { ConsultationModal } from '../../shared/ui/consultation';
 import * as Dialog from '@radix-ui/react-dialog';
 
 export function Consultation() {

@@ -1,7 +1,7 @@
 import * as Dialog from '@radix-ui/react-dialog';
 import './hero.scss';
-import { ConsultationModal } from '~@/shared/ui/consultation';
-import { IntroDisclaimer } from '~@/shared/ui/introdisclaimer/disclaimer';
+import { ConsultationModal } from '../../shared/ui/consultation';
+import { IntroDisclaimer } from '../../shared/ui/introdisclaimer/disclaimer';
 
 export function Hero() {
 	return (

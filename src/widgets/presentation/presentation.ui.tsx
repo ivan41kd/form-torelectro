@@ -1,6 +1,6 @@
 import './presentation.scss';
 import * as Dialog from '@radix-ui/react-dialog';
-import { PresentationModal } from '~@/shared/ui/presentation/presentation.modal';
+import { PresentationModal } from '../..//shared/ui/presentation/presentation.modal';
 
 export function Presentation() {
 	return (

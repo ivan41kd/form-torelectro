@@ -1,7 +1,7 @@
-import { ContactsModal } from '~@/shared/ui/contacts/contacts.modal';
+import { ContactsModal } from '../..//shared/ui/contacts/contacts.modal';
 import './header.scss';
 import * as Dialog from '@radix-ui/react-dialog';
-import { DocumentationModal } from '~@/shared/ui/documentation/documentation.modal';
+import { DocumentationModal } from '../..//shared/ui/documentation/documentation.modal';
 
 export function Header() {
 	return (
