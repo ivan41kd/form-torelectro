@@ -5,7 +5,7 @@ import { Image } from '../image';
 
 import './product-card.scss';
 
-export function ProductCard({ product, index }: { product: TProduct }, { products }) {
+export function ProductCard({ product }: { product: TProduct }) {
 	return (
 		<Dialog.Root>
 			<div className='catalog__card-wrapper'>
@@ -46,7 +46,7 @@ export function ProductCard({ product, index }: { product: TProduct }, { product
 							</p>
 							<p className='catalog__char-value'>
 								{product.category == 1
-									? `${product.variants[0].options[0].security}  ·  ${product.socket}`
+									? `${product.variants[0].options[0].security}  ·  ${product.variants[0].variant}`
 									: `${product.grounding == true}`
 									? 'с заземлением'
 									: 'без заземления'}{' '}
@@ -76,6 +76,7 @@ export function ProductCard({ product, index }: { product: TProduct }, { product
 									</svg>
 								</button>
 							</Dialog.Close>
+							{/* @ts-expect-error */}
 							<ProductCardModal products={products} product={product} index={index} />
 						</Dialog.Content>
 					</Dialog.Portal>

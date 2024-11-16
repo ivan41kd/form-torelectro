@@ -106,12 +106,7 @@ export function Catalog() {
 						>
 							{PVS_DATA.map((product, index) => (
 								<SwiperSlide className='catalog__card'>
-									<ProductCard
-										key={product.description}
-										product={product}
-										index={index}
-										products={PVS_DATA}
-									/>
+									<ProductCard key={product.description} product={product} />
 								</SwiperSlide>
 							))}
 						</Swiper>
@@ -129,12 +124,7 @@ export function Catalog() {
 						>
 							{KG_DATA.map((product, index) => (
 								<SwiperSlide className='catalog__card'>
-									<ProductCard
-										key={product.description}
-										product={product}
-										index={index}
-										products={KG_DATA}
-									/>
+									<ProductCard key={product.description} product={product} />
 								</SwiperSlide>
 							))}
 						</Swiper>

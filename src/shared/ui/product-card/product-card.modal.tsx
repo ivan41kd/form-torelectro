@@ -2,9 +2,7 @@ import * as Tabs from '@radix-ui/react-tabs';
 import { Image } from '../image';
 import { TProduct } from './product-card.types';
 
-export function ProductCardModal({ product, index, products }: { product: TProduct }) {
-	console.log(product, products);
-
+export function ProductCardModal({ product }: { product: TProduct }) {
 	return (
 		<Tabs.Root className='product__card-tabs' defaultValue='tab1'>
 			<div className='product__card'>

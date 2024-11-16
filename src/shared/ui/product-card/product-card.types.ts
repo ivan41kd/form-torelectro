@@ -4,7 +4,6 @@ export type TProduct = {
 	grounding: boolean;
 	isProfessional: boolean;
 	category: number;
-	socket: string;
 	variants: {
 		variant: number;
 		options: {

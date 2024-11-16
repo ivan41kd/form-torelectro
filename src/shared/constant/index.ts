@@ -1,5 +1,3 @@
-import { TProduct } from '~@/shared/ui/product-card/product-card.types';
-
 export const PVS_DATA = [
 	{
 		title: 'Удлинители в бухте',
