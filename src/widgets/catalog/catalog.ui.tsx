@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import * as Tabs from '@radix-ui/react-tabs';
 
+// @ts-expect-error
 import 'swiper/css'
 
 import './catalog.scss';
