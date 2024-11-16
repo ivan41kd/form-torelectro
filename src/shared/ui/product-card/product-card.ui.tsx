@@ -76,8 +76,7 @@ export function ProductCard({ product }: { product: TProduct }) {
 									</svg>
 								</button>
 							</Dialog.Close>
-							{/* @ts-expect-error */}
-							<ProductCardModal products={products} product={product} index={index} />
+							<ProductCardModal product={product} />
 						</Dialog.Content>
 					</Dialog.Portal>
 				</div>
