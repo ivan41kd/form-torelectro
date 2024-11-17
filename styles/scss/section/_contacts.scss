@@ -67,6 +67,12 @@
  &__info-legal-name {
   color: rgba(144, 144, 144, 1);
  }
+ &__map {
+  width: 800px;
+  height: 470px;
+  border-radius: 5px;
+  overflow: hidden;
+ }
  @media screen and (max-width: 820px) {
   padding-left: 0;
   padding-right: 0;
@@ -78,6 +84,9 @@
   }
   &__info-cards {
    max-width: 100%;
+  }
+  &__map {
+   display: none;
   }
  }
 }

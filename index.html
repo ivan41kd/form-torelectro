@@ -100,7 +100,13 @@
        </div>
       </div>
       <div class="intro__img-wrapper">
-       <img src="./assets/intro/main2.png" alt="" class="intro__img" />
+       <picture>
+        <source
+         srcset="./assets/intro/main-390.png"
+         media="(max-width:820px)"
+        />
+        <img src="./assets/intro/main2.png" alt="" class="intro__img" />
+       </picture>
       </div>
      </div>
      <div class="intro__disclaimer">
@@ -261,11 +267,18 @@
          опытом на рынке
         </p>
        </div>
-       <img
-        src="./assets/information/rac.png"
-        alt=""
-        class="information__img"
-       />
+       <picture>
+        <source
+         srcset="./assets/information/rac-390.png"
+         media="(max-width:820px)"
+        />
+
+        <img
+         src="./assets/information/rac.png"
+         alt=""
+         class="information__img"
+        />
+       </picture>
       </div>
       <div class="information__item">
        <div class="information__texts">
@@ -283,11 +296,18 @@
          учреждениями
         </p>
        </div>
-       <img
-        src="./assets/information/nad.png"
-        alt=""
-        class="information__img"
-       />
+       <picture>
+        <source
+         srcset="./assets/information/nad-390.png"
+         media="(max-width:820px)"
+        />
+
+        <img
+         src="./assets/information/nad.png"
+         alt=""
+         class="information__img"
+        />
+       </picture>
       </div>
       <div class="information__item">
        <div class="information__texts">
@@ -304,11 +324,18 @@
          способными «выдерживать» большинство видов инструментов
         </p>
        </div>
-       <img
-        src="./assets/information/pro.png"
-        alt=""
-        class="information__img"
-       />
+       <picture>
+        <source
+         srcset="./assets/information/pro-390.png"
+         media="(max-width:820px)"
+        />
+
+        <img
+         src="./assets/information/pro.png"
+         alt=""
+         class="information__img"
+        />
+       </picture>
       </div>
      </div>
     </div>
@@ -920,17 +947,17 @@
     <div class="footer__map">
      <div style="position: relative; overflow: hidden">
       <a
-       href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/?utm_medium=mapframe&utm_source=maps"
+       href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
        style="color: #eee; font-size: 12px; position: absolute; top: 0px"
-       >Москва и Московская область</a
+       >Яндекс Карты</a
       ><a
-       href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/house/derevnya_torbeyevo_48/Z0EYdgJlS0wDQFtvfXp4c3phYw==/?ll=38.055295%2C55.692628&utm_medium=mapframe&utm_source=maps&z=17"
+       href="https://yandex.ru/maps/?from=mapframe&ll=38.055295%2C55.692628&mode=routes&rtext=~55.692627%2C38.055294&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DIgoNnzgYQhVAxV5C&source=mapframe&utm_medium=mapframe&utm_source=maps&z=17"
        style="color: #eee; font-size: 12px; position: absolute; top: 14px"
-       >Деревня Торбеево, 48 на карте Москвы и Московской области —
-       Яндекс Карты</a
+       >деревня Торбеево, 48: как доехать на автомобиле, общественным
+       транспортом или пешком – Яндекс Карты</a
       ><iframe
-       src="https://yandex.ru/map-widget/v1/?ll=38.055295%2C55.692628&mode=whatshere&whatshere%5Bpoint%5D=38.055294%2C55.692627&whatshere%5Bzoom%5D=17&z=17"
-       width="100%"
+       src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=38.055295%2C55.692628&mode=routes&rtext=~55.692627%2C38.055294&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DIgoNnzgYQhVAxV5C&source=mapframe&utm_source=mapframe&z=17"
+       width="1180"
        height="150"
        frameborder="0"
        allowfullscreen="true"
@@ -940,6 +967,10 @@
     </div>
    </div>
   </footer>
+  <script
+   src="https://api-maps.yandex.ru/1.1/index.xml?loadByRequire=1"
+   type="text/javascript"
+  ></script>
   <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
   <script src="./js/main/main.js"></script>
   <script defer src="https://unpkg.com/imask@7.6.1/dist/imask.js"></script>

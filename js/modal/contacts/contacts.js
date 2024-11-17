@@ -22,25 +22,9 @@ const openContactsModal = () => {
   <div class="contacts__wrapper">
    <h2 class="contacts__title">Контактная информация</h2>
    <div class="contacts__info-items">
-   <div style="position: relative; overflow: hidden">
-   <a
-    href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/?utm_medium=mapframe&utm_source=maps"
-    style="color: #eee; font-size: 12px; position: absolute; top: 0px"
-    >Москва и Московская область</a
-   ><a
-    href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/house/derevnya_torbeyevo_48/Z0EYdgJlS0wDQFtvfXp4c3phYw==/?ll=38.055295%2C55.692628&utm_medium=mapframe&utm_source=maps&z=17"
-    style="color: #eee; font-size: 12px; position: absolute; top: 14px"
-    >Деревня Торбеево, 48 на карте Москвы и Московской области —
-    Яндекс Карты</a
-   ><iframe
-    src="https://yandex.ru/map-widget/v1/?ll=38.055295%2C55.692628&mode=whatshere&whatshere%5Bpoint%5D=38.055294%2C55.692627&whatshere%5Bzoom%5D=17&z=17"
-    width="800"
-    height="470"
-    frameborder="0"
-    allowfullscreen="true"
-    style="position: relative"
-   ></iframe>
-  </div>
+   <div class='contacts__map'>
+   <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.ru/maps/?from=mapframe&ll=38.055295%2C55.692628&mode=routes&rtext=~55.692627%2C38.055294&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DIgoNnzgYQhVAxV5C&source=mapframe&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">деревня Торбеево, 48: как доехать на автомобиле, общественным транспортом или пешком – Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=38.055295%2C55.692628&mode=routes&rtext=~55.692627%2C38.055294&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DIgoNnzgYQhVAxV5C&source=mapframe&utm_source=mapframe&z=17" width="800" height="470" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+   </div>
     <div class="contacts__info-cards">
      <div class="contacts__info-card">
       <p class="contacts__info-text">+7 495 198 62 55</p>
