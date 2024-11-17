@@ -5,7 +5,10 @@ const lenis = new Lenis({
  lerp: 0.2,
  // Valeur par défaut : 1
  // Plus la valeur est haute, plus le défilement sera rapide
- wheelMultiplier: 0.4,
+ wheelMultiplier: 0.2,
+ touchMultiplier: 0.1,
+ smooth: true,
+ smoothTouch: true,
  prevent: (node) => node.classList.contains('politcal'),
 });
 
