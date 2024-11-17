@@ -1110,6 +1110,9 @@ section {
   min-height: 45px;
   max-height: 75px;
 }
+.product__description.mobile {
+  display: none;
+}
 .product__options {
   display: flex;
   -moz-column-gap: 5px;
@@ -1268,6 +1271,19 @@ section {
   .product__card-img-wrapper {
     display: flex;
   }
+  .product__description.mobile {
+    display: block;
+    font-size: 14px;
+    min-height: 90px;
+    max-height: 90px;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 15px;
+    color: #909090;
+  }
   .product__wrapper {
     max-width: 350px;
     justify-content: normal;
@@ -1279,16 +1295,7 @@ section {
     height: fit-content;
   }
   .product__description {
-    font-size: 14px;
-    min-height: 90px;
-    max-height: 90px;
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-bottom: 15px;
-    color: #909090;
+    display: none;
   }
   .product__next-variant {
     display: none;

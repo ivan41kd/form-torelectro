@@ -217,6 +217,9 @@
   min-height: 45px;
   max-height: 75px;
  }
+ &__description.mobile {
+  display: none;
+ }
  &__options {
   display: flex;
   column-gap: 5px;
@@ -375,16 +378,9 @@
   &__card-img-wrapper {
    display: flex;
   }
-  &__wrapper {
-   max-width: 350px;
-   justify-content: normal;
-  }
-  &__card {
-   max-width: 350px;
-   padding: 15px;
-   height: fit-content;
-  }
-  &__description {
+
+  &__description.mobile {
+   display: block;
    font-size: 14px;
    min-height: 90px;
    max-height: 90px;
@@ -395,6 +391,18 @@
    text-overflow: ellipsis;
    margin-bottom: 15px;
    color: #909090;
+  }
+  &__wrapper {
+   max-width: 350px;
+   justify-content: normal;
+  }
+  &__card {
+   max-width: 350px;
+   padding: 15px;
+   height: fit-content;
+  }
+  &__description {
+   display: none;
   }
   &__next-variant {
    display: none;
