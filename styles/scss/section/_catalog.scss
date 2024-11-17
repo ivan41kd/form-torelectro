@@ -22,6 +22,7 @@
  &__categories {
   display: flex;
   width: 100%;
+  -moz-column-gap: 10px;
   column-gap: 10px;
  }
  &__category {
@@ -38,6 +39,7 @@
   top: -155%;
   display: flex;
   background: rgba(255, 61, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   position: absolute;
   max-width: 280px;
@@ -45,6 +47,7 @@
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
+  -moz-column-gap: 10px;
   column-gap: 10px;
   padding: 10px;
   border-radius: 5px;
@@ -52,6 +55,7 @@
  }
  &__category-info-wrapper {
   display: flex;
+  -moz-column-gap: 10px;
   column-gap: 10px;
  }
  &__category-info-subtitle {
@@ -97,6 +101,8 @@
  &__cards-wrapper {
   display: flex;
   overflow: hidden;
+  width: -webkit-max-content !important;
+  width: -moz-max-content !important;
   width: max-content !important;
  }
  &__card {
@@ -124,6 +130,7 @@
  &__card-img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
  }
  &__card-name {
@@ -147,6 +154,7 @@
   display: flex;
   font-size: 16px;
   line-height: 17.6px;
+  -moz-column-gap: 2px;
   column-gap: 2px;
  }
  &__char-name {

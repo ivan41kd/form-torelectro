@@ -10,6 +10,7 @@
   background: white;
   padding: 10px;
   border-radius: 5px;
+  -moz-column-gap: 15px;
   column-gap: 15px;
   position: relative;
  }
@@ -111,6 +112,7 @@
  }
  &__info {
   display: flex;
+  -moz-column-gap: 5px;
   column-gap: 5px;
  }
  &__phone {
@@ -137,11 +139,13 @@
   width: 17.62px;
   height: 23.62px;
   display: flex;
+  -moz-column-gap: 15px;
   column-gap: 15px;
  }
  &__phone-icon-wrapper {
   display: flex;
   align-items: center;
+  -moz-column-gap: 10px;
   column-gap: 10px;
   &::after {
    content: '';

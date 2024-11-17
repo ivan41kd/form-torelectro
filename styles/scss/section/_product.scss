@@ -66,6 +66,7 @@
   top: 0;
   display: flex;
   right: 0;
+  -moz-column-gap: 5px;
   column-gap: 5px;
  }
  &__card-sticker {
@@ -81,6 +82,9 @@
  }
  &__next-variant {
   position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
  }
  &__next-variant-icon {
@@ -88,6 +92,9 @@
   height: auto;
   width: 100%;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
  }
  &__next-variant:hover &__next-variant-info {
@@ -112,6 +119,7 @@
   visibility: hidden;
   opacity: 0;
   transition: 0.3s;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
  }
  &__next-variant-info-icon {
@@ -125,6 +133,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
  }
  &__next-variant-info-text {
@@ -141,6 +151,7 @@
  &__card-variants {
   display: flex;
   width: 100%;
+  -moz-column-gap: 10px;
   column-gap: 10px;
  }
 
@@ -175,6 +186,7 @@
   max-width: 470px;
   height: 470px;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 5px;
   position: relative;
@@ -182,10 +194,12 @@
  &__card-img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
  }
  &__card-wrapper {
   display: flex;
+  -moz-column-gap: 20px;
   column-gap: 20px;
  }
  &__card-info-texts {
@@ -222,6 +236,7 @@
  }
  &__options {
   display: flex;
+  -moz-column-gap: 5px;
   column-gap: 5px;
  }
  &__options:nth-last-child(1) {
@@ -330,6 +345,8 @@
   align-items: center;
  }
  &__img-sticker {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 10px;
   background: rgba(16, 16, 16, 0.25);
@@ -337,6 +354,7 @@
   line-height: normal;
   color: rgba(255, 255, 255, 1);
   border-radius: 5px;
+  -webkit-backdrop-filter: blur(7px);
   backdrop-filter: blur(7px);
  }
  &__img-stickers {
@@ -399,6 +417,8 @@
   &__card {
    max-width: 350px;
    padding: 15px;
+   height: -webkit-fit-content;
+   height: -moz-fit-content;
    height: fit-content;
   }
   &__description {
@@ -491,6 +511,7 @@
   }
   &__card-sticker {
    background: #ff3d0080;
+   -webkit-backdrop-filter: blur(10px);
    backdrop-filter: blur(10px);
    display: none;
   }

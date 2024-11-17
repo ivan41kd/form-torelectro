@@ -124,7 +124,7 @@ h4 {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
   color: currentColor;
 }
 
@@ -219,7 +219,7 @@ html {
   padding: 10px;
   border-radius: 5px;
   -moz-column-gap: 15px;
-       column-gap: 15px;
+  column-gap: 15px;
   position: relative;
 }
 .header__nav {
@@ -321,7 +321,7 @@ html {
 .header__info {
   display: flex;
   -moz-column-gap: 5px;
-       column-gap: 5px;
+  column-gap: 5px;
 }
 .header__phone {
   justify-content: space-between;
@@ -347,13 +347,13 @@ html {
   height: 23.62px;
   display: flex;
   -moz-column-gap: 15px;
-       column-gap: 15px;
+  column-gap: 15px;
 }
 .header__phone-icon-wrapper {
   display: flex;
   align-items: center;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
 }
 .header__phone-icon-wrapper::after {
   content: "";
@@ -451,7 +451,7 @@ section {
 }
 .intro__img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 780px;
   height: 510px;
   position: absolute;
@@ -512,7 +512,7 @@ section {
   display: flex;
   border-radius: 5px;
   -moz-column-gap: 25px;
-       column-gap: 25px;
+  column-gap: 25px;
   padding-left: 20px;
   padding-top: 11px;
   padding-bottom: 9px;
@@ -534,7 +534,7 @@ section {
 .intro__disclaimer-button-wrapper {
   display: flex;
   -moz-column-gap: 23px;
-       column-gap: 23px;
+  column-gap: 23px;
   align-items: center;
 }
 .intro__disclaimer-button {
@@ -607,7 +607,7 @@ section {
   .intro__disclaimer-button-wrapper {
     display: flex;
     -moz-column-gap: 15px;
-         column-gap: 15px;
+    column-gap: 15px;
   }
 }
 @media screen and (max-width: 820px) {
@@ -677,7 +677,7 @@ section {
   display: flex;
   width: 100%;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
 }
 .catalog__category {
   display: flex;
@@ -694,7 +694,7 @@ section {
   display: flex;
   background: rgba(255, 61, 0, 0.5);
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   position: absolute;
   max-width: 280px;
   width: 100%;
@@ -702,7 +702,7 @@ section {
   visibility: hidden;
   transition: 0.3s;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   padding: 10px;
   border-radius: 5px;
   flex-direction: column;
@@ -710,7 +710,7 @@ section {
 .catalog__category-info-wrapper {
   display: flex;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
 }
 .catalog__category-info-subtitle {
   font-size: 12px;
@@ -784,7 +784,7 @@ section {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .catalog__card-name {
   font-size: 18px;
@@ -808,7 +808,7 @@ section {
   font-size: 16px;
   line-height: 17.6px;
   -moz-column-gap: 2px;
-       column-gap: 2px;
+  column-gap: 2px;
 }
 .catalog__char-name {
   color: rgb(144, 144, 144);
@@ -950,7 +950,7 @@ section {
   display: flex;
   right: 0;
   -moz-column-gap: 5px;
-       column-gap: 5px;
+  column-gap: 5px;
 }
 .product__card-sticker {
   background: #ff3d00;
@@ -966,8 +966,8 @@ section {
 .product__next-variant {
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 .product__next-variant-icon {
   max-width: 30px;
@@ -975,8 +975,8 @@ section {
   width: 100%;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 .product__next-variant:hover .product__next-variant-info {
   visibility: visible;
@@ -1001,7 +1001,7 @@ section {
   opacity: 0;
   transition: 0.3s;
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 .product__next-variant-info-icon {
   margin-top: 10px;
@@ -1032,7 +1032,7 @@ section {
   display: flex;
   width: 100%;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
 }
 .product__card-variant {
   max-width: 150px;
@@ -1066,7 +1066,7 @@ section {
   height: 470px;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 5px;
   position: relative;
 }
@@ -1074,12 +1074,12 @@ section {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .product__card-wrapper {
   display: flex;
   -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
 }
 .product__card-info-texts {
   display: flex;
@@ -1116,7 +1116,7 @@ section {
 .product__options {
   display: flex;
   -moz-column-gap: 5px;
-       column-gap: 5px;
+  column-gap: 5px;
 }
 .product__options:nth-last-child(1) {
   margin-bottom: 0;
@@ -1232,7 +1232,7 @@ section {
   color: rgb(255, 255, 255);
   border-radius: 5px;
   -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
 }
 .product__img-stickers {
   display: none;
@@ -1385,7 +1385,7 @@ section {
   .product__card-sticker {
     background: rgba(255, 61, 0, 0.5019607843);
     -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     display: none;
   }
 }
@@ -1617,7 +1617,7 @@ section {
   width: 580px;
   height: 210px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 5px;
   display: flex;
 }
@@ -2163,7 +2163,7 @@ section {
 .contacts__info-items {
   display: flex;
   -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
 }
 .contacts__info-cards {
   display: flex;
@@ -2250,7 +2250,7 @@ section {
   display: grid;
   grid-template-columns: minmax(0, 780px) 1fr;
   -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
 }
 .footer__info-items {
   display: flex;
@@ -2291,7 +2291,7 @@ section {
   width: 100%;
   grid-template-columns: minmax(0, 385px) minmax(0, 380px) minmax(0, 380px);
   -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
 }
 .footer__docs-item {
   color: rgb(80, 80, 80);
@@ -2303,7 +2303,7 @@ section {
   display: grid;
   grid-template-columns: minmax(0, 385px) minmax(0, 380px);
   -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   width: 100%;
   max-width: 765px;
 }
@@ -2312,7 +2312,7 @@ section {
   width: 100%;
   justify-content: space-between;
   -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
 }
 .footer__docs-item.footer-political {
   cursor: pointer;
@@ -2431,7 +2431,7 @@ section {
   display: grid;
   grid-template-columns: minmax(0, 815px) minmax(0, 130px) minmax(0, 130px) minmax(0, 50px);
   -moz-column-gap: 5px;
-       column-gap: 5px;
+  column-gap: 5px;
 }
 .documentation__items {
   display: flex;

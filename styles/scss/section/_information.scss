@@ -39,6 +39,7 @@
  &__img {
   width: 580px;
   height: 210px;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 5px;
   display: flex;
