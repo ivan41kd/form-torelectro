@@ -1,7 +1,7 @@
 const openDocumentationModal = () => {
  window.scrollTo(0, 0);
  const documentSection = document.createElement('section');
- documentSection.className = 'contacts';
+ documentSection.className = 'documentation';
  documentSection.innerHTML = `   <div class="popup__wrapper">
  <svg
   width="30"
@@ -58,6 +58,7 @@ const openDocumentationModal = () => {
 </div>`;
  document.body.append(documentSection);
  document.body.classList.add('scroll-disabled');
+ lenis.stop();
  const closePopupIcon = documentSection.querySelector('.popup__close');
  closePopupIcon.addEventListener('click', () => closePopup(documentSection));
 };

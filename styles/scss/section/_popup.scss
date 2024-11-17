@@ -98,6 +98,7 @@
   position: relative;
  }
  @media screen and (max-width: 820px) {
+  padding-right: 0;
   &__form-title {
    font-size: 16px;
   }

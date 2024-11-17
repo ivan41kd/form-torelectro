@@ -47,6 +47,7 @@ const openConsultationModal = () => {
     </div>
    `;
  document.body.classList.add('scroll-disabled');
+ lenis.stop();
  document.body.append(consultationSection);
  const popupInput = consultationSection.querySelector('.popup__input');
  const popupForm = consultationSection.querySelector('.popup__form');

@@ -128,6 +128,7 @@ const openVacancyModal = () => {
    </div>`;
  document.body.append(vacancySection);
  document.body.classList.add('scroll-disabled');
+ lenis.stop();
  const closePopupIcon = vacancySection.querySelector('.popup__close');
  const vacancyButton = vacancySection.querySelector('.vacancy__button');
  closePopupIcon.addEventListener('click', () => closePopup(vacancySection));

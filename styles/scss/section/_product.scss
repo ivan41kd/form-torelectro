@@ -6,12 +6,12 @@
  width: 100%;
  max-width: 100vw;
  padding-left: 0;
- padding-right: 17px;
  height: 100dvh;
  z-index: 100;
  background: rgba(16, 16, 16, 0.9);
  padding-bottom: 0;
  box-sizing: content-box;
+ padding-right: 17px;
  &__wrapper {
   align-items: center;
   display: flex;
@@ -370,6 +370,8 @@
   height: 100%;
   overflow: auto;
   top: 0%;
+  padding-right: 0;
+
   &__card-img-wrapper {
    display: flex;
   }

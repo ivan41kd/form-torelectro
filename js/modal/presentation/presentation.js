@@ -53,6 +53,7 @@ const openPresentationModal = () => {
  const closePopupIcon = presentationSection.querySelector('.popup__close');
 
  document.body.classList.add('scroll-disabled');
+ lenis.stop();
  initMask(popupInput);
  setInputMask(popupInput);
  popupInput.addEventListener('input', () => setInputMask(popupInput));
@@ -80,6 +81,7 @@ const submitForm = (input, form) => {
 
 const closePopup = (section) => {
  document.body.classList.remove('scroll-disabled');
+ lenis.start();
  section.remove();
 };
 const presentationButton = document.querySelector('.presentation__button');
