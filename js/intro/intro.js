@@ -1,4 +1,3 @@
-window.scrollTo(0, 0);
 const disclaimerButton = document.querySelector('.intro__disclaimer-button');
 const introButton = document.querySelector('.intro__button');
 const introPolitical = document.querySelectorAll(
