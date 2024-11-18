@@ -319,10 +319,16 @@ html {
   flex-direction: column;
 }
 .header__logo-wrapper {
-  background: rgb(240, 240, 240);
+  background: none;
   width: 370px;
   height: 40px;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  width: 100%;
+  height: 40px;
 }
 .header__info {
   display: flex;
