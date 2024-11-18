@@ -51,7 +51,8 @@ const openVacancyForm = (section) => {
 
  const closePopupIcon = vacancySection.querySelector('.popup__close');
  popupInput.addEventListener('input', () => setInputMask(popupInput));
-
+ initMask(popupInput);
+ setInputMask(popupInput);
  popupForm.addEventListener('submit', (e) => {
   submitForm(popupInput);
   e.preventDefault();
@@ -131,6 +132,7 @@ const openVacancyModal = () => {
  lenis.stop();
  const closePopupIcon = vacancySection.querySelector('.popup__close');
  const vacancyButton = vacancySection.querySelector('.vacancy__button');
+
  closePopupIcon.addEventListener('click', () => closePopup(vacancySection));
  vacancyButton.addEventListener('click', () => openVacancyForm(vacancySection));
  vacancySection
