@@ -283,6 +283,8 @@ html {
 }
 .header__more-nav-wrapper {
   transition: 0.3s;
+  width: 40px;
+  height: 40px;
 }
 .header__nav-item:hover {
   text-decoration: underline;
