@@ -44,6 +44,7 @@ body {
  align-items: center;
  position: relative;
  color: rgba(16, 16, 16, 1);
+ overflow-x: hidden;
 }
 body.scroll-disabled {
  height: 100vh;

@@ -67,6 +67,7 @@ body {
   align-items: center;
   position: relative;
   color: rgb(16, 16, 16);
+  overflow-x: hidden;
 }
 
 body.scroll-disabled {
