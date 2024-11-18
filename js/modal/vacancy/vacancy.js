@@ -57,7 +57,10 @@ const openVacancyForm = (section) => {
   submitForm(popupInput);
   e.preventDefault();
  });
- closePopupIcon.addEventListener('click', () => closePopup(vacancySection));
+ closePopupIcon.addEventListener('click', () => {
+  lenis.start();
+  closePopup(vacancySection);
+ });
  popupDisclaimer.addEventListener('click', openPoliticalModal);
 };
 const openVacancyModal = () => {

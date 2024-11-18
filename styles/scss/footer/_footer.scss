@@ -11,12 +11,15 @@
   max-width: 1180px;
   width: 100%;
  }
- &__logo {
-  background: rgba(240, 240, 240, 1);
+ &__logo-wrapper {
   max-width: 380px;
   height: 40px;
   width: 100%;
   border-radius: 5px;
+ }
+ &__logo {
+  width: fit-content;
+  height: 40px;
  }
  &__info {
   display: grid;
@@ -99,7 +102,7 @@
  }
  @media screen and (max-width: 820px) {
   padding: 40px 0px 20px 0px;
-  &__logo {
+  &__logo-wrapper {
    margin-bottom: 40px;
   }
   &__telegram {

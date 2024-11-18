@@ -38,7 +38,7 @@ const openPresentationModal = () => {
     <div class="popup__button-wrapper">
      <button class="popup__form-button">Подробная презентация</button>
      <p class="popup__disclamer">
-      нажимая, вы соглашаетесь <br/>с <span>условиями политики конфиденциальности</span>
+      нажимая, вы соглашаетесь <br/> <span>с условиями политики конфиденциальности</span>
      </p>
     </div>
     </div>

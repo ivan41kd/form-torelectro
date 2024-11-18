@@ -219,7 +219,11 @@ const openPoliticalModal = () => {
  document.body.classList.add('scroll-disabled');
  politicalSection.setAttribute('data-lenis-prevent', true);
  const closePopupIcon = politicalSection.querySelector('.popup__close');
- closePopupIcon.addEventListener('click', () => closePopup(politicalSection));
+ closePopupIcon.addEventListener('click', () => {
+  politicalSection.setAttribute('data-lenis-prevent', false);
+  closePopup(politicalSection);
+  lenis.stop();
+ });
 };
 
 const footerPolitical = document.querySelector(
