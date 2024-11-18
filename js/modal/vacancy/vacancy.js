@@ -50,11 +50,11 @@ const openVacancyForm = (section) => {
  const popupDisclaimer = vacancySection.querySelector('.popup__disclamer');
 
  const closePopupIcon = vacancySection.querySelector('.popup__close');
- popupInput.addEventListener('input', () => mask(popupInput));
+ popupInput.addEventListener('input', () => setInputMask(popupInput));
 
  popupForm.addEventListener('submit', (e) => {
-  e.preventDefault();
   submitForm(popupInput);
+  e.preventDefault();
  });
  closePopupIcon.addEventListener('click', () => closePopup(vacancySection));
  popupDisclaimer.addEventListener('click', openPoliticalModal);
