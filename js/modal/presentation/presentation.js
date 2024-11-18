@@ -29,7 +29,7 @@ const openPresentationModal = () => {
     <h1 class="popup__form-title mobile">
     <span>Пожалуйста</span>, оставьте ваши контакты,
     чтобы мы перезвонили и ответили
-    на все необходимые вопросы
+    <br/>на все необходимые вопросы
    </h1>
     <div class="popup__form-input">
      <p class="popup__input-name">номер сотового телефона</p>
@@ -70,13 +70,13 @@ const openPresentationModal = () => {
   .addEventListener('click', openPoliticalModal);
 };
 
-const submitForm = (input, form) => {
- form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  validatePhoneNumber(input) == true
-   ? console.log('Форма отправлена!')
-   : input.classList.add('invalid');
- });
+const submitForm = (input) => {
+ if (validatePhoneNumber(input) == true) {
+  input.classList.remove('invalid');
+  console.log('Форма отправлена!');
+ } else {
+  input.classList.add('invalid');
+ }
 };
 
 const closePopup = (section) => {

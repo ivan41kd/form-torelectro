@@ -128,6 +128,10 @@ input {
  line-height: normal;
  padding: 15px;
  position: relative;
+ height: 54px;
+ border: 1px solid transparent;
+ border-color: transparent;
+ transition: border-color 0.3s, box-shadow 0.3s;
  &::-webkit-input-placeholder {
   color: black;
  }
@@ -145,7 +149,7 @@ input {
  }
 }
 input:focus {
- border-color: #007bff;
+ border-color: none;
 }
 .placeholder {
  position: absolute;
@@ -164,7 +168,7 @@ input:focus {
 }
 
 input.invalid {
- border: 1px solid red;
+ border-color: red;
 }
 
 /* Make sure textarea without a rows attribute are not tiny */

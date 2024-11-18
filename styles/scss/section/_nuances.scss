@@ -99,7 +99,7 @@
  }
  &__item-name {
   font-size: 18px;
-  line-height: 10px;
+  line-height: 16px;
   color: rgba(255, 255, 255, 1);
  }
  &__question-icon {
@@ -172,10 +172,7 @@
    line-height: 110%;
   }
   &__item {
-   padding-left: 15px;
-   padding-right: 15px;
-   padding-bottom: 10px;
-   padding-top: 14px;
+   padding: 16px;
   }
   &__write {
    font-size: 14px;

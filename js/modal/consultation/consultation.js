@@ -28,7 +28,7 @@ const openConsultationModal = () => {
        <h1 class="popup__form-title mobile">
        <span>Пожалуйста</span>, оставьте ваши контакты,
        чтобы мы перезвонили и ответили
-       на все необходимые вопросы
+       <br/>на все необходимые вопросы
       </h1>
        <div class="popup__form-input">
         <p class="popup__input-name">номер сотового телефона</p>
@@ -58,7 +58,7 @@ const openConsultationModal = () => {
 
  popupForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  submitForm(popupInput, popupForm);
+  submitForm(popupInput);
  });
  closePopupIcon.addEventListener('click', () =>
   closePopup(consultationSection)

@@ -33,7 +33,7 @@ const openVacancyForm = (section) => {
         <input type="text" class="popup__input" placeholder="+7" />
        </div>
        <div class="popup__button-wrapper">
-        <button class="popup__form-button">Подробная презентация</button>
+        <button class="popup__form-button">Анкета для заполнения</button>
         <p class="popup__disclamer">
          нажимая, вы соглашаетесь<br/> <span>с условиями политики конфиденциальности</span>
         </p>
@@ -54,7 +54,7 @@ const openVacancyForm = (section) => {
 
  popupForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  submitForm(popupInput, popupForm);
+  submitForm(popupInput);
  });
  closePopupIcon.addEventListener('click', () => closePopup(vacancySection));
  popupDisclaimer.addEventListener('click', openPoliticalModal);
