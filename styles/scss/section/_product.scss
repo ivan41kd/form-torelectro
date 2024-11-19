@@ -23,6 +23,10 @@
   height: 100%;
   justify-content: center;
  }
+ &__nav {
+  display: flex;
+  column-gap: 10px;
+ }
  &__card {
   position: relative;
   padding: 20px;
@@ -81,14 +85,17 @@
   align-items: center;
   color: white;
  }
- &__next-variant {
+ &__next-variant,
+ &__prev-variant {
   position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
  }
- &__next-variant-icon {
+
+ &__next-variant-icon,
+ &__prev-variant-icon {
   max-width: 30px;
   height: auto;
   width: 100%;
@@ -98,12 +105,22 @@
   -ms-user-select: none;
   user-select: none;
  }
+ &__prev-variant-icon {
+  transform: scale(-1, 1);
+ }
  &__next-variant:hover &__next-variant-info {
   visibility: visible;
   opacity: 1;
   transition: 0.3s;
  }
- &__next-variant-info {
+ &__prev-variant:hover &__prev-variant-info {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s;
+ }
+
+ &__next-variant-info,
+ &__prev-variant-info {
   position: absolute;
   display: flex;
   width: 285px;
@@ -123,13 +140,15 @@
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
  }
- &__next-variant-info-icon {
+ &__next-variant-info-icon,
+ &__prev-variant-info-icon {
   margin-top: 10px;
   max-width: 20px;
   width: 100%;
   height: 20px;
  }
- &__next-variant-info-texts {
+ &__next-variant-info-texts,
+ &__prev-variant-info-texts {
   max-width: 230px;
   width: 100%;
   display: flex;
@@ -138,14 +157,17 @@
   width: -moz-fit-content;
   width: fit-content;
  }
- &__next-variant-info-text {
+ &__next-variant-info-text,
+ &__prev-variant-info-text {
   font-size: 16px;
   line-height: 110%;
  }
- &__next-variant-info-text:nth-child(1) {
+ &__next-variant-info-text:nth-child(1),
+ &__prev-variant-info-text:nth-child(1) {
   height: 40px;
  }
- &__next-variant-info-text:nth-child(2) {
+ &__next-variant-info-text:nth-child(2),
+ &__prev-variant-info-text:nth-child(2) {
   font-size: 12px;
   line-height: 13.2px;
  }
@@ -426,7 +448,8 @@
   &__description {
    display: none;
   }
-  &__next-variant {
+  &__next-variant,
+  &__prev-variant {
    display: none;
   }
   &__card-img-wrapper {

@@ -943,6 +943,11 @@ section {
   height: 100%;
   justify-content: center;
 }
+.product__nav {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
 .product__card {
   position: relative;
   padding: 20px;
@@ -1001,13 +1006,13 @@ section {
   align-items: center;
   color: white;
 }
-.product__next-variant {
+.product__next-variant, .product__prev-variant {
   position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
 }
-.product__next-variant-icon {
+.product__next-variant-icon, .product__prev-variant-icon {
   max-width: 30px;
   height: auto;
   width: 100%;
@@ -1016,12 +1021,20 @@ section {
   -moz-user-select: none;
   user-select: none;
 }
+.product__prev-variant-icon {
+  transform: scale(-1, 1);
+}
 .product__next-variant:hover .product__next-variant-info {
   visibility: visible;
   opacity: 1;
   transition: 0.3s;
 }
-.product__next-variant-info {
+.product__prev-variant:hover .product__prev-variant-info {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s;
+}
+.product__next-variant-info, .product__prev-variant-info {
   position: absolute;
   display: flex;
   width: 285px;
@@ -1041,13 +1054,13 @@ section {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
-.product__next-variant-info-icon {
+.product__next-variant-info-icon, .product__prev-variant-info-icon {
   margin-top: 10px;
   max-width: 20px;
   width: 100%;
   height: 20px;
 }
-.product__next-variant-info-texts {
+.product__next-variant-info-texts, .product__prev-variant-info-texts {
   max-width: 230px;
   width: 100%;
   display: flex;
@@ -1055,14 +1068,14 @@ section {
   width: -moz-fit-content;
   width: fit-content;
 }
-.product__next-variant-info-text {
+.product__next-variant-info-text, .product__prev-variant-info-text {
   font-size: 16px;
   line-height: 110%;
 }
-.product__next-variant-info-text:nth-child(1) {
+.product__next-variant-info-text:nth-child(1), .product__prev-variant-info-text:nth-child(1) {
   height: 40px;
 }
-.product__next-variant-info-text:nth-child(2) {
+.product__next-variant-info-text:nth-child(2), .product__prev-variant-info-text:nth-child(2) {
   font-size: 12px;
   line-height: 13.2px;
 }
@@ -1336,7 +1349,7 @@ section {
   .product__description {
     display: none;
   }
-  .product__next-variant {
+  .product__next-variant, .product__prev-variant {
     display: none;
   }
   .product__card-img-wrapper {
