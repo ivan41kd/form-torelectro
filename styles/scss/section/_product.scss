@@ -11,8 +11,8 @@
  background: rgba(16, 16, 16, 0.9);
  padding-bottom: 0;
  box-sizing: content-box;
- padding-right: 17px;
- transform: translateX(7px);
+ padding-right: 16px;
+ transform: translateX(8px);
  &__wrapper {
   align-items: center;
   display: flex;
@@ -44,10 +44,8 @@
   justify-content: space-between;
  }
  &__card-options {
-  display: flex;
-  flex-direction: column;
-  height: 280px;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
   row-gap: 10px;
  }
  &__card-info-wrapper {
@@ -67,15 +65,17 @@
   height: 50px;
  }
  &__card-stickers {
-  position: absolute;
-  top: 0;
   display: flex;
-  right: 0;
   -moz-column-gap: 5px;
   column-gap: 5px;
  }
+ &__stickers {
+  display: flex;
+  margin-bottom: 12.5px;
+  justify-content: space-between;
+ }
  &__card-sticker {
-  background: #ff3d00;
+  background: #ff3d00bf;
   border-radius: 5px;
   font-size: 14px;
   line-height: normal;
@@ -84,6 +84,22 @@
   display: flex;
   align-items: center;
   color: white;
+ }
+ &__card-material {
+  position: absolute;
+  right: 0;
+  background: #ff3d00bf;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 15.4px;
+  font-weight: 400;
+  height: 28px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 3%;
  }
  &__next-variant,
  &__prev-variant {
@@ -125,7 +141,7 @@
   display: flex;
   width: 285px;
   right: 10%;
-  bottom: 100%;
+  bottom: 120%;
   color: white;
   background: rgba(255, 61, 0, 0.7);
   border-radius: 5px;
@@ -229,7 +245,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
  }
  &__card-title {
   color: rgba(144, 144, 144, 1);
@@ -354,7 +370,6 @@
   color: rgba(144, 144, 144, 1);
  }
  &__sticker {
-  max-width: 325px;
   width: 100%;
   background: rgba(255, 61, 0, 1);
   font-size: 14px;
@@ -362,7 +377,9 @@
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
   height: 26px;
+  max-width: fit-content;
   padding-left: 10px;
+  padding-right: 10px;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -419,6 +436,18 @@
 
   &__card-img-wrapper {
    display: flex;
+  }
+
+  &__card-material {
+   display: none;
+  }
+  &__img-stickers-items &__card-material {
+   position: static;
+   width: 95px;
+   display: flex;
+   background: #ff3d0080;
+   -webkit-backdrop-filter: blur(10px);
+   backdrop-filter: blur(10px);
   }
 
   &__description.mobile {
@@ -510,6 +539,7 @@
   &__card-info-wrapper {
    display: flex;
    flex-direction: column;
+   justify-content: space-between;
    height: 100%;
   }
   &__card-button {

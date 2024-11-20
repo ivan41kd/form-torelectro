@@ -1859,6 +1859,11 @@ const products = [
         socket: '1 розетка',
         grounding: true,
        },
+      ],
+     },
+     {
+      variant: 4000,
+      options: [
        {
         article: 533,
         plugs: '3х2,5',
@@ -2495,6 +2500,7 @@ const products = [
     grounding: true,
     isProfessional: false,
     isSpec: true,
+    copper: '100% медь',
     options: {
      isEco: false,
      isGost: true,
@@ -2675,11 +2681,7 @@ const renderCards = (product, index) => {
    <img class='catalog__card-img' src ='./assets/product/product.png'/>
    </div>
    <div class='catalog__card-info'>
-   <p class='catalog__card-name'>${product.title} ${
-  product.grounding == true && product.category === 1 ? '· с заземлением' : ''
- } ${
-  product.grounding == false && product.category === 1 ? '· без заземления' : ''
- }  </p>
+   <p class='catalog__card-name'>${product.title} </p>
    <div class='catalog__card-chars'>
     <div class='catalog__char'>
      <p class='catalog__char-name'>сечение кабеля: <br /></p>
@@ -2704,7 +2706,9 @@ const renderCards = (product, index) => {
      }</p>
      <p class='catalog__char-value'>${
       product.category == 1
-       ? `${product.variants[0].options[0].security} <span> · </span>  ${product.socket}`
+       ? `${product.variants[0].options[0].security} <span> · </span>  ${
+          product.grounding == true ? 'с заземлением' : 'без заземления'
+         }`
        : `${product.grounding == true ? 'с заземлением' : 'без заземления'}`
      } </p>
     </div>
@@ -2742,9 +2746,6 @@ const renderVariants = (product, variantsContainer) => {
    renderOptions(variant);
   });
   variantsContainer.appendChild(productVariantButton);
-  if (product.variants.length < 2) {
-   variantsContainer.innerHTML = '';
-  }
  });
 };
 
@@ -2860,6 +2861,12 @@ const openProduct = (index) => {
                   prod.mobiledescrip
                  }</h2>
                </div>
+
+               </div>
+               <button class='product__card-button'>Бесплатная консультация</button>
+               ${
+                prod.isProfessional || prod.isSpec
+                 ? ` <div class='product__stickers'>
                ${
                 prod.isProfessional
                  ? '<div class="product__sticker">выбор настоящих профессионалов</div>'
@@ -2870,8 +2877,10 @@ const openProduct = (index) => {
                  ? '<div class="product__sticker">выбор сильных специалистов</div>'
                  : ''
                }  
-               </div>
-               <button class='product__card-button'>Бесплатная консультация</button>
+
+               </div>`
+                 : ''
+               } 
              <div class='product__card-options'></div>
              </div>
                <p class='product__disclaimer'>
@@ -2895,6 +2904,7 @@ const openProduct = (index) => {
  const prevProduct = productSection.querySelector(
   '.product__prev-variant-icon'
  );
+ const imgStickers = document.querySelector('.product__img-stickers-items');
  renderVariants(prod, variantsContainer);
  nextProduct.addEventListener('click', () => {
   const nextIndex = (index + 1) % products[currentCategory].items.length;
@@ -2913,14 +2923,27 @@ const openProduct = (index) => {
   .querySelector('.product__card-button')
   .addEventListener('click', openConsultationModal);
 
- const productInfo = productSection.querySelector('.product__card-info');
+ const productInfo = productSection.querySelector(
+  '.product__card-info-wrapper'
+ );
  const imgWrapper = productSection.querySelector('.product__img-stickers');
  renderStickers(imgWrapper, prod);
- renderStickers(productInfo, prod);
+
+ const stickers = document.querySelector('.product__stickers');
+ const stickersDiv = document.createElement('div');
+ stickersDiv.className = 'product__stickers';
+ if (stickers) {
+  renderStickers(stickers, prod);
+ } else {
+  renderStickers(stickersDiv, prod);
+ }
+ prod.copper ? renderMaterial(productInfo, prod.copper) : null;
+ prod.copper ? renderMaterial(imgStickers, prod.copper) : null;
 };
 const renderStickers = (wrapper, product) => {
  const stickerWrapper = document.createElement('div');
  stickerWrapper.className = 'product__card-stickers';
+
  let length;
  if (product.options != undefined) {
   length = Object.keys(product.options).length;
@@ -2946,6 +2969,14 @@ const renderStickers = (wrapper, product) => {
    wrapper.appendChild(stickerWrapper);
   }
  }
+};
+
+const renderMaterial = (wrapper, material) => {
+ const materialDiv = document.createElement('div');
+ materialDiv.className = 'product__card-material';
+ materialDiv.innerHTML = material;
+
+ wrapper.append(materialDiv);
 };
 
 categories.forEach((category) => {
