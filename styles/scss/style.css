@@ -757,7 +757,7 @@ section {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   position: absolute;
-  max-width: 280px;
+  max-width: 230px;
   width: 100%;
   opacity: 0;
   visibility: hidden;
@@ -777,9 +777,6 @@ section {
   font-size: 12px;
   line-height: normal;
   color: white;
-}
-.catalog__category:nth-child(2) .catalog__category-info {
-  max-width: 330px;
 }
 .catalog__category-info-icon {
   margin-top: 10px;
@@ -836,7 +833,7 @@ section {
 }
 .catalog__card-articles {
   position: absolute;
-  top: 57%;
+  top: 56.8%;
   background: white;
   padding: 0 9px;
   border-radius: 5px;
@@ -848,7 +845,8 @@ section {
   font-weight: 400;
   display: flex;
   align-items: center;
-  line-height: 167%;
+  line-height: 37px;
+  height: 36px;
 }
 .catalog__card-img-wrapper {
   background: rgb(240, 240, 240);
@@ -1042,12 +1040,22 @@ section {
   margin-bottom: 12.5px;
   justify-content: space-between;
 }
+.product__top-stickers {
+  top: 3%;
+  right: 0;
+  position: absolute;
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.product__top-stickers .product__card-material {
+  position: static;
+}
 .product__card-sticker {
-  background: rgba(255, 61, 0, 0.7490196078);
+  background: #ff3d00;
   border-radius: 5px;
   font-size: 14px;
-  line-height: normal;
-  height: 28px;
+  line-height: 14px;
   padding: 0 10px;
   display: flex;
   align-items: center;
@@ -1056,13 +1064,12 @@ section {
 .product__card-material {
   position: absolute;
   right: 0;
-  background: rgba(255, 61, 0, 0.7490196078);
+  background: rgba(255, 61, 0, 0.5019607843);
   color: white;
   border-radius: 5px;
   font-size: 14px;
-  line-height: 15.4px;
+  line-height: 30px;
   font-weight: 400;
-  height: 28px;
   padding: 0 10px;
   display: flex;
   align-items: center;
@@ -1329,7 +1336,7 @@ section {
   line-height: normal;
   color: rgb(255, 255, 255);
   font-weight: 400;
-  height: 26px;
+  line-height: 30px;
   max-width: -moz-fit-content;
   max-width: fit-content;
   padding-left: 10px;
@@ -1402,6 +1409,9 @@ section {
     padding-right: 0;
   }
   .product__slider-prev, .product__slider-next {
+    display: none;
+  }
+  .product__top-stickers {
     display: none;
   }
   .product__card-img-wrapper {

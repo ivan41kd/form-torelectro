@@ -74,12 +74,21 @@
   margin-bottom: 12.5px;
   justify-content: space-between;
  }
+ &__top-stickers {
+  top: 3%;
+  right: 0;
+  position: absolute;
+  display: flex;
+  column-gap: 5px;
+ }
+ &__top-stickers &__card-material {
+  position: static;
+ }
  &__card-sticker {
-  background: #ff3d00bf;
+  background: #ff3d00;
   border-radius: 5px;
   font-size: 14px;
-  line-height: normal;
-  height: 28px;
+  line-height: 14px;
   padding: 0 10px;
   display: flex;
   align-items: center;
@@ -88,13 +97,12 @@
  &__card-material {
   position: absolute;
   right: 0;
-  background: #ff3d00bf;
+  background: #ff3d0080;
   color: white;
   border-radius: 5px;
   font-size: 14px;
-  line-height: 15.4px;
+  line-height: 30px;
   font-weight: 400;
-  height: 28px;
   padding: 0 10px;
   display: flex;
   align-items: center;
@@ -376,7 +384,7 @@
   line-height: normal;
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
-  height: 26px;
+  line-height: 30px;
   max-width: fit-content;
   padding-left: 10px;
   padding-right: 10px;
@@ -447,6 +455,9 @@
  @media screen and (max-width: 820px) {
   &__slider-prev,
   &__slider-next {
+   display: none;
+  }
+  &__top-stickers {
    display: none;
   }
   transform: translateX(0);
