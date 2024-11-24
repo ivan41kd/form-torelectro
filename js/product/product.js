@@ -2597,6 +2597,35 @@ const products = [
  },
 ];
 
+let imgswiper;
+
+const initImgSlider = () => {
+ if (imgswiper) {
+  imgswiper.destroy(true, true);
+ }
+
+ imgswiper = new Swiper('.product__card-img-slider', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  initialSlide: 0,
+  scrollbar: {
+   el: '.swiper-scrollbar',
+  },
+  pagination: {
+   el: '.swiper-pagination',
+  },
+  navigation: {
+   nextEl: '.product__slider-next',
+   prevEl: '.product__slider-prev',
+  },
+  autoplay: {
+   delay: 3000,
+  },
+ });
+};
+
 let currentCategory = 0;
 
 const cardsWrapper = document.querySelector('.catalog__cards-wrapper');
@@ -2677,6 +2706,7 @@ const renderCards = (product, index) => {
  const cardIndex = cardDiv.dataset.index;
  cardDiv.innerHTML = `
   <div class='catalog__card-wrapper'>
+
    <div class='catalog__card-img-wrapper'>
    <img class='catalog__card-img' src ='./assets/product/product.png'/>
    </div>
@@ -2717,9 +2747,15 @@ const renderCards = (product, index) => {
     </div>
   </div>`;
  cardsWrapper.appendChild(cardDiv);
+
  cardDiv.addEventListener('click', () => {
   openProduct(cardIndex);
+  initImgSlider();
  });
+
+ const cardWrapper = cardDiv.querySelector('.catalog__card-wrapper');
+
+ cardWrapper.append(renderArticle(product));
 };
 
 const renderVariants = (product, variantsContainer) => {
@@ -2819,8 +2855,24 @@ const openProduct = (index) => {
            </div>
              </div>
            <div class='product__card-wrapper'>
-             <div class='product__card-img-wrapper'>
-             <img class='product__card-img' src='./assets/product/product.png'/>
+           <div class="product__card-img-wrapper">
+           <div class="product__card-img-slider swiper">
+            <div class="product__card-img-slider-wrapper swiper-wrapper">
+             <div class="product__card-slide swiper-slide">
+              <img class="product__card-img" src="./assets/product/product.png" />
+             </div>
+             <div class="product__card-slide swiper-slide">
+             <img class="product__card-img" src="./assets/product/product-2.png" />
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="product__slider-prev">
+            <img class='product__slider-left' src='./assets/product/slider-right.svg'/>
+            </div>
+            <div class="product__slider-next">
+            <img class='product__slider-right' src='./assets/product/slider-right.svg'/>
+            </div>
+           </div>
              <div class='product__img-stickers'>
              <div class='product__img-stickers-items'>
              
@@ -2909,6 +2961,7 @@ const openProduct = (index) => {
  nextProduct.addEventListener('click', () => {
   const nextIndex = (index + 1) % products[currentCategory].items.length;
   openProduct(nextIndex);
+  initImgSlider();
  });
  prevProduct.addEventListener('click', () => {
   const prevIndex = (index - 1) % products[currentCategory].items.length;
@@ -2977,6 +3030,20 @@ const renderMaterial = (wrapper, material) => {
  materialDiv.innerHTML = material;
 
  wrapper.append(materialDiv);
+};
+
+const renderArticle = (product) => {
+ const firstIndex = product.variants[0].options[0].article;
+ const lastIndexLength =
+  product.variants[product.variants.length - 1].options.length - 1;
+ const lastIndex =
+  product.variants[product.variants.length - 1].options[lastIndexLength]
+   .article;
+
+ const articleDiv = document.createElement('div');
+ articleDiv.className = 'catalog__card-articles';
+ articleDiv.innerHTML = `${firstIndex}-${lastIndex}`;
+ return articleDiv;
 };
 
 categories.forEach((category) => {

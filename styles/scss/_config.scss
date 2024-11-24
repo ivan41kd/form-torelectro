@@ -59,6 +59,17 @@ body.scroll-disabled {
   padding-right: 50px;
  }
 }
+.swiper-pagination-bullet {
+ background: #ffffff80 !important;
+ opacity: 1 !important;
+ margin: 0 !important;
+ margin-right: 5px !important;
+}
+.swiper-pagination-bullet-active {
+ background: #ffffff !important;
+ margin: 0 !important;
+ margin-right: 5px !important;
+}
 
 html.lenis-stopped body.scroll.disabled {
  padding-right: 17px;
