@@ -2342,6 +2342,8 @@ const renderVariants = (product, variantsContainer) => {
 
    productVariantButton.classList.add('active');
    renderOptions(variant);
+   const imgStickers = document.querySelector('.product__img-stickers-items');
+   product.copper ? renderMaterial(imgStickers, product.copper) : null;
   });
   variantsContainer.appendChild(productVariantButton);
  });
