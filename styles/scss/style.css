@@ -834,12 +834,10 @@ section {
 .catalog__card-articles {
   position: absolute;
   top: 56.8%;
-  background: white;
-  padding: 0 9px;
   border-radius: 5px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  left: 10.9%;
+  left: 12.9%;
   font-size: 18px;
   color: rgba(16, 16, 16, 0.7490196078);
   font-weight: 400;
@@ -901,7 +899,7 @@ section {
 @media screen and (max-width: 820px) {
   .catalog__card-articles {
     top: 58%;
-    left: 10%;
+    left: 11.7%;
   }
   .catalog__category:hover .catalog__category-info {
     opacity: 0;

@@ -129,12 +129,10 @@
  &__card-articles {
   position: absolute;
   top: 56.8%;
-  background: white;
-  padding: 0 9px;
   border-radius: 5px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  left: 10.9%;
+  left: 12.9%;
   font-size: 18px;
   color: #101010bf;
   font-weight: 400;
@@ -196,7 +194,7 @@
  @media screen and (max-width: 820px) {
   &__card-articles {
    top: 58%;
-   left: 10%;
+   left: 11.7%;
   }
   &__category:hover &__category-info {
    opacity: 0;
