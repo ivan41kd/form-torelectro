@@ -26,7 +26,7 @@ const openDocumentationModal = () => {
      <p class="documentation__item-text">Руководство по эксплуатации</p>
     </div>
     <div class="documentation__col">
-     <p class="documentation__item-text">0.77 МБ</p>
+     <p class="documentation__item-text">4.43 МБ</p>
     </div>
     <div class="documentation__col">
      <p class="documentation__item-text">PDF</p>
@@ -42,7 +42,7 @@ const openDocumentationModal = () => {
      <p class="documentation__item-text">Сертификат на продуцкию</p>
     </div>
     <div class="documentation__col">
-     <p class="documentation__item-text">0.00 МБ</p>
+     <p class="documentation__item-text">2.31 МБ</p>
     </div>
     <div class="documentation__col">
      <p class="documentation__item-text">PDF</p>

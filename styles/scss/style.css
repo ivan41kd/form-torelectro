@@ -2690,6 +2690,7 @@ section {
   padding: 20px;
   border-radius: 5px;
   max-width: 1180px;
+  padding-bottom: 0;
 }
 .vacancy .popup__wrapper {
   justify-content: normal;
