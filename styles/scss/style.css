@@ -849,7 +849,6 @@ section {
   height: 36px;
 }
 .catalog__card-img-wrapper {
-  background: rgb(240, 240, 240);
   max-width: 340px;
   height: 340px;
   width: 100%;
@@ -1223,6 +1222,9 @@ section {
   max-width: 650px;
   width: 100%;
   text-wrap: pretty;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .product__description {
   font-size: 16px;

@@ -269,6 +269,9 @@
   max-width: 650px;
   width: 100%;
   text-wrap: pretty;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
  }
  &__description {
   font-size: 16px;
