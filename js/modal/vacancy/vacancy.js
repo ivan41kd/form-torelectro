@@ -25,8 +25,7 @@ const openVacancyForm = (section) => {
      <form class="popup__form">
       <div class="popup__form-wrapper">
        <h1 class="popup__form-title">
-        <span>Пожалуйста</span>, оставьте ваши контакты, чтобы мы отправили вам
-        презентацию
+        <span>Пожалуйста</span>, оставьте ваши контакты, чтобы мы перезвонили вам
        </h1>
        <div class="popup__form-input">
         <p class="popup__input-name">номер сотового телефона</p>
