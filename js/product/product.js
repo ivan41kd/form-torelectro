@@ -1094,12 +1094,12 @@ const products = [
      },
     ],
     images: {
-     main: `./assets/product/pvc/7/main.png`,
+     main: `./assets/product/pvc/4/main.png`,
      gallery: [
       {
-       1: './assets/product/pvc/7/1.png',
-       2: './assets/product/pvc/7/2.png',
-       3: './assets/product/pvc/7/3.png',
+       1: './assets/product/pvc/4/1.png',
+       2: './assets/product/pvc/4/2.png',
+       3: './assets/product/pvc/4/3.png',
       },
      ],
     },
@@ -1251,12 +1251,12 @@ const products = [
      },
     ],
     images: {
-     main: `./assets/product/pvc/7/main.png`,
+     main: `./assets/product/pvc/6/main.png`,
      gallery: [
       {
-       1: './assets/product/pvc/7/1.png',
-       2: './assets/product/pvc/7/2.png',
-       3: './assets/product/pvc/7/3.png',
+       1: './assets/product/pvc/6/1.png',
+       2: './assets/product/pvc/6/2.png',
+       3: './assets/product/pvc/6/3.png',
       },
      ],
     },
@@ -1551,13 +1551,13 @@ const products = [
     <br/>
     со степенью защиты «IP44» (каучуковая розетка и крышка),
     <br/>
-    с европейской вилкой «16А», с поддержанием напряжения сети «220В»`,
+    с европейской вилкой «16А»,<br/> с поддержанием напряжения сети «220В»`,
     grounding: true,
     isProfessional: false,
     isSpec: false,
     options: {
      isEco: false,
-     isGost: true,
+     isGost: false,
      temp: 'от +40°C до -60°C ',
     },
     copper: '100% медь',
@@ -1569,7 +1569,7 @@ const products = [
       variant: 3500,
       options: [
        {
-        article: 601,
+        article: 501,
         plugs: '3х1,5',
         length: '10 м',
         security: 'IP44',
@@ -1578,7 +1578,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 602,
+        article: 502,
         plugs: '3х1,5',
         length: '20 м',
         security: 'IP44',
@@ -1587,7 +1587,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 603,
+        article: 503,
         plugs: '3х1,5',
         length: '30 м',
         security: 'IP44',
@@ -1596,7 +1596,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 604,
+        article: 504,
         plugs: '3х1,5',
         length: '40 м',
         security: 'IP44',
@@ -1605,7 +1605,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 605,
+        article: 505,
         plugs: '3х1,5',
         length: '50 м',
         security: 'IP44',
@@ -1619,7 +1619,7 @@ const products = [
       variant: 4000,
       options: [
        {
-        article: 606,
+        article: 506,
         plugs: '3х2,5',
         length: '10 м',
         security: 'IP44',
@@ -1628,7 +1628,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 607,
+        article: 507,
         plugs: '3х2,5',
         length: '20 м',
         security: 'IP44',
@@ -1637,7 +1637,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 608,
+        article: 508,
         plugs: '3х2,5',
         length: '30 м',
         security: 'IP44',
@@ -1646,7 +1646,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 609,
+        article: 509,
         plugs: '3х2,5',
         length: '40 м',
         security: 'IP44',
@@ -1655,7 +1655,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 610,
+        article: 510,
         plugs: '3х2,5',
         length: '50 м',
         security: 'IP44',
@@ -1688,14 +1688,14 @@ const products = [
     <br/>
     со степенью защиты «IP44» (каучуковая розетка и крышка),
     <br/>
-    с европейской вилкой «16А», с поддержанием напряжения сети «220В»`,
+    с европейской вилкой «16А»,<br/> с поддержанием напряжения сети «220В»`,
     grounding: true,
     isProfessional: false,
     isSpec: false,
     copper: '100% медь',
     options: {
      isEco: false,
-     isGost: true,
+     isGost: false,
      temp: 'от +40°C до -60°C ',
     },
     category: 2,
@@ -1705,7 +1705,143 @@ const products = [
       variant: 3500,
       options: [
        {
-        article: 621,
+        article: 511,
+        plugs: '3х1,5',
+        length: '10 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 512,
+        plugs: '3х1,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 513,
+        plugs: '3х1,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 514,
+        plugs: '3х1,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 515,
+        plugs: '3х1,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '3500 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+      ],
+     },
+     {
+      variant: 4000,
+      options: [
+       {
+        article: 516,
+        plugs: '3х2,5',
+        length: '10 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 517,
+        plugs: '3х2,5',
+        length: '20 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 518,
+        plugs: '3х2,5',
+        length: '30 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 519,
+        plugs: '3х2,5',
+        length: '40 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+       {
+        article: 520,
+        plugs: '3х2,5',
+        length: '50 м',
+        security: 'IP44',
+        power: '4000 Вт',
+        socket: '3 розетки',
+        grounding: true,
+       },
+      ],
+     },
+    ],
+    images: {
+     main: `./assets/product/ukg/2/main.png`,
+     gallery: [
+      {
+       1: './assets/product/ukg/2/1.png',
+       2: './assets/product/ukg/2/2.png',
+       3: './assets/product/ukg/2/3.png',
+      },
+     ],
+    },
+   },
+   {
+    title: 'Удлинители силовые на колодке',
+    description: `Удлинители силовые с медным кабелем «КГ<span>тп</span> ХЛ», с заземлением,
+    <br/>
+    со степенью защиты «IP44» (каучуковая розетка и крышка),
+    <br/>
+    с европейской вилкой «16А», с поддержанием напряжения сети «220В»`,
+    mobiledescrip: `Удлинители силовые с медным кабелем «КГ<span>тп</span> ХЛ», с заземлением,
+    <br/>
+    со степенью защиты «IP44» (каучуковая розетка и крышка),
+    <br/>
+    с европейской вилкой «16А»,<br/> с поддержанием напряжения сети «220В»`,
+    grounding: true,
+    isProfessional: false,
+    isSpec: false,
+    copper: '100% медь',
+    options: {
+     isEco: false,
+     isGost: false,
+     temp: 'от +40°C до -60°C ',
+    },
+    category: 2,
+
+    variants: [
+     {
+      variant: 3500,
+      options: [
+       {
+        article: 521,
         plugs: '3х1,5',
         length: '10 м',
         security: 'IP44',
@@ -1714,7 +1850,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 622,
+        article: 522,
         plugs: '3х1,5',
         length: '20 м',
         security: 'IP44',
@@ -1723,7 +1859,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 623,
+        article: 523,
         plugs: '3х1,5',
         length: '30 м',
         security: 'IP44',
@@ -1732,7 +1868,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 624,
+        article: 524,
         plugs: '3х1,5',
         length: '40 м',
         security: 'IP44',
@@ -1741,7 +1877,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 625,
+        article: 525,
         plugs: '3х1,5',
         length: '50 м',
         security: 'IP44',
@@ -1755,7 +1891,7 @@ const products = [
       variant: 4000,
       options: [
        {
-        article: 626,
+        article: 526,
         plugs: '3х2,5',
         length: '10 м',
         security: 'IP44',
@@ -1764,7 +1900,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 627,
+        article: 527,
         plugs: '3х2,5',
         length: '20 м',
         security: 'IP44',
@@ -1773,7 +1909,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 628,
+        article: 528,
         plugs: '3х2,5',
         length: '30 м',
         security: 'IP44',
@@ -1782,7 +1918,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 629,
+        article: 529,
         plugs: '3х2,5',
         length: '40 м',
         security: 'IP44',
@@ -1791,7 +1927,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 630,
+        article: 530,
         plugs: '3х2,5',
         length: '50 м',
         security: 'IP44',
@@ -1803,12 +1939,12 @@ const products = [
      },
     ],
     images: {
-     main: `./assets/product/ukg/2/main.png`,
+     main: `./assets/product/ukg/3/main.png`,
      gallery: [
       {
-       1: './assets/product/ukg/2/1.png',
-       2: './assets/product/ukg/2/2.png',
-       3: './assets/product/ukg/2/3.png',
+       1: './assets/product/ukg/3/1.png',
+       2: './assets/product/ukg/3/2.png',
+       3: './assets/product/ukg/3/3.png',
       },
      ],
     },
@@ -1828,14 +1964,14 @@ const products = [
     <br/>
     со степенью защиты «IP44» (каучуковая розетка и крышка),
     <br/>
-    с европейской вилкой «16А», с поддержанием напряжения сети «220В»`,
+    с европейской вилкой «16А»,<br/> с поддержанием напряжения сети «220В»`,
     grounding: true,
     isProfessional: true,
     copper: '100% медь',
     isSpec: false,
     options: {
      isEco: true,
-     isGost: true,
+     isGost: false,
      temp: 'от +40°C до -60°C ',
     },
     category: 2,
@@ -1845,7 +1981,7 @@ const products = [
       variant: 3500,
       options: [
        {
-        article: 631,
+        article: 531,
         plugs: '3х1,5',
         length: '20 м',
         security: 'IP44',
@@ -1854,7 +1990,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 632,
+        article: 532,
         plugs: '3х1,5',
         length: '30 м',
         security: 'IP44',
@@ -1868,7 +2004,7 @@ const products = [
       variant: 4000,
       options: [
        {
-        article: 633,
+        article: 533,
         plugs: '3х2,5',
         length: '20 м',
         security: 'IP44',
@@ -1877,7 +2013,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 634,
+        article: 534,
         plugs: '3х2,5',
         length: '30 м',
         security: 'IP44',
@@ -1889,12 +2025,12 @@ const products = [
      },
     ],
     images: {
-     main: `./assets/product/ukg/3/main.png`,
+     main: `./assets/product/ukg/4/main.png`,
      gallery: [
       {
-       1: './assets/product/ukg/3/1.png',
-       2: './assets/product/ukg/3/2.png',
-       3: './assets/product/ukg/3/3.png',
+       1: './assets/product/ukg/4/1.png',
+       2: './assets/product/ukg/4/2.png',
+       3: './assets/product/ukg/4/3.png',
       },
      ],
     },
@@ -1915,7 +2051,7 @@ const products = [
     <br/>
     со степенью защиты «IP44» (каучуковая розетка и крышка),
     <br/>
-    с европейской вилкой «16А», с поддержанием напряжения сети «220В»`,
+    с европейской вилкой «16А»,<br/> с поддержанием напряжения сети «220В»`,
     grounding: true,
     isProfessional: true,
     isSpec: false,
@@ -1924,7 +2060,7 @@ const products = [
     copper: '100% медь',
     options: {
      isEco: false,
-     isGost: true,
+     isGost: false,
      temp: 'от +40°C до -60°C ',
     },
     category: 2,
@@ -1934,7 +2070,7 @@ const products = [
       variant: 3500,
       options: [
        {
-        article: 635,
+        article: 535,
         plugs: '3х1,5',
         length: '20 м',
         security: 'IP44',
@@ -1943,7 +2079,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 636,
+        article: 536,
         plugs: '3х1,5',
         length: '30 м',
         security: 'IP44',
@@ -1952,7 +2088,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 637,
+        article: 537,
         plugs: '3х1,5',
         length: '40 м',
         security: 'IP44',
@@ -1961,7 +2097,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 638,
+        article: 538,
         plugs: '3х1,5',
         length: '50 м',
         security: 'IP44',
@@ -1975,7 +2111,7 @@ const products = [
       variant: 4000,
       options: [
        {
-        article: 639,
+        article: 539,
         plugs: '3х2,5',
         length: '20 м',
         security: 'IP44',
@@ -1984,7 +2120,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 640,
+        article: 540,
         plugs: '3х2,5',
         length: '30 м',
         security: 'IP44',
@@ -1993,7 +2129,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 641,
+        article: 541,
         plugs: '3х2,5',
         length: '40 м',
         security: 'IP44',
@@ -2002,7 +2138,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 642,
+        article: 542,
         plugs: '3х2,5',
         length: '50 м',
         security: 'IP44',
@@ -2014,12 +2150,12 @@ const products = [
      },
     ],
     images: {
-     main: `./assets/product/ukg/4/main.png`,
+     main: `./assets/product/ukg/5/main.png`,
      gallery: [
       {
-       1: './assets/product/ukg/4/1.png',
-       2: './assets/product/ukg/4/2.png',
-       3: './assets/product/ukg/4/3.png',
+       1: './assets/product/ukg/5/1.png',
+       2: './assets/product/ukg/5/2.png',
+       3: './assets/product/ukg/5/3.png',
       },
      ],
     },
@@ -2040,7 +2176,7 @@ const products = [
     <br/>
     со степенью защиты «IP44» (каучуковая розетка и крышка),
     <br/>
-    с европейской вилкой «16А», с поддержанием напряжения сети «220В»`,
+    с европейской вилкой «16А»,<br/> с поддержанием напряжения сети «220В»`,
     grounding: true,
     isProfessional: true,
     isSpec: false,
@@ -2049,8 +2185,6 @@ const products = [
     isCatushka: true,
     copper: '100% медь',
     options: {
-     isEco: false,
-     isGost: true,
      temp: 'от +40°C до -60°C ',
     },
     category: 2,
@@ -2060,7 +2194,7 @@ const products = [
       variant: 3500,
       options: [
        {
-        article: 643,
+        article: 543,
         plugs: '3х1,5',
         length: '20 м',
         security: 'IP44',
@@ -2069,7 +2203,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 644,
+        article: 544,
         plugs: '3х1,5',
         length: '30 м',
         security: 'IP44',
@@ -2078,7 +2212,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 645,
+        article: 545,
         plugs: '3х1,5',
         length: '40 м',
         security: 'IP44',
@@ -2087,7 +2221,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 646,
+        article: 546,
         plugs: '3х1,5',
         length: '50 м',
         security: 'IP44',
@@ -2101,7 +2235,7 @@ const products = [
       variant: 4000,
       options: [
        {
-        article: 647,
+        article: 547,
         plugs: '3х2,5',
         length: '20 м',
         security: 'IP44',
@@ -2110,7 +2244,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 648,
+        article: 548,
         plugs: '3х2,5',
         length: '30 м',
         security: 'IP44',
@@ -2119,7 +2253,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 649,
+        article: 549,
         plugs: '3х2,5',
         length: '40 м',
         security: 'IP44',
@@ -2128,7 +2262,7 @@ const products = [
         grounding: true,
        },
        {
-        article: 650,
+        article: 550,
         plugs: '3х2,5',
         length: '50 м',
         security: 'IP44',
@@ -2140,12 +2274,12 @@ const products = [
      },
     ],
     images: {
-     main: `./assets/product/ukg/5/main.png`,
+     main: `./assets/product/ukg/6/main.png`,
      gallery: [
       {
-       1: './assets/product/ukg/5/1.png',
-       2: './assets/product/ukg/5/2.png',
-       3: './assets/product/ukg/5/3.png',
+       1: './assets/product/ukg/6/1.png',
+       2: './assets/product/ukg/6/2.png',
+       3: './assets/product/ukg/6/3.png',
       },
      ],
     },
@@ -2512,9 +2646,14 @@ const openProduct = (index) => {
  });
  prevProduct.addEventListener('click', () => {
   const prevIndex = (index - 1) % products[currentCategory].items.length;
-  prevIndex < 0
-   ? openProduct(products[currentCategory].items.length - 1)
-   : openProduct(prevIndex);
+  initImgSlider();
+  if (prevIndex < 0) {
+   openProduct(products[currentCategory].items.length - 1);
+   initImgSlider();
+  } else {
+   openProduct(prevIndex);
+   initImgSlider();
+  }
  });
  const closeIcon = productSection.querySelector('.product__card-close');
  closeIcon.addEventListener('click', () => closeProduct(productSection));
