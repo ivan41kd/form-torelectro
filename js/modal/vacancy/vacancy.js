@@ -60,7 +60,10 @@ const openVacancyForm = (section) => {
   lenis.start();
   closePopup(vacancySection);
  });
- popupDisclaimer.addEventListener('click', openPoliticalModal);
+ popupDisclaimer.addEventListener('click', () => {
+  closePopup(vacancySection);
+  openPoliticalModal();
+ });
 };
 const openVacancyModal = () => {
  window.scrollTo(0, 0);
@@ -139,7 +142,10 @@ const openVacancyModal = () => {
  vacancyButton.addEventListener('click', () => openVacancyForm(vacancySection));
  vacancySection
   .querySelector('.vacancy__disclaimer')
-  .addEventListener('click', openPoliticalModal);
+  .addEventListener('click', () => {
+   closePopup(vacancySection);
+   openPoliticalModal();
+  });
 };
 
 const footerVacancy = document.querySelector(

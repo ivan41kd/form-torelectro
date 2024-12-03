@@ -74,7 +74,7 @@
   padding-top: 40px;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 10px;
  }
  &__question-answer {
   font-size: 18px;
@@ -118,7 +118,7 @@
   }
   &__question-answer {
    font-size: 16px;
-   line-height: normal;
+   line-height: 120%;
   }
   &__question-answer.hide-mobile {
    display: none;

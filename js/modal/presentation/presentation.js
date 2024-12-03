@@ -67,7 +67,10 @@ const openPresentationModal = () => {
  );
  presentationSection
   .querySelector('.popup__disclamer')
-  .addEventListener('click', openPoliticalModal);
+  .addEventListener('click', () => {
+   closePopup(presentationSection);
+   openPoliticalModal();
+  });
 };
 
 const submitForm = (input) => {

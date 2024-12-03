@@ -2301,6 +2301,7 @@ const initImgSlider = () => {
   slidesPerView: 'auto',
   spaceBetween: 20,
   initialSlide: 0,
+  speed: 600,
   scrollbar: {
    el: '.swiper-scrollbar',
   },

@@ -205,8 +205,7 @@ const openPoliticalModal = () => {
     12.1. Пользователь (субъект персональных данных) может запросить любые
     разъяснения по интересующим вопросам, касающимся обработки персональных
     данных, обратившись к оператору с помощью электронной почты:
-    <span><a href="tor@elektro.ru"></a></span>
-    tor@elektro.ru. <br />
+    <span><a href="mailto:tor@torelektro.ru">tor@torelektro.ru</a></span>. <br />
     12.2. Политика в актуальном издании всегда в свободном доступе находится
     по сетевому адресу:<span
      ><a href="https://torelektro.ru">https://torelektro.ru</a></span
@@ -217,12 +216,17 @@ const openPoliticalModal = () => {
 </div>`;
  document.body.append(politicalSection);
  document.body.classList.add('scroll-disabled');
+
+ if (document.querySelector('.intro__disclaimer-wrapper')) {
+  politicalSection.style.background = 'transparent';
+ }
  politicalSection.setAttribute('data-lenis-prevent', true);
  const closePopupIcon = politicalSection.querySelector('.popup__close');
  closePopupIcon.addEventListener('click', () => {
   politicalSection.setAttribute('data-lenis-prevent', false);
   closePopup(politicalSection);
   lenis.stop();
+  lenis.start();
  });
 };
 

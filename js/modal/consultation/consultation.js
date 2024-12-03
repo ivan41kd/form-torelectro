@@ -65,7 +65,10 @@ const openConsultationModal = () => {
  );
  consultationSection
   .querySelector('.popup__disclamer')
-  .addEventListener('click', openPoliticalModal);
+  .addEventListener('click', () => {
+   closePopup(consultationSection);
+   openPoliticalModal();
+  });
 };
 
 const consultationButton = document.querySelector('.consultation__button');

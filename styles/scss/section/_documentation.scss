@@ -88,10 +88,15 @@
   }
   &__title {
    font-size: 18px;
+   margin-bottom: 0;
   }
   &__wrapper {
    max-width: 350px;
    padding: 15px;
+  }
+  &__item-text {
+   font-size: 14px;
+   line-height: 120%;
   }
  }
 }
