@@ -2246,7 +2246,7 @@ section {
 .popup__disclamer {
   text-align: center;
   font-size: 14px;
-  line-height: 15.4px;
+  line-height: normal;
   font-weight: 400;
   color: rgb(144, 144, 144);
 }
@@ -2764,6 +2764,7 @@ section {
   font-size: 14px;
   line-height: normal;
   text-align: center;
+  color: rgb(144, 144, 144);
 }
 .vacancy__disclaimer span {
   text-decoration: underline;
