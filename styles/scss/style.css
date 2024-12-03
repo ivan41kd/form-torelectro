@@ -424,7 +424,7 @@ html {
     padding-top: 15px;
     padding: 15px;
     padding-left: 55px;
-    row-gap: 42px;
+    row-gap: 30px;
   }
   .header__nav-items-list {
     row-gap: 10px;
@@ -2146,9 +2146,11 @@ section {
   .nuances__item-answer {
     font-size: 16px;
     line-height: 120%;
+    max-width: 320px;
+    width: 100%;
   }
   .nuances__item {
-    padding: 16px;
+    padding: 15px;
   }
   .nuances__write {
     font-size: 14px;
@@ -2834,6 +2836,7 @@ section {
   border-radius: 5px;
 }
 .political .popup__wrapper {
+  padding-top: 85px;
   justify-content: normal;
 }
 .political__title {
@@ -2876,6 +2879,6 @@ section {
   }
   .political__text {
     font-size: 8px;
-    line-height: normal;
+    line-height: 8.8px;
   }
 }/*# sourceMappingURL=style.css.map */

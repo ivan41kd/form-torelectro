@@ -170,9 +170,11 @@
   &__item-answer {
    font-size: 16px;
    line-height: 120%;
+   max-width: 320px;
+   width: 100%;
   }
   &__item {
-   padding: 16px;
+   padding: 15px;
   }
   &__write {
    font-size: 14px;

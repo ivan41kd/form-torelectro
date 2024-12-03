@@ -27,6 +27,7 @@
  }
 
  .popup__wrapper {
+  padding-top: 85px;
   justify-content: normal;
  }
 
@@ -70,7 +71,7 @@
   }
   &__text {
    font-size: 8px;
-   line-height: normal;
+   line-height: 8.8px;
   }
  }
 }
