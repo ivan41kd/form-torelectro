@@ -1780,6 +1780,8 @@ section {
   object-fit: cover;
   border-radius: 5px;
   display: flex;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 .information__item-subtitle.mobile {
   display: none;

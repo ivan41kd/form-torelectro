@@ -43,6 +43,7 @@
   object-fit: cover;
   border-radius: 5px;
   display: flex;
+  object-position: bottom;
  }
  &__item-subtitle.mobile {
   display: none;
