@@ -80,11 +80,6 @@ body.scroll-disabled {
     padding-right: 0;
   }
 }
-body.scroll-disabled .consultation,
-body.scroll-disabled .presentation {
-  box-sizing: content-box;
-  padding-right: 50px;
-}
 
 .swiper-pagination-bullet {
   background: rgba(255, 255, 255, 0.5019607843) !important;
