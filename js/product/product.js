@@ -1542,14 +1542,14 @@ const products = [
   items: [
    {
     title: 'Удлинители силовые в бухте',
-    description: `Удлинители силовые с медным кабелем «КГ<span>тп</span> ХЛ», с заземлением,
+    description: `Удлинители силовые с медным кабелем «КГТП ХЛ», с заземлением,
     <br/>
     со степенью защиты «IP44» (каучуковая розетка и крышка),
     <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети «220В»`,
-    mobiledescrip: `Удлинители силовые с медным кабелем «КГ<span>тп</span> ХЛ», с заземлением,
+    mobiledescrip: `Удлинители силовые с медным кабелем  <br/> «КГТП ХЛ», с заземлением,
     <br/>
-    со степенью защиты «IP44» (каучуковая розетка и крышка),
+    со степенью защиты «IP44» <br/> (каучуковая розетка и крышка),
     <br/>
     с европейской вилкой «16А»,<br/> с поддержанием напряжения сети «220В»`,
     grounding: true,
@@ -1558,8 +1558,8 @@ const products = [
     options: {
      isEco: false,
      isGost: false,
-     temp: 'от +40°C до -60°C ',
     },
+    temp: 'от +40°C до -60°C ',
     copper: '100% медь',
 
     category: 2,
@@ -1679,24 +1679,25 @@ const products = [
    },
    {
     title: 'Удлинители силовые на колодке',
-    description: `Удлинители силовые с медным кабелем «КГ<span>тп</span> ХЛ», с заземлением,
+    description: `Удлинители силовые с медным кабелем «КГТП ХЛ», с заземлением,
     <br/>
     со степенью защиты «IP44» (каучуковая розетка и крышка),
     <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети «220В»`,
-    mobiledescrip: `Удлинители силовые с медным кабелем «КГ<span>тп</span> ХЛ», с заземлением,
+    mobiledescrip: `Удлинители силовые с медным кабелем <br/> «КГТП ХЛ», с заземлением,
     <br/>
-    со степенью защиты «IP44» (каучуковая розетка и крышка),
+    со степенью защиты «IP44» <br/> (каучуковая розетка и крышка),
     <br/>
     с европейской вилкой «16А»,<br/> с поддержанием напряжения сети «220В»`,
     grounding: true,
     isProfessional: false,
     isSpec: false,
+    temp: 'от +40°C до -60°C ',
     copper: '100% медь',
+
     options: {
      isEco: false,
      isGost: false,
-     temp: 'от +40°C до -60°C ',
     },
     category: 2,
 
@@ -1815,24 +1816,24 @@ const products = [
    },
    {
     title: 'Удлинители силовые на колодке',
-    description: `Удлинители силовые с медным кабелем «КГ<span>тп</span> ХЛ», с заземлением,
+    description: `Удлинители силовые с медным кабелем «КГТП ХЛ», с заземлением,
     <br/>
     со степенью защиты «IP44» (каучуковая розетка и крышка),
     <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети «220В»`,
-    mobiledescrip: `Удлинители силовые с медным кабелем «КГ<span>тп</span> ХЛ», с заземлением,
+    mobiledescrip: `Удлинители силовые с медным кабелем <br/> «КГТП ХЛ», с заземлением,
     <br/>
-    со степенью защиты «IP44» (каучуковая розетка и крышка),
+    со степенью защиты «IP44» <br/> (каучуковая розетка и крышка),
     <br/>
     с европейской вилкой «16А»,<br/> с поддержанием напряжения сети «220В»`,
     grounding: true,
     isProfessional: false,
     isSpec: false,
+    temp: 'от +40°C до -60°C ',
     copper: '100% медь',
     options: {
      isEco: false,
      isGost: false,
-     temp: 'от +40°C до -60°C ',
     },
     category: 2,
 
@@ -1951,28 +1952,27 @@ const products = [
    },
    {
     title: 'Удлинители силовые на пластиковой рамке',
-    description: `Удлинители силовые с медным кабелем «КГ<span>тп</span> ХЛ», с заземлением,
+    description: `Удлинители силовые с медным кабелем «КГТП ХЛ», с заземлением,
     <br/>
     на пластиковой рамке для легкого наматывания и хранения,
     <br/>
     со степенью защиты «IP44» (каучуковая розетка и крышка),
     <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети «220В»`,
-    mobiledescrip: `Удлинители силовые с медным кабелем «КГ<span>тп</span> ХЛ», с заземлением,
-    <br/>
-    на пластиковой рамке для легкого наматывания и хранения,
-    <br/>
-    со степенью защиты «IP44» (каучуковая розетка и крышка),
+    mobiledescrip: `Удлинители силовые с медным кабелем <br/> «КГТП ХЛ», с заземлением,
+    на пластиковой <br/> рамке для легкого наматывания <br/> и хранения,
+
+    со степенью защиты «IP44» <br/> (каучуковая розетка и крышка),
     <br/>
     с европейской вилкой «16А»,<br/> с поддержанием напряжения сети «220В»`,
     grounding: true,
     isProfessional: true,
+    temp: 'от +40°C до -60°C ',
     copper: '100% медь',
     isSpec: false,
     options: {
      isEco: true,
      isGost: false,
-     temp: 'от +40°C до -60°C ',
     },
     category: 2,
 
@@ -2038,17 +2038,15 @@ const products = [
    {
     title: 'Удлинители силовые на пластиковой катушке',
     fulltitle: 'Удлинители силовые на пластиковой катушке',
-    description: `Удлинители силовые с медным кабелем «КГ<span>тп</span> ХЛ», с заземлением,
+    description: `Удлинители силовые с медным кабелем «КГТП ХЛ», с заземлением,
     <br/>
     на пластиковой катушке для легкого наматывания и хранения,
     <br/>
     со степенью защиты «IP44» (каучуковая розетка и крышка),
     <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети «220В»`,
-    mobiledescrip: `Удлинители силовые с медным кабелем «КГ<span>тп</span> ХЛ», с заземлением,
-    <br/>
-    на пластиковой катушке для легкого наматывания и хранения,
-    <br/>
+    mobiledescrip: `Удлинители силовые с медным кабелем <br/> «КГТП ХЛ», с заземлением,
+    на пластиковой <br/> катушке для легкого наматывания <br/> и хранения,
     со степенью защиты «IP44» (каучуковая розетка и крышка),
     <br/>
     с европейской вилкой «16А»,<br/> с поддержанием напряжения сети «220В»`,
@@ -2057,11 +2055,11 @@ const products = [
     isSpec: false,
     isPlastic: true,
     isMetalic: false,
+    temp: 'от +40°C до -60°C ',
     copper: '100% медь',
     options: {
      isEco: false,
      isGost: false,
-     temp: 'от +40°C до -60°C ',
     },
     category: 2,
 
@@ -2163,18 +2161,16 @@ const products = [
    {
     title: 'Удлинители силовые на металлической катушке',
     fulltitle: 'Удлинители силовые на металлической катушке',
-    description: `Удлинители силовые с медным кабелем «КГ<span>тп</span> ХЛ», с заземлением,
+    description: `Удлинители силовые с медным кабелем «КГТП ХЛ», с заземлением,
     <br/>
     на металлической катушке для легкого наматывания и хранения,
     <br/>
     со степенью защиты «IP44» (каучуковая розетка и крышка),
     <br/>
     с европейской вилкой «16А», с поддержанием напряжения сети «220В»`,
-    mobiledescrip: `Удлинители силовые с медным кабелем «КГ<span>тп</span> ХЛ», с заземлением,
-    <br/>
-    на металлической катушке для легкого наматывания и хранения,
-    <br/>
-    со степенью защиты «IP44» (каучуковая розетка и крышка),
+    mobiledescrip: `Удлинители силовые с медным кабелем <br/> «КГТП ХЛ», с заземлением,
+    на металлической <br/> катушке для легкого наматывания <br/> и хранения,
+    со степенью защиты «IP44» <br/> (каучуковая розетка и крышка),
     <br/>
     с европейской вилкой «16А»,<br/> с поддержанием напряжения сети «220В»`,
     grounding: true,
@@ -2183,10 +2179,9 @@ const products = [
     isPlastic: false,
     isMetalic: true,
     isCatushka: true,
+    temp: 'от +40°C до -60°C ',
     copper: '100% медь',
-    options: {
-     temp: 'от +40°C до -60°C ',
-    },
+    options: {},
     category: 2,
 
     variants: [
@@ -2343,7 +2338,7 @@ const renderOptions = (product) => {
  const cardOptions = document.querySelector('.product__card-options');
  const imgStickers = document.querySelector('.product__img-stickers-items');
  const stickers = imgStickers.lastChild;
-
+ console.log(product);
  cardOptions.innerHTML = '';
  imgStickers.innerHTML = '';
  const lastLength = optionsArr[optionsArr.length - 1].length;
@@ -2476,6 +2471,8 @@ const renderVariants = (product, variantsContainer) => {
    productVariantButton.classList.add('active');
    renderOptions(variant);
    const imgStickers = document.querySelector('.product__img-stickers-items');
+
+   product.temp ? renderTempImg(imgStickers, product.temp) : null;
    product.copper ? renderMaterial(imgStickers, product.copper) : null;
   });
   variantsContainer.appendChild(productVariantButton);
@@ -2683,18 +2680,24 @@ const openProduct = (index) => {
   const topStickers = document.createElement('div');
   topStickers.className = 'product__top-stickers';
   renderMaterial(topStickers, prod.copper);
+
   renderStickers(topStickers, prod);
   productInfo.append(topStickers);
  } else {
   renderMaterial(productInfo, prod.copper);
  }
 
+ prod.temp ? renderTempImg(imgStickers, prod.temp) : null;
  prod.copper ? renderMaterial(imgStickers, prod.copper) : null;
  renderImages(prod, galleryWrapper);
 };
 const renderStickers = (wrapper, product) => {
  const stickerWrapper = document.createElement('div');
  stickerWrapper.className = 'product__card-stickers';
+ const stickerItem = document.createElement('div');
+ stickerItem.className = 'product__card-sticker';
+ stickerItem.textContent = product.temp;
+ stickerWrapper.append(stickerItem);
 
  let length;
  if (product.options != undefined) {
@@ -2728,6 +2731,29 @@ const renderMaterial = (wrapper, material) => {
  materialDiv.className = 'product__card-material';
  materialDiv.innerHTML = material;
 
+ wrapper.append(materialDiv);
+};
+
+const renderTempImg = (wrapper, temp) => {
+ const materialDiv = document.createElement('div');
+ materialDiv.className = 'product__card-sticker';
+ materialDiv.innerHTML = temp;
+ const stickersContainer = wrapper.querySelector(
+  '.product__img-stickers-items'
+ );
+
+ if (stickersContainer) {
+  // Перемещаем элемент перед другим 'product__card-material' (если он есть)
+  const existingMaterial = stickersContainer.querySelector(
+   '.product__card-material'
+  );
+  if (existingMaterial) {
+   stickersContainer.insertAfter(materialDiv, existingMaterial);
+  } else {
+   // Если такого элемента нет, просто добавляем в конец стикеров
+   stickersContainer.appendChild(materialDiv);
+  }
+ }
  wrapper.append(materialDiv);
 };
 

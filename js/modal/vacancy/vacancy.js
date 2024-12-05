@@ -115,10 +115,14 @@ const openVacancyModal = () => {
          </p>
         </div>
         <div class="vacancy__info-item">
-         <p class="vacancy__info-text">
+         <p class="vacancy__info-text hide-mobile">
           <span>Карьерная лестница</span>, c понятным ростом и необходимыми
           производственными обязанностями
          </p>
+         <p class="vacancy__info-text mobile">
+         <span>Карьерная лестница</span>, c понятным ростом и 
+         производственными обязанностями
+        </p>
         </div>
        </div>
        <div class="vacancy__bottom">

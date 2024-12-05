@@ -1539,7 +1539,7 @@ section {
     display: none;
   }
   .product__card-stickers {
-    position: static;
+    display: none;
   }
   .product__card-sticker {
     background: rgba(255, 61, 0, 0.5019607843);
@@ -2386,6 +2386,11 @@ section {
   }
   .contacts__title {
     font-size: 18px;
+    height: 30px;
+    margin-bottom: 15px;
+  }
+  .contacts__wrapper {
+    padding: 15px;
   }
   .contacts iframe {
     display: none !important;
@@ -2669,7 +2674,8 @@ section {
   }
   .documentation__title {
     font-size: 18px;
-    margin-bottom: 0;
+    margin-bottom: 15px;
+    height: 30px;
   }
   .documentation__wrapper {
     max-width: 350px;
@@ -2776,6 +2782,9 @@ section {
 .vacancy__title.mobile {
   display: none;
 }
+.vacancy__info-text.mobile {
+  display: none;
+}
 @media screen and (max-width: 820px) {
   .vacancy {
     transform: translateX(0);
@@ -2808,6 +2817,12 @@ section {
   }
   .vacancy__info-text {
     font-size: 14px;
+  }
+  .vacancy__info-text.hide-mobile {
+    display: none;
+  }
+  .vacancy__info-text.mobile {
+    display: block;
   }
 }
 
@@ -2875,6 +2890,7 @@ section {
   }
   .political__wrapper {
     max-width: 350px;
+    padding: 15px;
   }
   .political__text-wrapper {
     font-size: 8px;
